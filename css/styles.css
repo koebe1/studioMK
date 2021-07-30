@@ -1,0 +1,29 @@
+/* fonts */
+@font-face {
+  font-family: "Non Natural Grotesk";
+  src: url("../fonts/NON\ Natural\ Grotesk-Regular.otf");
+}
+* {
+  font-family: "Non Natural Grotesk";
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* navbar */
+nav {
+  width: 100 vw;
+  font-size: 30px;
+  border: 1px solid black;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+}
+.nav-links a {
+  text-decoration: none;
+}
+
+.nav-links li {
+  list-style: none;
+}
