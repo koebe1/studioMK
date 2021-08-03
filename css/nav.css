@@ -1,0 +1,42 @@
+/* navbar */
+nav {
+  font-size: 25px;
+  padding: 33px 42px 33px 42px;
+  /* border: 1px solid red; */
+}
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links-right {
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+
+  /* border: 1px solid blue; */
+}
+.nav-links a {
+  text-decoration: none;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+#info {
+  padding: 0px 8vw 0 8vw;
+}
+
+.nav-links a:hover {
+  font-family: "Non Natural Grotesk Medium";
+}
+
+@media (max-width: 1600px) {
+  nav {
+    font-size: 20px;
+  }
+  #info {
+    padding: 0px 8vw 0 8vw;
+  }
+}
