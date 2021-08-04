@@ -1,0 +1,136 @@
+main {
+  flex-direction: column;
+  /* border: 1px solid black; */
+}
+
+.main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 60vh;
+  font-size: 70px;
+}
+.indented {
+  text-indent: 22%;
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+}
+.slider {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 7.2% 0 7.2%;
+  height: 82vh;
+  width: 100%;
+  background-image: url("../ue_bildmaterial/dummy.jpg");
+  background-size: fit;
+  background-repeat: no-repeat;
+}
+
+.slider span {
+  font-size: 65px;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+
+.slider span:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.slider-sub {
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  height: 14.4vh;
+}
+
+.slider-sub-left {
+  padding-left: 2.51%;
+}
+
+#dots {
+  padding: 0 2vw 0 2vw;
+}
+
+.dots {
+  font-size: 35px;
+}
+
+.slider-sub-right {
+  padding-right: 2.51%;
+}
+
+#info-1 {
+  cursor: pointer;
+}
+
+.slider-counter-current {
+  padding-left: 2vw;
+}
+
+.info-card {
+  transform: translateY(-1px);
+  height: 82.2vh;
+  width: 87.5vw;
+  background-color: #ffffff;
+}
+
+.info-card {
+  display: none;
+  line-height: 35px;
+
+  font-size: 25px;
+  background-color: "white";
+  position: absolute;
+}
+
+.info-card-text-left {
+  display: flex;
+  max-width: 850px;
+  width: 49.15vw;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10.1vh 0 0 2.65vw;
+}
+
+.info-card-text-right {
+  padding: 32vh 0 0 15vw;
+}
+
+@media (max-width: 1865px) {
+  .main-text {
+    font-size: 65px;
+  }
+}
+
+@media (max-width: 1750px) {
+  .main-text {
+    font-size: 58px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .main-text {
+    font-size: 55px;
+  }
+  .info-card {
+    font-size: 19px;
+  }
+}
+@media (max-width: 1515px) {
+  .main-text {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .main-text {
+    font-size: 45px;
+  }
+}

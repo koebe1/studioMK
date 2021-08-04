@@ -39,4 +39,12 @@ body {
 main {
   display: flex;
   flex: auto;
+  /* margin: 162px 120px 195px 120px; */
+  margin: 15vh 6.25vw 18.1vh 6.25vw;
+}
+
+.dots {
+  letter-spacing: 4px;
+  font-weight: bold;
+  font-family: sans-serif;
 }
