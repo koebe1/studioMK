@@ -19,16 +19,16 @@ main {
   flex-direction: column;
 }
 .slider {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 7.2% 0 7.2%;
+  padding: 0 7.2% 0 7.3%;
   height: 82vh;
   width: 100%;
-  background-image: url("../ue_bildmaterial/dummy.jpg");
-  background-size: fit;
+  background-image: url("../ue_bildmaterial/dummy1.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .slider span {
@@ -39,6 +39,10 @@ main {
 
 .slider span:hover {
   color: rgba(255, 255, 255, 0.5);
+}
+
+.slider span:active {
+  color: rgba(255, 255, 255, 1);
 }
 
 .slider-sub {
@@ -68,6 +72,7 @@ main {
 
 #info-1 {
   cursor: pointer;
+  padding-right: 2vw;
 }
 
 .slider-counter-current {
@@ -75,15 +80,13 @@ main {
 }
 
 .info-card {
+  display: none;
+  opacity: 1;
+  line-height: 35px;
   transform: translateY(-1px);
   height: 82.2vh;
   width: 87.5vw;
   background-color: #ffffff;
-}
-
-.info-card {
-  display: none;
-  line-height: 35px;
 
   font-size: 25px;
   background-color: "white";
@@ -100,7 +103,7 @@ main {
 }
 
 .info-card-text-right {
-  padding: 32vh 0 0 15vw;
+  padding: 10.1vh 0 0 15vw;
 }
 
 @media (max-width: 1865px) {
@@ -120,8 +123,13 @@ main {
     font-size: 55px;
   }
   .info-card {
-    font-size: 19px;
+    font-size: 18px;
+    line-height: 27px;
   }
+  .dots {
+      font-size: 25px
+  }
+
 }
 @media (max-width: 1515px) {
   .main-text {
