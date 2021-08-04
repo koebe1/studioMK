@@ -7,11 +7,24 @@ main {
   /* border: 1px solid red; */
 }
 
-#filter {
+/* filter */
+
+.filter {
   padding-bottom: 3.3%;
 }
+.filter-name {
+  font-family: "Non Natural Grotesk Light";
+  cursor: pointer;
+}
 
-.work-grid-container {
+.off {
+}
+
+.on {
+  font-family: "Non Natural Grotesk Medium";
+}
+
+#work-grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto auto;
