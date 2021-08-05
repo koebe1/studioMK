@@ -15,7 +15,15 @@ const sliderList1 = [
 ];
 // slider function
 let counter = 0;
-slider1CounterEnd.innerHTML = sliderList1.length;
+
+const main = () => {
+  slider1CounterEnd.innerHTML = sliderList1.length;
+  info1.addEventListener("click", () => infoSlide(info1, infoCard1));
+
+  slider1ArrLeft.addEventListener("click", () => slideDown(sliderList1));
+  slider1ArrRight.addEventListener("click", () => slideUp(sliderList1));
+};
+
 let slideDown = pictureList => {
   if (counter === 0) {
     counter = pictureList.length - 1;
@@ -37,21 +45,21 @@ let slideUp = pictureList => {
   slider1.style.backgroundImage = `url("${pictureList[counter]}")`;
 };
 
-slider1ArrLeft.addEventListener("click", () => slideDown(sliderList1));
-slider1ArrRight.addEventListener("click", () => slideUp(sliderList1));
 // function to show the info box of the slider
 let clicked = false;
 let infoSlide = (button, target) => {
   if (!clicked) {
     target.style.display = "flex";
-    target.style.opasity = "0";
+    slider1.style.opacity = "0";
     button.innerHTML = "CLOSE";
 
     clicked = true;
   } else {
+    slider1.style.opacity = "1";
     target.style.display = "none";
     button.innerHTML = "INFO";
     clicked = false;
   }
 };
-info1.addEventListener("click", () => infoSlide(info1, infoCard1));
+
+main();

@@ -1,6 +1,5 @@
 main {
   flex-direction: column;
-  /* border: 1px solid black; */
 }
 
 .main-text {
@@ -22,13 +21,25 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 7.2% 0 7.3%;
   height: 82vh;
   width: 100%;
   background-image: url("../ue_bildmaterial/dummy1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  cursor: url("../fonts/cursor_right.png"), pointer;
+}
+.arr-container-left {
+  opacity: 0;
+  height: 100%;
+  width: 50%;
+  cursor: url("../fonts/cursor_left.png"), pointer;
+}
+.arr-container-right {
+  opacity: 0;
+  height: 100%;
+  width: 50%;
+  cursor: url("../fonts/cursor_right.png"), pointer;
 }
 
 .slider span {
@@ -88,7 +99,7 @@ main {
   width: 87.5vw;
   background-color: #ffffff;
 
-  font-size: 25px;
+  font-size: 22px;
   background-color: "white";
   position: absolute;
 }
@@ -106,16 +117,20 @@ main {
   padding: 10.1vh 0 0 15vw;
 }
 
+/* BREAKPOINTS */
 @media (max-width: 1865px) {
   .main-text {
     font-size: 65px;
-  }
+}
+    .info-card {
+    font-size: 20px;
+     line-height: 30px;
+}
 }
 
 @media (max-width: 1750px) {
   .main-text {
     font-size: 58px;
-  }
 }
 
 @media (max-width: 1600px) {
@@ -127,9 +142,8 @@ main {
     line-height: 27px;
   }
   .dots {
-      font-size: 25px
+    font-size: 25px;
   }
-
 }
 @media (max-width: 1515px) {
   .main-text {
