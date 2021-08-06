@@ -37,6 +37,51 @@ const slider4CounterCurr = document.getElementById("slider4-counter-current");
 const slider4CounterEnd = document.getElementById("slider4-counter-end");
 const slider4 = document.getElementById("slider-4");
 window["counter4"] = 0;
+// slider 5
+const info5 = document.getElementById("info-5");
+const infoCard5 = document.querySelector(".info-card-5");
+const slider5ArrLeft = document.getElementById("slider5-arr-left");
+const slider5ArrRight = document.getElementById("slider5-arr-right");
+const slider5CounterCurr = document.getElementById("slider5-counter-current");
+const slider5CounterEnd = document.getElementById("slider5-counter-end");
+const slider5 = document.getElementById("slider-5");
+window["counter5"] = 0;
+// slider 6
+const info6 = document.getElementById("info-6");
+const infoCard6 = document.querySelector(".info-card-6");
+const slider6ArrLeft = document.getElementById("slider6-arr-left");
+const slider6ArrRight = document.getElementById("slider6-arr-right");
+const slider6CounterCurr = document.getElementById("slider6-counter-current");
+const slider6CounterEnd = document.getElementById("slider6-counter-end");
+const slider6 = document.getElementById("slider-6");
+window["counter6"] = 0;
+// slider 7
+const info7 = document.getElementById("info-7");
+const infoCard7 = document.querySelector(".info-card-7");
+const slider7ArrLeft = document.getElementById("slider7-arr-left");
+const slider7ArrRight = document.getElementById("slider7-arr-right");
+const slider7CounterCurr = document.getElementById("slider7-counter-current");
+const slider7CounterEnd = document.getElementById("slider7-counter-end");
+const slider7 = document.getElementById("slider-7");
+window["counter7"] = 0;
+// slider 8
+const info8 = document.getElementById("info-8");
+const infoCard8 = document.querySelector(".info-card-8");
+const slider8ArrLeft = document.getElementById("slider8-arr-left");
+const slider8ArrRight = document.getElementById("slider8-arr-right");
+const slider8CounterCurr = document.getElementById("slider8-counter-current");
+const slider8CounterEnd = document.getElementById("slider8-counter-end");
+const slider8 = document.getElementById("slider-8");
+window["counter8"] = 0;
+// slider 9
+const info9 = document.getElementById("info-9");
+const infoCard9 = document.querySelector(".info-card-9");
+const slider9ArrLeft = document.getElementById("slider9-arr-left");
+const slider9ArrRight = document.getElementById("slider9-arr-right");
+const slider9CounterCurr = document.getElementById("slider9-counter-current");
+const slider9CounterEnd = document.getElementById("slider9-counter-end");
+const slider9 = document.getElementById("slider-9");
+window["counter9"] = 0;
 
 //  slider pictures
 const sliderList1 = [
@@ -51,10 +96,19 @@ const sliderList1 = [
   "../pictures/index/01_yes/yes9.jpg"
 ];
 const sliderList2 = [
-  "../ue_bildmaterial/dummy4.jpg",
-  "../ue_bildmaterial/dummy3.jpg",
-  "../ue_bildmaterial/dummy2.jpg",
-  "../ue_bildmaterial/dummy1.jpg"
+  "../pictures/index/02_Pfadfinder/pfadfinder_1920x1063px.jpg",
+  "../pictures/index/02_Pfadfinder/pfadfinder_1920x1063px2.jpg",
+  "../pictures/index/02_Pfadfinder/pfadfinder_1920x1063px3.jpg",
+  "../pictures/index/02_Pfadfinder/pfadfinder_1920x1063px4.jpg",
+  "../pictures/index/02_Pfadfinder/pfadfinder_1920x1063px5.jpg",
+  "../pictures/index/02_Pfadfinder/pfadfinder_1920x1063px6.jpg",
+  "../pictures/index/02_Pfadfinder/pfadfinder_1920x1063px7.jpg",
+  "../pictures/index/02_Pfadfinder/pfadfinder_1920x1063px8.jpg",
+  "../pictures/index/02_Pfadfinder/pfadfinder_1920x1063px9.jpg",
+  "../pictures/index/02_Pfadfinder/pfadfinder_1920x1063px10.jpg",
+  "../pictures/index/02_Pfadfinder/pfadfinder_1920x1063px11.jpg",
+  "../pictures/index/02_Pfadfinder/pfadfinder_1920x1063px12.jpg",
+  "../pictures/index/02_Pfadfinder/pfadfinder_1920x1063px13.jpg"
 ];
 const sliderList3 = [
   "../pictures/index/03_ueberbild/ueberbild1.jpg",
@@ -74,18 +128,76 @@ const sliderList4 = [
   "../pictures/index/04_neunkubikmeter/neunkubikmeter_1920x1063px6.jpg",
   "../pictures/index/04_neunkubikmeter/neunkubikmeter_1920x1063px7.jpg"
 ];
+const sliderList5 = [
+  "../pictures/index/05_luemo/luemo_1920x1063px.jpg",
+  "../pictures/index/05_luemo/luemo_1920x1063px2.jpg",
+  "../pictures/index/05_luemo/luemo_1920x1063px3.jpg",
+  "../pictures/index/05_luemo/luemo_1920x1063px4.jpg",
+  "../pictures/index/05_luemo/luemo_1920x1063px5.jpg",
+  "../pictures/index/05_luemo/luemo_1920x1063px6.jpg",
+  "../pictures/index/05_luemo/luemo_1920x1063px7.jpg"
+];
+const sliderList6 = [
+  "../pictures/index/06_united-ip/uip1.jpg",
+  "../pictures/index/06_united-ip/uip2.jpg",
+  "../pictures/index/06_united-ip/uip3.jpg",
+  "../pictures/index/06_united-ip/uip4.jpg"
+];
+const sliderList7 = [
+  "../pictures/index/07_zfkk/zfkk_1920x1063px.jpg",
+  "../pictures/index/07_zfkk/zfkk_1920x1063px2.jpg",
+  "../pictures/index/07_zfkk/zfkk_1920x1063px3.jpg",
+  "../pictures/index/07_zfkk/zfkk_1920x1063px4.jpg",
+  "../pictures/index/07_zfkk/zfkk_1920x1063px5.jpg",
+  "../pictures/index/07_zfkk/zfkk_1920x1063px6.jpg",
+  "../pictures/index/07_zfkk/zfkk_1920x1063px7.jpg",
+  "../pictures/index/07_zfkk/zfkk_1920x1063px8.jpg",
+  "../pictures/index/07_zfkk/zfkk_1920x1063px9.jpg",
+  "../pictures/index/07_zfkk/zfkk_1920x1063px10.jpg"
+];
+const sliderList8 = [
+  "../pictures/index/08_gruppeB/gruppeb_1920x1063px.jpg",
+  "../pictures/index/08_gruppeB/gruppeb_1920x1063px2.jpg",
+  "../pictures/index/08_gruppeB/gruppeb_1920x1063px3.jpg",
+  "../pictures/index/08_gruppeB/gruppeb_1920x1063px4.jpg",
+  "../pictures/index/08_gruppeB/gruppeb_1920x1063px5.jpg",
+  "../pictures/index/08_gruppeB/gruppeb_1920x1063px6.jpg",
+  "../pictures/index/08_gruppeB/gruppeb_1920x1063px7.jpg",
+  "../pictures/index/08_gruppeB/gruppeb_1920x1063px8.jpg"
+];
+const sliderList9 = [
+  "../pictures/index/09_365/kalenderblatt_1920x1063px.jpg",
+  "../pictures/index/09_365/kalenderblatt_1920x1063px2.jpg",
+  "../pictures/index/09_365/kalenderblatt_1920x1063px3.jpg",
+  "../pictures/index/09_365/kalenderblatt_1920x1063px4.jpg",
+  "../pictures/index/09_365/kalenderblatt_1920x1063px5.jpg",
+  "../pictures/index/09_365/kalenderblatt_1920x1063px6.jpg",
+  "../pictures/index/09_365/kalenderblatt_1920x1063px7.jpg",
+  "../pictures/index/09_365/kalenderblatt_1920x1063px8.jpg",
+  "../pictures/index/09_365/kalenderblatt_1920x1063px9.jpg"
+];
 
 // info slider event listeners
 info1.addEventListener("click", () => infoSlide(info1, infoCard1, slider1));
 info2.addEventListener("click", () => infoSlide(info2, infoCard2, slider2));
 info3.addEventListener("click", () => infoSlide(info3, infoCard3, slider3));
 info4.addEventListener("click", () => infoSlide(info4, infoCard4, slider4));
+info5.addEventListener("click", () => infoSlide(info5, infoCard5, slider5));
+info6.addEventListener("click", () => infoSlide(info6, infoCard6, slider6));
+info7.addEventListener("click", () => infoSlide(info7, infoCard7, slider7));
+info8.addEventListener("click", () => infoSlide(info8, infoCard8, slider8));
+info9.addEventListener("click", () => infoSlide(info9, infoCard9, slider9));
 
 // getting length of the sliders
 slider1CounterEnd.innerHTML = sliderList1.length;
 slider2CounterEnd.innerHTML = sliderList2.length;
 slider3CounterEnd.innerHTML = sliderList3.length;
 slider4CounterEnd.innerHTML = sliderList4.length;
+slider5CounterEnd.innerHTML = sliderList5.length;
+slider6CounterEnd.innerHTML = sliderList6.length;
+slider7CounterEnd.innerHTML = sliderList7.length;
+slider8CounterEnd.innerHTML = sliderList8.length;
+slider9CounterEnd.innerHTML = sliderList9.length;
 // event listener for the slider
 
 slider1ArrLeft.addEventListener("click", () =>
@@ -117,6 +229,41 @@ slider4ArrLeft.addEventListener("click", () =>
 
 slider4ArrRight.addEventListener("click", () =>
   slideUp(sliderList4, "counter4", slider4CounterCurr, slider4)
+);
+slider5ArrLeft.addEventListener("click", () =>
+  slideDown(sliderList5, "counter5", slider5CounterCurr, slider5)
+);
+
+slider5ArrRight.addEventListener("click", () =>
+  slideUp(sliderList5, "counter5", slider5CounterCurr, slider5)
+);
+slider6ArrLeft.addEventListener("click", () =>
+  slideDown(sliderList6, "counter6", slider6CounterCurr, slider6)
+);
+
+slider6ArrRight.addEventListener("click", () =>
+  slideUp(sliderList6, "counter6", slider6CounterCurr, slider6)
+);
+slider7ArrLeft.addEventListener("click", () =>
+  slideDown(sliderList7, "counter7", slider7CounterCurr, slider7)
+);
+
+slider7ArrRight.addEventListener("click", () =>
+  slideUp(sliderList7, "counter7", slider7CounterCurr, slider7)
+);
+slider8ArrLeft.addEventListener("click", () =>
+  slideDown(sliderList8, "counter8", slider8CounterCurr, slider8)
+);
+
+slider8ArrRight.addEventListener("click", () =>
+  slideUp(sliderList8, "counter8", slider8CounterCurr, slider8)
+);
+slider9ArrLeft.addEventListener("click", () =>
+  slideDown(sliderList9, "counter9", slider9CounterCurr, slider9)
+);
+
+slider9ArrRight.addEventListener("click", () =>
+  slideUp(sliderList9, "counter9", slider9CounterCurr, slider9)
 );
 
 let slideDown = (pictureList, counter, counterCurr, slider) => {

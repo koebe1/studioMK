@@ -120,13 +120,28 @@ main {
 }
 
 #slider-2 {
-  background-image: url("../ue_bildmaterial/dummy4.jpg");
+  background-image: url("../pictures/index/02_Pfadfinder/pfadfinder_1920x1063px.jpg");
 }
 #slider-3 {
   background-image: url("../pictures/index/03_ueberbild/ueberbild1.jpg");
 }
 #slider-4 {
   background-image: url("../pictures/index/04_neunkubikmeter/neunkubikmeter_1920x1063px.jpg");
+}
+#slider-5 {
+  background-image: url("../pictures/index/05_luemo/luemo_1920x1063px.jpg");
+}
+#slider-6 {
+  background-image: url("../pictures/index/06_united-ip/uip1.jpg");
+}
+#slider-7 {
+  background-image: url("../pictures/index/07_zfkk/zfkk_1920x1063px.jpg");
+}
+#slider-8 {
+  background-image: url("../pictures/index/08_gruppeB/gruppeb_1920x1063px.jpg");
+}
+#slider-9 {
+  background-image: url("../pictures/index/09_365/kalenderblatt_1920x1063px.jpg");
 }
 
 /* BREAKPOINTS */
