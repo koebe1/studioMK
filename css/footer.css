@@ -5,8 +5,8 @@ footer {
 
   bottom: 0px;
   width: 100vw;
-  padding: 0px 30px 93px 30px;
-  /* border: 1px solid green; */
+  /* padding: 0px 30px 93px 30px; */
+  padding: 0vh 1.565vw 8.612vh 1.565vw;
 }
 
 a {
@@ -22,8 +22,8 @@ a {
   /* border: 1px solid red; */
 }
 .footer-left-imp {
-  padding-left: 93px;
-  padding-right: 93px;
+  /* padding: 0 93px 0 93px; */
+  padding: 0 4.85vw 0 4.85vw;
 }
 .footer-left-imp a {
   display: block;
@@ -51,8 +51,23 @@ a {
   footer {
     font-size: 20px;
   }
-  .footer-right-contact {
-    /* padding-left: 12vw; */
-    padding: 0 9vw 0 9vw;
+}
+
+@media (max-width: 480px) {
+  footer {
+    font-size: 14px;
+    padding: 0vh 2.4vw 2vh 2.4vw;
+  }
+  .footer-left {
+    display: inline;
+  }
+  .footer-left-imp {
+    padding: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  footer {
+    font-size: 12px;
   }
 }
