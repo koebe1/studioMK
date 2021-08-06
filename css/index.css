@@ -1,7 +1,6 @@
 main {
   flex-direction: column;
   margin: 15vh 0vw 18.1vh 0vw;
-  
 }
 
 .main-text {
@@ -220,15 +219,14 @@ main {
 }
 @media (max-width: 480px) {
   main {
-    margin-top: 0px;
+    margin-top: 3vh;
     margin-bottom: 9.5vh;
   }
   .main-text {
-    /* padding: 3.1vh 25px 6vh 25px; */
-    margin: 3.1vh 25px 6vh 25px;
+
     line-height: 30px;
     font-size: 25px;
-    height: 35.3vh;
+    height: 32vh;
   }
   div,
   p {
@@ -255,5 +253,8 @@ main {
   }
   .indented {
     text-indent: 0;
+  }
+  .slider {
+    height: 30vh;
   }
 }
