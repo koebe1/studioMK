@@ -32,6 +32,9 @@ nav {
 .nav-links a:hover {
   font-family: "Non Natural Grotesk Medium";
 }
+.nav-links a:active {
+  font-family: "Non Natural Grotesk Light";
+}
 
 @media (max-width: 1600px) {
   nav {

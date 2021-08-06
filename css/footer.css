@@ -55,6 +55,7 @@ a {
 
 @media (max-width: 480px) {
   footer {
+  
     font-size: 14px;
     padding: 0vh 2.4vw 2vh 2.4vw;
   }

@@ -274,7 +274,7 @@ let slideDown = (pictureList, counter, counterCurr, slider) => {
     window[counter] -= 1;
     counterCurr.innerHTML = window[counter] + 1;
   }
-  console.log(window[counter]);
+
   slider.style.backgroundImage = `url("${pictureList[window[counter]]}")`;
 };
 

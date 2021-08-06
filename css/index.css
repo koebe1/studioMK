@@ -91,6 +91,13 @@ main {
   padding-right: 2vw;
 }
 
+.info:hover {
+  font-family: "Non Natural Grotesk Medium";
+}
+.info:active {
+  font-family: "Non Natural Grotesk Light";
+}
+
 .slider-counter-current {
   padding-left: 2vw;
 }
@@ -223,7 +230,6 @@ main {
     margin-bottom: 9.5vh;
   }
   .main-text {
-
     line-height: 30px;
     font-size: 25px;
     height: 32vh;
@@ -244,6 +250,35 @@ main {
   }
   .dots {
     font-size: 15px;
+  }
+  .filter-label {
+    display: none;
+  }
+  .info {
+    padding-right: 4vw;
+  }
+  #dots {
+    padding-left: 4vw;
+  }
+
+  .info-card {
+    background-color: rgba(0, 0, 0, 1);
+    font-size: 9px;
+    height: 30vh;
+    line-height: 11px;
+  }
+  .info-card-text-left {
+    width: 100%;
+    padding: 35px;
+  }
+  .info-card-text-left span {
+    color: white;
+  }
+  .info-card-text-right {
+    display: none;
+  }
+  .info-card-text-left .dots {
+    display: none;
   }
 }
 
