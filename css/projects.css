@@ -1,0 +1,120 @@
+body {
+  width: 100vw;
+  height: 100vh;
+}
+nav {
+  height: 14vh;
+  width: 100vw;
+  background-color: #000;
+}
+nav a {
+  color: #fff;
+}
+nav span {
+  color: #fff;
+}
+main {
+  width: 100%;
+  padding: 0;
+  margin: 14vh 0 0 0;
+}
+
+.slider-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: black;
+}
+.slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 76vh;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: url("../fonts/cursor_right.png"), pointer;
+}
+#slider-1 {
+  background-image: url("../pictures/index/01_yes/yes1.jpg");
+}
+#slider-2 {
+  background-image: url("../pictures/index/02_Pfadfinder/pfadfinder_1920x1063px.jpg");
+}
+#slider-3 {
+  background-image: url("../pictures/index/03_ueberbild/ueberbild1.jpg");
+}
+#slider-4 {
+  background-image: url("../pictures/index/04_neunkubikmeter/neunkubikmeter_1920x1063px.jpg");
+}
+#slider-5 {
+  background-image: url("../pictures/index/05_luemo/luemo_1920x1063px.jpg");
+}
+#slider-6 {
+  background-image: url("../pictures/index/06_united-ip/uip1.jpg");
+}
+#slider-7 {
+  background-image: url("../pictures/index/07_zfkk/zfkk_1920x1063px.jpg");
+}
+#slider-8 {
+  background-image: url("../pictures/index/08_gruppeB/gruppeb_1920x1063px.jpg");
+}
+#slider-9 {
+  background-image: url("../pictures/index/09_365/kalenderblatt_1920x1063px.jpg");
+}
+
+.arr-container-left {
+  opacity: 0;
+  height: 100%;
+  width: 50%;
+  cursor: url("../fonts/cursor_left.png"), pointer;
+}
+.arr-container-right {
+  opacity: 0;
+  height: 100%;
+  width: 50%;
+  cursor: url("../fonts/cursor_right.png"), pointer;
+}
+
+.slider span {
+  font-size: 65px;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+
+.slider span:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.slider span:active {
+  color: rgba(255, 255, 255, 1);
+}
+
+.slider-sub {
+  font-size: 25px;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  height: 10vh;
+}
+
+.slider-sub-left {
+  padding-left: 2.51%;
+}
+
+#dots {
+  padding: 0 2vw 0 2vw;
+}
+
+.dots {
+  font-size: 35px;
+}
+
+.slider-sub-right {
+  padding-right: 2.51%;
+}
