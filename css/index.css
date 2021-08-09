@@ -312,6 +312,7 @@ main {
   }
   .slider {
     height: 37vh;
+    z-index: 2;
   }
   .dots {
     font-size: 15px;

@@ -305,3 +305,7 @@ let infoSlide = (button, infoCard, slider) => {
     clicked = false;
   }
 };
+
+
+
+//  add breakline for main text in mobile verison
