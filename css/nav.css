@@ -1,11 +1,17 @@
 /* navbar */
 nav {
+  background-color: #fff;
+  display: flex;
+  position: fixed;
+  height: 100px;
+  width: 100%;
   font-size: 25px;
+  z-index: 100;
   /* padding: 33px 42px 33px 42px; */
-  padding: 3.056vh 2.19vw;
-  /* border: 1px solid red; */
+  padding: 0 2.19vw 0 2.19vw;
 }
 .nav-links {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,8 +20,6 @@ nav {
   width: 60%;
   display: flex;
   justify-content: flex-end;
-
-  /* border: 1px solid blue; */
 }
 .nav-links a {
   text-decoration: none;
@@ -60,6 +64,7 @@ nav {
 
 @media (max-width: 480px) {
   nav {
+    height: 43px;
     font-size: 13px;
     padding: 1.75vh 2.4vw;
   }

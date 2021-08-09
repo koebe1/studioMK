@@ -1,14 +1,17 @@
 main {
   flex-direction: column;
-  margin: 15vh 0vw 18.1vh 0vw;
+  margin-top: 100px;
+  margin-left: 0vw;
+  margin-right: 0vw;
 }
 
 .main-text {
   display: flex;
   padding: 0 6.25vw 0 6.25vw;
   flex-direction: column;
-  justify-content: flex-start;
-  height: 60vh;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
   font-size: 70px;
 }
 .indented {
