@@ -165,6 +165,7 @@ main {
 @media (max-width: 1750px) {
   .main-text {
     font-size: 58px;
+    max-height: 700px;
   }
 }
 
@@ -175,9 +176,13 @@ main {
   .main-text {
     font-size: 55px;
   }
+  .slider {
+    max-height: 800px;
+  }
   .info-card {
     font-size: 18px;
     line-height: 27px;
+    max-height: 800px;
   }
   .dots {
     font-size: 25px;
@@ -192,38 +197,98 @@ main {
 @media (max-width: 1400px) {
   .main-text {
     font-size: 45px;
+    max-height: 500px;
+  }
+  .slider {
+    max-height: 700px;
+  }
+  .info-card {
+    font-size: 16px;
+    line-height: 25px;
+    max-height: 700px;
   }
 }
 @media (max-width: 1192px) {
   .main-text {
     font-size: 38px;
+    max-height: 500px;
+  }
+  .info-card {
+    font-size: 14px;
+    line-height: 23px;
   }
 }
 @media (max-width: 1024px) {
   .main-text {
     font-size: 33px;
+    height: 50vh;
+    max-height: 400px;
+  }
+  .slider {
+    max-height: 600px;
+  }
+  .slider-sub {
+    max-height: 150px;
+  }
+  .info-card {
+    max-height: 600px;
+  }
+  .info-card-text-left {
+    padding-top: 6vh;
+    padding-bottom: 6vh;
+  }
+  .info-card-text-right {
+    padding-top: 6vh;
+    padding-bottom: 6vh;
   }
 }
 @media (max-width: 880px) {
   .main-text {
     font-size: 29px;
   }
+  .slider {
+    max-height: 500px;
+  }
+  .info-card {
+    font-size: 12px;
+    line-height: 20px;
+    max-height: 500px;
+  }
 }
+
+/* tablet */
 @media (max-width: 768px) {
   .main-text {
     font-size: 25px;
+    height: 40vh;
+  }
+  .slider-sub {
+    font-size: 18px;
   }
 }
 @media (max-width: 665px) {
   .main-text {
     font-size: 21px;
+    height: 30vh;
+  }
+  .slider-sub {
+    font-size: 16px;
+  }
+  .info-card {
+    font-size: 9px;
+    line-height: 18px;
   }
 }
 @media (max-width: 560px) {
   .main-text {
     font-size: 18px;
   }
+  .slider-sub {
+    font-size: 15px;
+  }
 }
+
+/* mobile */
 @media (max-width: 480px) {
   main {
     margin-top: 3vh;
@@ -232,7 +297,7 @@ main {
   .main-text {
     line-height: 30px;
     font-size: 25px;
-    height: 32vh;
+    height: 70vw;
   }
   div,
   p {
@@ -284,12 +349,16 @@ main {
 
 @media (max-width: 375px) {
   .main-text {
-    font-size: 25px;
+    font-size: 23px;
   }
   .indented {
     text-indent: 0;
   }
   .slider {
-    height: 30vh;
+    height: 33vh;
+  }
+
+  .info-card {
+    font-size: 7px;
   }
 }
