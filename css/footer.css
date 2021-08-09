@@ -5,7 +5,6 @@ footer {
 
   bottom: 0px;
   width: 100vw;
-  /* padding: 0px 30px 93px 30px; */
   padding: 0vh 1.565vw 8.612vh 1.565vw;
 }
 
@@ -23,7 +22,6 @@ a {
   /* border: 1px solid red; */
 }
 .footer-left-imp {
-  /* padding: 0 93px 0 93px; */
   padding: 0 4.85vw 0 4.85vw;
 }
 .footer-left-imp a {
@@ -81,8 +79,6 @@ a {
   .footer-left-imp {
     padding: 1vh 0 0 0;
   }
-
- 
 }
 
 @media (max-width: 375px) {
