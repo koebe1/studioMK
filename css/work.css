@@ -1,6 +1,7 @@
 main {
   flex-direction: column;
   font-size: 25px;
+  margin: 14vh 2.19vw 14vh 2.19vw;
 }
 
 /* filter */

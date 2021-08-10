@@ -50,20 +50,6 @@ main {
   cursor: url("../fonts/cursor_right.png"), pointer;
 }
 
-.slider span {
-  font-size: 65px;
-  color: rgba(255, 255, 255, 1);
-  cursor: pointer;
-}
-
-.slider span:hover {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.slider span:active {
-  color: rgba(255, 255, 255, 1);
-}
-
 .slider-sub {
   font-size: 25px;
   display: flex;
