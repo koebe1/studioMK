@@ -51,7 +51,7 @@ main {
   background-image: url("../pictures/index/03_ueberbild/ueberbild1.jpg");
 }
 #slider-4 {
-  background-image: url("../pictures/index/04_neunkubikmeter/neunkubikmeter_1920x1063px.jpg");
+  background-image: url("../pictures/index/04_neunkubikmeter/01_neunkubikmeter.jpg");
 }
 #slider-5 {
   background-image: url("../pictures/index/05_luemo/luemo_1920x1063px.jpg");
@@ -150,4 +150,3 @@ main {
 .info-card-text-right {
   padding: 10.1vh 0 0 15vw;
 }
-

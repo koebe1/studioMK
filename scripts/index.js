@@ -120,13 +120,16 @@ const sliderList3 = [
   "../pictures/index/03_ueberbild/ueberbild7.jpg"
 ];
 const sliderList4 = [
-  "../pictures/index/04_neunkubikmeter/neunkubikmeter_1920x1063px.jpg",
-  "../pictures/index/04_neunkubikmeter/neunkubikmeter_1920x1063px2.jpg",
-  "../pictures/index/04_neunkubikmeter/neunkubikmeter_1920x1063px3.jpg",
-  "../pictures/index/04_neunkubikmeter/neunkubikmeter_1920x1063px4.jpg",
-  "../pictures/index/04_neunkubikmeter/neunkubikmeter_1920x1063px5.jpg",
-  "../pictures/index/04_neunkubikmeter/neunkubikmeter_1920x1063px6.jpg",
-  "../pictures/index/04_neunkubikmeter/neunkubikmeter_1920x1063px7.jpg"
+  "../pictures/index/04_neunkubikmeter/01_neunkubikmeter.jpg",
+  "../pictures/index/04_neunkubikmeter/02_neunkubikmeter.jpg",
+  "../pictures/index/04_neunkubikmeter/03_neunkubikmeter.jpg",
+  "../pictures/index/04_neunkubikmeter/04_neunkubikmeter.jpg",
+  "../pictures/index/04_neunkubikmeter/05_neunkubikmeter.jpg",
+  "../pictures/index/04_neunkubikmeter/06_neunkubikmeter.jpg",
+  "../pictures/index/04_neunkubikmeter/07_neunkubikmeter.jpg",
+  "../pictures/index/04_neunkubikmeter/08_neunkubikmeter.jpg",
+  "../pictures/index/04_neunkubikmeter/09_neunkubikmeter.jpg",
+  "../pictures/index/04_neunkubikmeter/10_neunkubikmeter.jpg"
 ];
 const sliderList5 = [
   "../pictures/index/05_luemo/luemo_1920x1063px.jpg",
@@ -189,7 +192,6 @@ info8.addEventListener("click", () => infoSlide(info8, infoCard8, slider8));
 info9.addEventListener("click", () => infoSlide(info9, infoCard9, slider9));
 
 if (window.innerWidth > 480) {
-  
   // getting length of the sliders
   slider1CounterEnd.innerHTML = sliderList1.length;
   slider2CounterEnd.innerHTML = sliderList2.length;
