@@ -289,6 +289,91 @@ let slideUp = (pictureList, counter, counterCurr, slider) => {
   slider.style.backgroundImage = `url("${pictureList[window[counter]]}")`;
 };
 
+// eventlistener for mobile
+if (window.innerWidth <= 480) {
+  // YES!
+  slider1ArrLeft.addEventListener(
+    "click",
+    () => (window.location.href = "../pages/projects/yes.html")
+  );
+  slider1ArrRight.addEventListener(
+    "click",
+    () => (window.location.href = "../pages/projects/yes.html")
+  );
+  // PFADFINDER
+  slider2ArrLeft.addEventListener(
+    "click",
+    () => (window.location.href = "../pages/projects/pfadfinder.html")
+  );
+  slider2ArrRight.addEventListener(
+    "click",
+    () => (window.location.href = "../pages/projects/pfadfinder.html")
+  );
+  // UEBERBILD
+  slider3ArrLeft.addEventListener(
+    "click",
+    () => (window.location.href = "../pages/projects/ueberbild.html")
+  );
+  slider3ArrRight.addEventListener(
+    "click",
+    () => (window.location.href = "../pages/projects/ueberbild.html")
+  );
+  // NEUNKUBIKMETER
+  slider4ArrLeft.addEventListener(
+    "click",
+    () => (window.location.href = "../pages/projects/neunkubikmeter.html")
+  );
+  slider4ArrRight.addEventListener(
+    "click",
+    () => (window.location.href = "../pages/projects/neunkubikmeter.html")
+  );
+  // LÜMO
+  slider5ArrLeft.addEventListener(
+    "click",
+    () => (window.location.href = "../pages/projects/luemo.html")
+  );
+  slider5ArrRight.addEventListener(
+    "click",
+    () => (window.location.href = "../pages/projects/luemo.html")
+  );
+  // UNITED IP
+  slider6ArrLeft.addEventListener(
+    "click",
+    () => (window.location.href = "../pages/projects/united-ip.html")
+  );
+  slider6ArrRight.addEventListener(
+    "click",
+    () => (window.location.href = "../pages/projects/united-ip.html")
+  );
+  // ZFKK
+  slider7ArrLeft.addEventListener(
+    "click",
+    () => (window.location.href = "../pages/projects/zfkk.html")
+  );
+  slider7ArrRight.addEventListener(
+    "click",
+    () => (window.location.href = "../pages/projects/zfkk.html")
+  );
+  // GRUPPE B
+  slider8ArrLeft.addEventListener(
+    "click",
+    () => (window.location.href = "../pages/projects/gruppe-b.html")
+  );
+  slider8ArrRight.addEventListener(
+    "click",
+    () => (window.location.href = "../pages/projects/gruppe-b.html")
+  );
+  // 365
+  slider9ArrLeft.addEventListener(
+    "click",
+    () => (window.location.href = "../pages/projects/365.html")
+  );
+  slider9ArrRight.addEventListener(
+    "click",
+    () => (window.location.href = "../pages/projects/365.html")
+  );
+}
+
 // function to show the info box of the slider
 let clicked = false;
 let infoSlide = (button, infoCard, slider) => {

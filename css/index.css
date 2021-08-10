@@ -296,12 +296,14 @@ main {
     font-size: 12px;
     height: 5vh;
   }
+  .slider-sub-right {
+    display: none;
+  }
   .indented {
     text-indent: 0;
   }
   .slider {
     height: 37vh;
-    z-index: 2;
   }
   .dots {
     font-size: 15px;
