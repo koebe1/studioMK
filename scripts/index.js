@@ -198,99 +198,77 @@ slider6CounterEnd.innerHTML = sliderList6.length;
 slider7CounterEnd.innerHTML = sliderList7.length;
 slider8CounterEnd.innerHTML = sliderList8.length;
 slider9CounterEnd.innerHTML = sliderList9.length;
+
 // event listener for the slider
+if (window.innerWidth > 480) {
+  slider1ArrLeft.addEventListener("click", () =>
+    slideDown(sliderList1, "counter1", slider1CounterCurr, slider1)
+  );
 
-slider1ArrLeft.addEventListener("click", () =>
-  slideDown(sliderList1, "counter1", slider1CounterCurr, slider1)
-);
+  slider1ArrRight.addEventListener("click", () =>
+    slideUp(sliderList1, "counter1", slider1CounterCurr, slider1)
+  );
 
-slider1ArrRight.addEventListener("click", () =>
-  slideUp(sliderList1, "counter1", slider1CounterCurr, slider1)
-);
+  slider2ArrLeft.addEventListener("click", () =>
+    slideDown(sliderList2, "counter2", slider2CounterCurr, slider2)
+  );
 
-slider2ArrLeft.addEventListener("click", () =>
-  slideDown(sliderList2, "counter2", slider2CounterCurr, slider2)
-);
+  slider2ArrRight.addEventListener("click", () =>
+    slideUp(sliderList2, "counter2", slider2CounterCurr, slider2)
+  );
 
-slider2ArrRight.addEventListener("click", () =>
-  slideUp(sliderList2, "counter2", slider2CounterCurr, slider2)
-);
+  slider3ArrLeft.addEventListener("click", () =>
+    slideDown(sliderList3, "counter3", slider3CounterCurr, slider3)
+  );
 
-slider3ArrLeft.addEventListener("click", () =>
-  slideDown(sliderList3, "counter3", slider3CounterCurr, slider3)
-);
+  slider3ArrRight.addEventListener("click", () =>
+    slideUp(sliderList3, "counter3", slider3CounterCurr, slider3)
+  );
+  slider4ArrLeft.addEventListener("click", () =>
+    slideDown(sliderList4, "counter4", slider4CounterCurr, slider4)
+  );
 
-slider3ArrRight.addEventListener("click", () =>
-  slideUp(sliderList3, "counter3", slider3CounterCurr, slider3)
-);
-slider4ArrLeft.addEventListener("click", () =>
-  slideDown(sliderList4, "counter4", slider4CounterCurr, slider4)
-);
+  slider4ArrRight.addEventListener("click", () =>
+    slideUp(sliderList4, "counter4", slider4CounterCurr, slider4)
+  );
+  slider5ArrLeft.addEventListener("click", () =>
+    slideDown(sliderList5, "counter5", slider5CounterCurr, slider5)
+  );
 
-slider4ArrRight.addEventListener("click", () =>
-  slideUp(sliderList4, "counter4", slider4CounterCurr, slider4)
-);
-slider5ArrLeft.addEventListener("click", () =>
-  slideDown(sliderList5, "counter5", slider5CounterCurr, slider5)
-);
+  slider5ArrRight.addEventListener("click", () =>
+    slideUp(sliderList5, "counter5", slider5CounterCurr, slider5)
+  );
+  slider6ArrLeft.addEventListener("click", () =>
+    slideDown(sliderList6, "counter6", slider6CounterCurr, slider6)
+  );
 
-slider5ArrRight.addEventListener("click", () =>
-  slideUp(sliderList5, "counter5", slider5CounterCurr, slider5)
-);
-slider6ArrLeft.addEventListener("click", () =>
-  slideDown(sliderList6, "counter6", slider6CounterCurr, slider6)
-);
+  slider6ArrRight.addEventListener("click", () =>
+    slideUp(sliderList6, "counter6", slider6CounterCurr, slider6)
+  );
+  slider7ArrLeft.addEventListener("click", () =>
+    slideDown(sliderList7, "counter7", slider7CounterCurr, slider7)
+  );
 
-slider6ArrRight.addEventListener("click", () =>
-  slideUp(sliderList6, "counter6", slider6CounterCurr, slider6)
-);
-slider7ArrLeft.addEventListener("click", () =>
-  slideDown(sliderList7, "counter7", slider7CounterCurr, slider7)
-);
+  slider7ArrRight.addEventListener("click", () =>
+    slideUp(sliderList7, "counter7", slider7CounterCurr, slider7)
+  );
+  slider8ArrLeft.addEventListener("click", () =>
+    slideDown(sliderList8, "counter8", slider8CounterCurr, slider8)
+  );
 
-slider7ArrRight.addEventListener("click", () =>
-  slideUp(sliderList7, "counter7", slider7CounterCurr, slider7)
-);
-slider8ArrLeft.addEventListener("click", () =>
-  slideDown(sliderList8, "counter8", slider8CounterCurr, slider8)
-);
+  slider8ArrRight.addEventListener("click", () =>
+    slideUp(sliderList8, "counter8", slider8CounterCurr, slider8)
+  );
+  slider9ArrLeft.addEventListener("click", () =>
+    slideDown(sliderList9, "counter9", slider9CounterCurr, slider9)
+  );
 
-slider8ArrRight.addEventListener("click", () =>
-  slideUp(sliderList8, "counter8", slider8CounterCurr, slider8)
-);
-slider9ArrLeft.addEventListener("click", () =>
-  slideDown(sliderList9, "counter9", slider9CounterCurr, slider9)
-);
-
-slider9ArrRight.addEventListener("click", () =>
-  slideUp(sliderList9, "counter9", slider9CounterCurr, slider9)
-);
-
-let slideDown = (pictureList, counter, counterCurr, slider) => {
-  if (window[counter] === 0) {
-    window[counter] = pictureList.length - 1;
-    counterCurr.innerHTML = window[counter] + 1;
-  } else {
-    window[counter] -= 1;
-    counterCurr.innerHTML = window[counter] + 1;
-  }
-
-  slider.style.backgroundImage = `url("${pictureList[window[counter]]}")`;
-};
-
-let slideUp = (pictureList, counter, counterCurr, slider) => {
-  if (window[counter] === pictureList.length - 1) {
-    window[counter] = 0;
-    counterCurr.innerHTML = window[counter] + 1;
-  } else {
-    window[counter] += 1;
-    counterCurr.innerHTML = window[counter] + 1;
-  }
-  slider.style.backgroundImage = `url("${pictureList[window[counter]]}")`;
-};
-
+  slider9ArrRight.addEventListener("click", () =>
+    slideUp(sliderList9, "counter9", slider9CounterCurr, slider9)
+  );
+}
 // eventlistener for mobile
-if (window.innerWidth <= 480) {
+else if (window.innerWidth <= 480) {
   // YES!
   slider1ArrLeft.addEventListener(
     "click",
@@ -373,6 +351,30 @@ if (window.innerWidth <= 480) {
     () => (window.location.href = "../pages/projects/365.html")
   );
 }
+
+// slide functions
+let slideDown = (pictureList, counter, counterCurr, slider) => {
+  if (window[counter] === 0) {
+    window[counter] = pictureList.length - 1;
+    counterCurr.innerHTML = window[counter] + 1;
+  } else {
+    window[counter] -= 1;
+    counterCurr.innerHTML = window[counter] + 1;
+  }
+
+  slider.style.backgroundImage = `url("${pictureList[window[counter]]}")`;
+};
+
+let slideUp = (pictureList, counter, counterCurr, slider) => {
+  if (window[counter] === pictureList.length - 1) {
+    window[counter] = 0;
+    counterCurr.innerHTML = window[counter] + 1;
+  } else {
+    window[counter] += 1;
+    counterCurr.innerHTML = window[counter] + 1;
+  }
+  slider.style.backgroundImage = `url("${pictureList[window[counter]]}")`;
+};
 
 // function to show the info box of the slider
 let clicked = false;
