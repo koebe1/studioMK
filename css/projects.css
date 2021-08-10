@@ -13,6 +13,10 @@ nav a {
 nav span {
   color: #fff;
 }
+
+#eyes {
+  color: #fff;
+}
 main {
   width: 100%;
   padding: 0;
@@ -146,3 +150,4 @@ main {
 .info-card-text-right {
   padding: 10.1vh 0 0 15vw;
 }
+

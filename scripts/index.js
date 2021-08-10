@@ -188,19 +188,20 @@ info7.addEventListener("click", () => infoSlide(info7, infoCard7, slider7));
 info8.addEventListener("click", () => infoSlide(info8, infoCard8, slider8));
 info9.addEventListener("click", () => infoSlide(info9, infoCard9, slider9));
 
-// getting length of the sliders
-slider1CounterEnd.innerHTML = sliderList1.length;
-slider2CounterEnd.innerHTML = sliderList2.length;
-slider3CounterEnd.innerHTML = sliderList3.length;
-slider4CounterEnd.innerHTML = sliderList4.length;
-slider5CounterEnd.innerHTML = sliderList5.length;
-slider6CounterEnd.innerHTML = sliderList6.length;
-slider7CounterEnd.innerHTML = sliderList7.length;
-slider8CounterEnd.innerHTML = sliderList8.length;
-slider9CounterEnd.innerHTML = sliderList9.length;
-
-// event listener for the slider
 if (window.innerWidth > 480) {
+  
+  // getting length of the sliders
+  slider1CounterEnd.innerHTML = sliderList1.length;
+  slider2CounterEnd.innerHTML = sliderList2.length;
+  slider3CounterEnd.innerHTML = sliderList3.length;
+  slider4CounterEnd.innerHTML = sliderList4.length;
+  slider5CounterEnd.innerHTML = sliderList5.length;
+  slider6CounterEnd.innerHTML = sliderList6.length;
+  slider7CounterEnd.innerHTML = sliderList7.length;
+  slider8CounterEnd.innerHTML = sliderList8.length;
+  slider9CounterEnd.innerHTML = sliderList9.length;
+
+  // event listener for the slider
   slider1ArrLeft.addEventListener("click", () =>
     slideDown(sliderList1, "counter1", slider1CounterCurr, slider1)
   );

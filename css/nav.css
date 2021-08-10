@@ -3,7 +3,7 @@ nav {
   background-color: #fff;
   display: flex;
   position: fixed;
-  height: 100px;
+  height: 9.5vh;
   width: 100%;
   font-size: 25px;
   z-index: 100;
@@ -36,9 +36,12 @@ nav {
 .nav-links a:hover {
   font-family: "Non Natural Grotesk Medium";
 }
+
 .nav-links a:active {
   font-family: "Non Natural Grotesk Light";
 }
+
+
 
 @media (max-width: 1600px) {
   nav {
@@ -49,16 +52,46 @@ nav {
   }
 }
 
+/* logo -> studio MK */
+#logo {
+  position: relative;
+}
+/* eyes */
+#eyes {
+  position: absolute;
+  font-family: serif;
+  left: 55.3%;
+  bottom: 44%;
+  font-size: 18px;
+}
+
 /* tablet */
+@media (max-width: 1600px) {
+  #eyes {
+    font-size: 15px;
+    left: 55.3%;
+    bottom: 43%;
+  }
+}
 @media (max-width: 768px) {
   nav {
     font-size: 18px;
+  }
+  #eyes {
+    font-size: 14px;
+    left: 55%;
+    bottom: 38.16%;
   }
 }
 
 @media (max-width: 560px) {
   nav {
     font-size: 15px;
+  }
+  #eyes {
+    font-size: 14px;
+    left: 54.4%;
+    bottom: 30.65%;
   }
 }
 
@@ -68,10 +101,20 @@ nav {
     font-size: 13px;
     padding: 1.75vh 2.4vw;
   }
+  #eyes {
+    font-size: 12px;
+    left: 54.4%;
+    bottom: 34%;
+  }
 }
 
 @media (max-width: 375px) {
   nav {
     font-size: 12px;
+  }
+  #eyes {
+    font-size: 9px;
+    left: 55.2%;
+    bottom: 43.4%;
   }
 }

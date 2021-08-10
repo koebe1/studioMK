@@ -23,8 +23,7 @@ main {
   display: grid;
   grid-template-columns: repeat(3, minmax(400px, 1fr));
   grid-template-rows: auto auto auto;
-  column-gap: 1.5%;
-  /* border: 1px solid blue; */
+  column-gap: 1.2%;
 }
 
 .work-grid-item {
@@ -57,7 +56,7 @@ main {
   background-color: white;
 }
 .dots {
-  font-size: 35px;
+  font-size: 30px;
   padding-left: 3.5%;
 }
 
