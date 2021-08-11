@@ -50,20 +50,6 @@ main {
   cursor: url("../fonts/cursor_right.png"), pointer;
 }
 
-.slider span {
-  font-size: 65px;
-  color: rgba(255, 255, 255, 1);
-  cursor: pointer;
-}
-
-.slider span:hover {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.slider span:active {
-  color: rgba(255, 255, 255, 1);
-}
-
 .slider-sub {
   font-size: 25px;
   display: flex;
@@ -136,7 +122,7 @@ main {
   background-image: url("../pictures/index/03_ueberbild/ueberbild1.jpg");
 }
 #slider-4 {
-  background-image: url("../pictures/index/04_neunkubikmeter/neunkubikmeter_1920x1063px.jpg");
+  background-image: url("../pictures/index/04_neunkubikmeter/01_neunkubikmeter.jpg");
 }
 #slider-5 {
   background-image: url("../pictures/index/05_luemo/luemo_1920x1063px.jpg");
@@ -310,12 +296,14 @@ main {
     font-size: 12px;
     height: 5vh;
   }
+  .slider-sub-right {
+    display: none;
+  }
   .indented {
     text-indent: 0;
   }
   .slider {
     height: 37vh;
-    z-index: 2;
   }
   .dots {
     font-size: 15px;

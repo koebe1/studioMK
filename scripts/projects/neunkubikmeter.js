@@ -10,13 +10,16 @@ window["counter4"] = 0;
 
 //  slider pictures
 const sliderList4 = [
-  "../../pictures/index/04_neunkubikmeter/neunkubikmeter_1920x1063px.jpg",
-  "../../pictures/index/04_neunkubikmeter/neunkubikmeter_1920x1063px2.jpg",
-  "../../pictures/index/04_neunkubikmeter/neunkubikmeter_1920x1063px3.jpg",
-  "../../pictures/index/04_neunkubikmeter/neunkubikmeter_1920x1063px4.jpg",
-  "../../pictures/index/04_neunkubikmeter/neunkubikmeter_1920x1063px5.jpg",
-  "../../pictures/index/04_neunkubikmeter/neunkubikmeter_1920x1063px6.jpg",
-  "../../pictures/index/04_neunkubikmeter/neunkubikmeter_1920x1063px7.jpg"
+  "../../pictures/index/04_neunkubikmeter/01_neunkubikmeter.jpg",
+  "../../pictures/index/04_neunkubikmeter/02_neunkubikmeter.jpg",
+  "../../pictures/index/04_neunkubikmeter/03_neunkubikmeter.jpg",
+  "../../pictures/index/04_neunkubikmeter/04_neunkubikmeter.jpg",
+  "../../pictures/index/04_neunkubikmeter/05_neunkubikmeter.jpg",
+  "../../pictures/index/04_neunkubikmeter/06_neunkubikmeter.jpg",
+  "../../pictures/index/04_neunkubikmeter/07_neunkubikmeter.jpg",
+  "../../pictures/index/04_neunkubikmeter/08_neunkubikmeter.jpg",
+  "../../pictures/index/04_neunkubikmeter/09_neunkubikmeter.jpg",
+  "../../pictures/index/04_neunkubikmeter/10_neunkubikmeter.jpg"
 ];
 
 // info slider event listeners

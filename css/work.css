@@ -1,6 +1,7 @@
 main {
   flex-direction: column;
   font-size: 25px;
+  margin: 14vh 2.19vw 14vh 2.19vw;
 }
 
 /* filter */
@@ -22,8 +23,7 @@ main {
   display: grid;
   grid-template-columns: repeat(3, minmax(400px, 1fr));
   grid-template-rows: auto auto auto;
-  column-gap: 1.5%;
-  /* border: 1px solid blue; */
+  column-gap: 1.2%;
 }
 
 .work-grid-item {
@@ -34,6 +34,12 @@ main {
   transform: scale(1.15);
 }
 .work-grid-item img:active {
+  transform: scale(1);
+}
+#gif:hover {
+  transform: scale(1.15);
+}
+#gif:active {
   transform: scale(1);
 }
 
@@ -48,6 +54,15 @@ main {
   width: 100%;
   height: 100%;
 }
+
+#gif {
+  width: 100%;
+  height: 100%;
+  background-image: url("../pictures/work/08_work_b_5.gif");
+  background-size: cover;
+  background-position: center;
+  transition: 0.3s ease;
+}
 .work-grid-item-sub {
   display: flex;
   align-items: center;
@@ -56,7 +71,7 @@ main {
   background-color: white;
 }
 .dots {
-  font-size: 35px;
+  font-size: 30px;
   padding-left: 3.5%;
 }
 

@@ -120,13 +120,16 @@ const sliderList3 = [
   "../pictures/index/03_ueberbild/ueberbild7.jpg"
 ];
 const sliderList4 = [
-  "../pictures/index/04_neunkubikmeter/neunkubikmeter_1920x1063px.jpg",
-  "../pictures/index/04_neunkubikmeter/neunkubikmeter_1920x1063px2.jpg",
-  "../pictures/index/04_neunkubikmeter/neunkubikmeter_1920x1063px3.jpg",
-  "../pictures/index/04_neunkubikmeter/neunkubikmeter_1920x1063px4.jpg",
-  "../pictures/index/04_neunkubikmeter/neunkubikmeter_1920x1063px5.jpg",
-  "../pictures/index/04_neunkubikmeter/neunkubikmeter_1920x1063px6.jpg",
-  "../pictures/index/04_neunkubikmeter/neunkubikmeter_1920x1063px7.jpg"
+  "../pictures/index/04_neunkubikmeter/01_neunkubikmeter.jpg",
+  "../pictures/index/04_neunkubikmeter/02_neunkubikmeter.jpg",
+  "../pictures/index/04_neunkubikmeter/03_neunkubikmeter.jpg",
+  "../pictures/index/04_neunkubikmeter/04_neunkubikmeter.jpg",
+  "../pictures/index/04_neunkubikmeter/05_neunkubikmeter.jpg",
+  "../pictures/index/04_neunkubikmeter/06_neunkubikmeter.jpg",
+  "../pictures/index/04_neunkubikmeter/07_neunkubikmeter.jpg",
+  "../pictures/index/04_neunkubikmeter/08_neunkubikmeter.jpg",
+  "../pictures/index/04_neunkubikmeter/09_neunkubikmeter.jpg",
+  "../pictures/index/04_neunkubikmeter/10_neunkubikmeter.jpg"
 ];
 const sliderList5 = [
   "../pictures/index/05_luemo/luemo_1920x1063px.jpg",
@@ -188,84 +191,171 @@ info7.addEventListener("click", () => infoSlide(info7, infoCard7, slider7));
 info8.addEventListener("click", () => infoSlide(info8, infoCard8, slider8));
 info9.addEventListener("click", () => infoSlide(info9, infoCard9, slider9));
 
-// getting length of the sliders
-slider1CounterEnd.innerHTML = sliderList1.length;
-slider2CounterEnd.innerHTML = sliderList2.length;
-slider3CounterEnd.innerHTML = sliderList3.length;
-slider4CounterEnd.innerHTML = sliderList4.length;
-slider5CounterEnd.innerHTML = sliderList5.length;
-slider6CounterEnd.innerHTML = sliderList6.length;
-slider7CounterEnd.innerHTML = sliderList7.length;
-slider8CounterEnd.innerHTML = sliderList8.length;
-slider9CounterEnd.innerHTML = sliderList9.length;
-// event listener for the slider
+if (window.innerWidth > 480) {
+  // getting length of the sliders
+  slider1CounterEnd.innerHTML = sliderList1.length;
+  slider2CounterEnd.innerHTML = sliderList2.length;
+  slider3CounterEnd.innerHTML = sliderList3.length;
+  slider4CounterEnd.innerHTML = sliderList4.length;
+  slider5CounterEnd.innerHTML = sliderList5.length;
+  slider6CounterEnd.innerHTML = sliderList6.length;
+  slider7CounterEnd.innerHTML = sliderList7.length;
+  slider8CounterEnd.innerHTML = sliderList8.length;
+  slider9CounterEnd.innerHTML = sliderList9.length;
 
-slider1ArrLeft.addEventListener("click", () =>
-  slideDown(sliderList1, "counter1", slider1CounterCurr, slider1)
-);
+  // event listener for the slider
+  slider1ArrLeft.addEventListener("click", () =>
+    slideDown(sliderList1, "counter1", slider1CounterCurr, slider1)
+  );
 
-slider1ArrRight.addEventListener("click", () =>
-  slideUp(sliderList1, "counter1", slider1CounterCurr, slider1)
-);
+  slider1ArrRight.addEventListener("click", () =>
+    slideUp(sliderList1, "counter1", slider1CounterCurr, slider1)
+  );
 
-slider2ArrLeft.addEventListener("click", () =>
-  slideDown(sliderList2, "counter2", slider2CounterCurr, slider2)
-);
+  slider2ArrLeft.addEventListener("click", () =>
+    slideDown(sliderList2, "counter2", slider2CounterCurr, slider2)
+  );
 
-slider2ArrRight.addEventListener("click", () =>
-  slideUp(sliderList2, "counter2", slider2CounterCurr, slider2)
-);
+  slider2ArrRight.addEventListener("click", () =>
+    slideUp(sliderList2, "counter2", slider2CounterCurr, slider2)
+  );
 
-slider3ArrLeft.addEventListener("click", () =>
-  slideDown(sliderList3, "counter3", slider3CounterCurr, slider3)
-);
+  slider3ArrLeft.addEventListener("click", () =>
+    slideDown(sliderList3, "counter3", slider3CounterCurr, slider3)
+  );
 
-slider3ArrRight.addEventListener("click", () =>
-  slideUp(sliderList3, "counter3", slider3CounterCurr, slider3)
-);
-slider4ArrLeft.addEventListener("click", () =>
-  slideDown(sliderList4, "counter4", slider4CounterCurr, slider4)
-);
+  slider3ArrRight.addEventListener("click", () =>
+    slideUp(sliderList3, "counter3", slider3CounterCurr, slider3)
+  );
+  slider4ArrLeft.addEventListener("click", () =>
+    slideDown(sliderList4, "counter4", slider4CounterCurr, slider4)
+  );
 
-slider4ArrRight.addEventListener("click", () =>
-  slideUp(sliderList4, "counter4", slider4CounterCurr, slider4)
-);
-slider5ArrLeft.addEventListener("click", () =>
-  slideDown(sliderList5, "counter5", slider5CounterCurr, slider5)
-);
+  slider4ArrRight.addEventListener("click", () =>
+    slideUp(sliderList4, "counter4", slider4CounterCurr, slider4)
+  );
+  slider5ArrLeft.addEventListener("click", () =>
+    slideDown(sliderList5, "counter5", slider5CounterCurr, slider5)
+  );
 
-slider5ArrRight.addEventListener("click", () =>
-  slideUp(sliderList5, "counter5", slider5CounterCurr, slider5)
-);
-slider6ArrLeft.addEventListener("click", () =>
-  slideDown(sliderList6, "counter6", slider6CounterCurr, slider6)
-);
+  slider5ArrRight.addEventListener("click", () =>
+    slideUp(sliderList5, "counter5", slider5CounterCurr, slider5)
+  );
+  slider6ArrLeft.addEventListener("click", () =>
+    slideDown(sliderList6, "counter6", slider6CounterCurr, slider6)
+  );
 
-slider6ArrRight.addEventListener("click", () =>
-  slideUp(sliderList6, "counter6", slider6CounterCurr, slider6)
-);
-slider7ArrLeft.addEventListener("click", () =>
-  slideDown(sliderList7, "counter7", slider7CounterCurr, slider7)
-);
+  slider6ArrRight.addEventListener("click", () =>
+    slideUp(sliderList6, "counter6", slider6CounterCurr, slider6)
+  );
+  slider7ArrLeft.addEventListener("click", () =>
+    slideDown(sliderList7, "counter7", slider7CounterCurr, slider7)
+  );
 
-slider7ArrRight.addEventListener("click", () =>
-  slideUp(sliderList7, "counter7", slider7CounterCurr, slider7)
-);
-slider8ArrLeft.addEventListener("click", () =>
-  slideDown(sliderList8, "counter8", slider8CounterCurr, slider8)
-);
+  slider7ArrRight.addEventListener("click", () =>
+    slideUp(sliderList7, "counter7", slider7CounterCurr, slider7)
+  );
+  slider8ArrLeft.addEventListener("click", () =>
+    slideDown(sliderList8, "counter8", slider8CounterCurr, slider8)
+  );
 
-slider8ArrRight.addEventListener("click", () =>
-  slideUp(sliderList8, "counter8", slider8CounterCurr, slider8)
-);
-slider9ArrLeft.addEventListener("click", () =>
-  slideDown(sliderList9, "counter9", slider9CounterCurr, slider9)
-);
+  slider8ArrRight.addEventListener("click", () =>
+    slideUp(sliderList8, "counter8", slider8CounterCurr, slider8)
+  );
+  slider9ArrLeft.addEventListener("click", () =>
+    slideDown(sliderList9, "counter9", slider9CounterCurr, slider9)
+  );
 
-slider9ArrRight.addEventListener("click", () =>
-  slideUp(sliderList9, "counter9", slider9CounterCurr, slider9)
-);
+  slider9ArrRight.addEventListener("click", () =>
+    slideUp(sliderList9, "counter9", slider9CounterCurr, slider9)
+  );
+}
+// eventlistener for mobile
+else if (window.innerWidth <= 480) {
+  // YES!
+  slider1ArrLeft.addEventListener(
+    "click",
+    () => (window.location.href = "../pages/projects/yes.html")
+  );
+  slider1ArrRight.addEventListener(
+    "click",
+    () => (window.location.href = "../pages/projects/yes.html")
+  );
+  // PFADFINDER
+  slider2ArrLeft.addEventListener(
+    "click",
+    () => (window.location.href = "../pages/projects/pfadfinder.html")
+  );
+  slider2ArrRight.addEventListener(
+    "click",
+    () => (window.location.href = "../pages/projects/pfadfinder.html")
+  );
+  // UEBERBILD
+  slider3ArrLeft.addEventListener(
+    "click",
+    () => (window.location.href = "../pages/projects/ueberbild.html")
+  );
+  slider3ArrRight.addEventListener(
+    "click",
+    () => (window.location.href = "../pages/projects/ueberbild.html")
+  );
+  // NEUNKUBIKMETER
+  slider4ArrLeft.addEventListener(
+    "click",
+    () => (window.location.href = "../pages/projects/neunkubikmeter.html")
+  );
+  slider4ArrRight.addEventListener(
+    "click",
+    () => (window.location.href = "../pages/projects/neunkubikmeter.html")
+  );
+  // LÜMO
+  slider5ArrLeft.addEventListener(
+    "click",
+    () => (window.location.href = "../pages/projects/luemo.html")
+  );
+  slider5ArrRight.addEventListener(
+    "click",
+    () => (window.location.href = "../pages/projects/luemo.html")
+  );
+  // UNITED IP
+  slider6ArrLeft.addEventListener(
+    "click",
+    () => (window.location.href = "../pages/projects/united-ip.html")
+  );
+  slider6ArrRight.addEventListener(
+    "click",
+    () => (window.location.href = "../pages/projects/united-ip.html")
+  );
+  // ZFKK
+  slider7ArrLeft.addEventListener(
+    "click",
+    () => (window.location.href = "../pages/projects/zfkk.html")
+  );
+  slider7ArrRight.addEventListener(
+    "click",
+    () => (window.location.href = "../pages/projects/zfkk.html")
+  );
+  // GRUPPE B
+  slider8ArrLeft.addEventListener(
+    "click",
+    () => (window.location.href = "../pages/projects/gruppe-b.html")
+  );
+  slider8ArrRight.addEventListener(
+    "click",
+    () => (window.location.href = "../pages/projects/gruppe-b.html")
+  );
+  // 365
+  slider9ArrLeft.addEventListener(
+    "click",
+    () => (window.location.href = "../pages/projects/365.html")
+  );
+  slider9ArrRight.addEventListener(
+    "click",
+    () => (window.location.href = "../pages/projects/365.html")
+  );
+}
 
+// slide functions
 let slideDown = (pictureList, counter, counterCurr, slider) => {
   if (window[counter] === 0) {
     window[counter] = pictureList.length - 1;

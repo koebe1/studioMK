@@ -3,7 +3,7 @@ body {
   height: 100vh;
 }
 nav {
-  height: 14vh;
+  height: 9.5vh;
   width: 100vw;
   background-color: #000;
 }
@@ -13,23 +13,28 @@ nav a {
 nav span {
   color: #fff;
 }
+
+#eyes {
+  color: #fff;
+}
 main {
   width: 100%;
   padding: 0;
-  margin: 14vh 0 0 0;
+  margin: 9.5vh 0 0 0;
 }
 
 .slider-container {
   display: flex;
   width: 100%;
   flex-direction: column;
-  background-color: black;
+  background-color: #000;
 }
 .slider {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 76vh;
+  /* height: calc(90vh - 100px); */
+  height: 81.5vh;
   width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -46,7 +51,7 @@ main {
   background-image: url("../pictures/index/03_ueberbild/ueberbild1.jpg");
 }
 #slider-4 {
-  background-image: url("../pictures/index/04_neunkubikmeter/neunkubikmeter_1920x1063px.jpg");
+  background-image: url("../pictures/index/04_neunkubikmeter/01_neunkubikmeter.jpg");
 }
 #slider-5 {
   background-image: url("../pictures/index/05_luemo/luemo_1920x1063px.jpg");
@@ -77,20 +82,6 @@ main {
   cursor: url("../fonts/cursor_right.png"), pointer;
 }
 
-.slider span {
-  font-size: 65px;
-  color: rgba(255, 255, 255, 1);
-  cursor: pointer;
-}
-
-.slider span:hover {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.slider span:active {
-  color: rgba(255, 255, 255, 1);
-}
-
 .slider-sub {
   font-size: 25px;
   position: fixed;
@@ -99,7 +90,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
+  background-color: #fff;
   height: 10vh;
 }
 
@@ -112,9 +103,50 @@ main {
 }
 
 .dots {
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .slider-sub-right {
   padding-right: 2.51%;
+}
+
+.info {
+  cursor: pointer;
+  padding-right: 2vw;
+}
+
+.info:hover {
+  font-family: "Non Natural Grotesk Medium";
+}
+.info:active {
+  font-family: "Non Natural Grotesk Light";
+}
+
+.slider-counter-current {
+  padding-left: 2vw;
+}
+
+.info-card {
+  display: none;
+  position: absolute;
+  opacity: 1;
+  line-height: 30px;
+  /* height: calc(90vh - 100px); */
+  height: 81.5vh;
+  width: 100%;
+  background-color: #fff;
+  font-size: 12px;
+}
+
+.info-card-text-left {
+  display: flex;
+  max-width: 850px;
+  width: 49.15vw;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10.1vh 0 0 8.91vw;
+}
+
+.info-card-text-right {
+  padding: 10.1vh 0 0 15vw;
 }
