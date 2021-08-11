@@ -84,7 +84,7 @@ main {
 }
 .grid-item-3 {
   grid-area: grid-item-3;
-  /* background-image: url("../pictures/lab/01_rose_ice.jpg"); */
+  background-image: url("../pictures/lab/01_sommerlab.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -163,7 +163,7 @@ main {
 }
 .grid-item-16 {
   grid-area: grid-item-16;
-  /* background-image: url("../pictures/lab/01_rose_ice.jpg"); */
+  background-image: url("../pictures/lab/01_studiomk_stick.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -236,7 +236,7 @@ main {
 }
 .grid-item-27 {
   grid-area: grid-item-27;
-  /* background-image: url("../pictures/lab/01_playinghands.jpg"); */
+  background-image: url("../pictures/lab/01_turmspiel.jpg");
   background-position: center;
   background-size: cover;
 }

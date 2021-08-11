@@ -20,6 +20,16 @@ const gridItemList2 = [
   "../pictures/lab/01_rose_ice.jpg",
   "../pictures/lab/02_rose_ice.jpg"
 ];
+// grid-item-3
+const gridItem3 = document.getElementById("3");
+const gridItem3Left = document.getElementById("grid-item-3-left");
+const gridItem3Right = document.getElementById("grid-item-3-right");
+window["counter3"] = 0;
+
+const gridItemList3 = [
+  "../pictures/lab/01_sommerlab.jpg",
+  "../pictures/lab/02_sommerlab.jpg"
+];
 
 // grid-item-6
 const gridItem6 = document.getElementById("6");
@@ -52,7 +62,10 @@ const gridItem13Left = document.getElementById("grid-item-13-left");
 const gridItem13Right = document.getElementById("grid-item-13-right");
 window["counter13"] = 0;
 
-const gridItemList13 = ["../pictures/lab/01_zfkk.jpg"];
+const gridItemList13 = [
+  "../pictures/lab/01_zfkk.jpg",
+  "../pictures/lab/zfkk_fenster_02.gif"
+];
 
 // grid-item-20
 const gridItem20 = document.getElementById("20");
@@ -117,6 +130,12 @@ let listen = () => {
   gridItem2Right.addEventListener("click", () => {
     slideUp(gridItemList2, "counter2", gridItem2);
   });
+  gridItem3Left.addEventListener("click", () => {
+    slideDown(gridItemList3, "counter3", gridItem3);
+  });
+  gridItem3Right.addEventListener("click", () => {
+    slideUp(gridItemList3, "counter3", gridItem3);
+  });
   gridItem6Left.addEventListener("click", () => {
     slideDown(gridItemList6, "counter6", gridItem6);
   });
@@ -132,7 +151,7 @@ let listen = () => {
   gridItem13Left.addEventListener("click", () => {
     slideDown(gridItemList13, "counter13", gridItem13);
   });
-  gridItem6Right.addEventListener("click", () => {
+  gridItem13Right.addEventListener("click", () => {
     slideUp(gridItemList13, "counter13", gridItem13);
   });
   gridItem20Left.addEventListener("click", () => {
@@ -174,7 +193,6 @@ let slideDown = (pictureList, counter, slider) => {
   } else {
     window[counter] -= 1;
   }
-  console.log(window[counter]);
   slider.style.backgroundImage = `url("${pictureList[window[counter]]}")`;
 };
 
