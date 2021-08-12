@@ -126,85 +126,86 @@ const gridItemList31 = [
 let listenDesktop = () => {
   if (window.innerWidth > 480) {
     gridItem2Left.addEventListener("click", () => {
-      slideDown(gridItemList2, "counter2", gridItem2);
+      slideLeft(gridItemList2, "counter2", gridItem2);
     });
     gridItem2Right.addEventListener("click", () => {
-      slideUp(gridItemList2, "counter2", gridItem2);
+      slideRight(gridItemList2, "counter2", gridItem2);
     });
     gridItem4Left.addEventListener("click", () => {
-      slideDown(gridItemList4, "counter4", gridItem4);
+      slideLeft(gridItemList4, "counter4", gridItem4);
     });
     gridItem4Right.addEventListener("click", () => {
-      slideUp(gridItemList4, "counter4", gridItem4);
+      slideRight(gridItemList4, "counter4", gridItem4);
     });
     gridItem6Left.addEventListener("click", () => {
-      slideDown(gridItemList6, "counter6", gridItem6);
+      slideLeft(gridItemList6, "counter6", gridItem6);
     });
     gridItem6Right.addEventListener("click", () => {
-      slideUp(gridItemList6, "counter6", gridItem6);
+      slideRight(gridItemList6, "counter6", gridItem6);
     });
     gridItem10Left.addEventListener("click", () => {
-      slideDown(gridItemList10, "counter10", gridItem10);
+      slideLeft(gridItemList10, "counter10", gridItem10);
     });
     gridItem10Right.addEventListener("click", () => {
-      slideUp(gridItemList10, "counter10", gridItem10);
+      slideRight(gridItemList10, "counter10", gridItem10);
     });
     gridItem14Left.addEventListener("click", () => {
-      slideDown(gridItemList14, "counter14", gridItem14);
+      slideLeft(gridItemList14, "counter14", gridItem14);
     });
     gridItem14Right.addEventListener("click", () => {
-      slideUp(gridItemList14, "counter14", gridItem14);
+      slideRight(gridItemList14, "counter14", gridItem14);
     });
     gridItem21Left.addEventListener("click", () => {
-      slideDown(gridItemList21, "counter21", gridItem21);
+      slideLeft(gridItemList21, "counter21", gridItem21);
     });
     gridItem21Right.addEventListener("click", () => {
-      slideUp(gridItemList21, "counter21", gridItem21);
+      slideRight(gridItemList21, "counter21", gridItem21);
     });
     gridItem23Left.addEventListener("click", () => {
-      slideDown(gridItemList23, "counter23", gridItem23);
+      slideLeft(gridItemList23, "counter23", gridItem23);
     });
     gridItem23Right.addEventListener("click", () => {
-      slideUp(gridItemList23, "counter23", gridItem23);
+      slideRight(gridItemList23, "counter23", gridItem23);
     });
     gridItem24Left.addEventListener("click", () => {
-      slideDown(gridItemList24, "counter24", gridItem24);
+      slideLeft(gridItemList24, "counter24", gridItem24);
     });
     gridItem24Right.addEventListener("click", () => {
-      slideUp(gridItemList24, "counter24", gridItem24);
+      slideRight(gridItemList24, "counter24", gridItem24);
     });
     gridItem26Left.addEventListener("click", () => {
-      slideDown(gridItemList26, "counter26", gridItem26);
+      slideLeft(gridItemList26, "counter26", gridItem26);
     });
     gridItem26Right.addEventListener("click", () => {
-      slideUp(gridItemList26, "counter26", gridItem26);
+      slideRight(gridItemList26, "counter26", gridItem26);
     });
     gridItem30Left.addEventListener("click", () => {
-      slideDown(gridItemList30, "counter30", gridItem30);
+      slideLeft(gridItemList30, "counter30", gridItem30);
     });
     gridItem30Right.addEventListener("click", () => {
-      slideUp(gridItemList30, "counter30", gridItem30);
+      slideRight(gridItemList30, "counter30", gridItem30);
     });
     gridItem31Left.addEventListener("click", () => {
-      slideDown(gridItemList31, "counter31", gridItem31);
+      slideLeft(gridItemList31, "counter31", gridItem31);
     });
     gridItem31Right.addEventListener("click", () => {
-      slideUp(gridItemList31, "counter31", gridItem31);
+      slideRight(gridItemList31, "counter31", gridItem31);
     });
   }
 };
 
 // slide functions
-let slideDown = (pictureList, counter, slider) => {
+let slideLeft = (pictureList, counter, slider) => {
   if (window[counter] === 0) {
     window[counter] = pictureList.length - 1;
   } else {
     window[counter] -= 1;
   }
+  //   slider.style.transform = "translate(100px,0)";
   slider.style.backgroundImage = `url("${pictureList[window[counter]]}")`;
 };
 
-let slideUp = (pictureList, counter, slider) => {
+let slideRight = (pictureList, counter, slider) => {
   if (window[counter] === pictureList.length - 1) {
     window[counter] = 0;
   } else {
@@ -220,13 +221,16 @@ let touchstartY = 0;
 let touchendX = 0;
 let touchendY = 0;
 
-function handleGesture() {
+function handleGesture(gridItemList, counter, gridItem) {
+  // swipe left -> slide down
   if (touchendX <= touchstartX) {
     console.log("Swiped left");
+    slideLeft(gridItemList, counter, gridItem);
   }
 
   if (touchendX >= touchstartX) {
     console.log("Swiped right");
+    slideRight(gridItemList, counter, gridItem);
   }
 
   if (touchendY <= touchstartY) {
@@ -259,8 +263,7 @@ let listenMobile = () => {
       event => {
         touchendX = event.changedTouches[0].screenX;
         touchendY = event.changedTouches[0].screenY;
-        handleGesture();
-        slideDown(gridItemList2, "counter2", gridItem2);
+        handleGesture(gridItemList2, "counter2", gridItem2);
       },
       false
     );
