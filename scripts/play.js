@@ -98,7 +98,7 @@ window["counter26"] = 0;
 
 const gridItemList26 = [
   "../pictures/play/01/01_Ich-bin-ich.jpg",
-  "../pictures/play/02/02_ich-bin-ich.jpg"
+  "../pictures/play/02/02_Ich-bin-ich.jpg"
 ];
 
 // grid-item-30
@@ -266,3 +266,7 @@ let listenMobile = () => {
     );
   }
 };
+// gridItem2.addEventListener("touchmove", () => {
+//   console.log("hello world!");
+// });
+listenMobile();
