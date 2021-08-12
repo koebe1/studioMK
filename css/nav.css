@@ -17,7 +17,7 @@ nav {
   align-items: center;
 }
 .nav-links-right {
-  width: 60%;
+  width: 70%;
   display: flex;
   justify-content: flex-end;
 }
@@ -30,7 +30,7 @@ nav {
 }
 
 #info {
-  padding: 0px 8vw 0 8vw;
+  padding: 0px 7.3vw 0 7.3vw;
 }
 
 .nav-links a:hover {
@@ -39,17 +39,6 @@ nav {
 
 .nav-links a:active {
   font-family: "Non Natural Grotesk Light";
-}
-
-
-
-@media (max-width: 1600px) {
-  nav {
-    font-size: 20px;
-  }
-  #info {
-    padding: 0px 8vw 0 8vw;
-  }
 }
 
 /* logo -> studio MK */
@@ -66,11 +55,38 @@ nav {
 }
 
 /* tablet */
+
 @media (max-width: 1600px) {
+  nav {
+    font-size: 20px;
+  }
   #eyes {
     font-size: 15px;
     left: 55.3%;
     bottom: 43%;
+  }
+  #info {
+    padding: 0px 7.5vw 0 7.5vw;
+  }
+}
+@media (max-width: 1450px) {
+  #info {
+    padding: 0px 6.7vw 0 6.7vw;
+  }
+}
+@media (max-width: 1400px) {
+  #info {
+    padding: 0px 6.6vw 0 6.6vw;
+  }
+}
+@media (max-width: 1200px) {
+  #info {
+    padding: 0px 4.9vw 0 4.9vw;
+  }
+}
+@media (max-width: 1024px) {
+  #info {
+    padding: 0px 3.2vw 0 3.2vw;
   }
 }
 @media (max-width: 768px) {
