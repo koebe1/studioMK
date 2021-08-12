@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/play.css" />
     <script src="../scripts/play.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/swipe/2.0.0/swipe.js" integrity="sha512-kdyhVzKNIGbwGMdFMtsEEUO8LrxBgwPIn8PAtf9eG0DPMZsMCeTN/w83KqLaDLvS6MmqrA/siNsQi27qPCzrxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <title>PLAY</title>
   </head>
 
@@ -37,10 +39,18 @@
       </div>
       <div class="grid-container">
         <div class="grid-item grid-item-1" id="1"></div>
-        <div class="grid-item grid-item-2" id="2">
-          <div class="grid-item-click-left" id="grid-item-2-left"></div>
-          <div class="grid-item-click-right" id="grid-item-2-right"></div>
+
+        <div class="grid-item grid-item-2 swipe" id="2">
+          <div class="swipe-wrap">
+            <div>hello</div>
+            <div>hello2</div>
+            <div>hello3</div>
+          </div>
+
+          <!-- <div class="grid-item-click-left" id="grid-item-2-left"></div>
+          <div class="grid-item-click-right" id="grid-item-2-right"></div> -->
         </div>
+
         <div class="grid-item grid-item-3" id="3"></div>
         <div class="grid-item grid-item-4" id="4">
           <div class="grid-item-click-left" id="grid-item-4-left"></div>
