@@ -81,9 +81,9 @@ main {
 }
 .grid-item-2 {
   grid-area: grid-item-2;
-  background-image: url("../pictures/play/01/01_pingpongtanja.jpg");
-  background-position: center;
-  background-size: cover;
+  /* background-image: url("../pictures/play/01/01_pingpongtanja.jpg"); */
+  /* background-position: center;
+  background-size: cover; */
 }
 .grid-item-3 {
   grid-area: grid-item-3;
@@ -418,7 +418,21 @@ main {
   position: relative;
 }
 .swipe-wrap > div {
-  float:left;
-  width:100%;
+  float: left;
+  width: 100%;
   position: relative;
+}
+.swipe-wrap div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+#img1 {
+  /* background-image: url("../pictures/play/01/01_pingpongtanja.jpg"); */
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
