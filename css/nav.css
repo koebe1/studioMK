@@ -7,7 +7,6 @@ nav {
   width: 100%;
   font-size: 25px;
   z-index: 100;
-  /* padding: 33px 42px 33px 42px; */
   padding: 0 2.19vw 0 2.19vw;
 }
 .nav-links {
@@ -17,7 +16,7 @@ nav {
   align-items: center;
 }
 .nav-links-right {
-  width: 70%;
+  /* width: 50vw; */
   display: flex;
   justify-content: flex-end;
 }
@@ -30,7 +29,7 @@ nav {
 }
 
 #info {
-  padding: 0px 7.3vw 0 7.3vw;
+  padding: 0px 7.5vw 0 7.5vw;
 }
 
 .nav-links a:hover {

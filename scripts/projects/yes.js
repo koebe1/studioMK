@@ -21,23 +21,82 @@ const sliderList1 = [
   "../../pictures/index/01_yes/yes9.jpg"
 ];
 
-// info slider event listeners
-info1.addEventListener("click", () => infoSlide(info1, infoCard1, slider1));
+let swipeWrap = document.querySelector(".swipe-wrap");
+let slider = document.querySelectorAll(".slider");
+let ClickLeft = document.querySelectorAll(".arr-container-left");
+let ClickRight = document.querySelectorAll(".arr-container-right");
 
 // getting length of the sliders
 slider1CounterEnd.innerHTML = sliderList1.length;
 
-// event listener for the slider
+let listenDesktop = () => {
+  if (window.innerWidth > 480) {
+    // set swipeWrapper property "display" to "none"
 
-slider1ArrLeft.addEventListener("click", () =>
-  slideDown(sliderList1, "counter1", slider1CounterCurr, slider1)
-);
+    swipeWrap.style.display = "none";
 
-slider1ArrRight.addEventListener("click", () =>
-  slideUp(sliderList1, "counter1", slider1CounterCurr, slider1)
-);
+    // remove class "swipe" from grid items so background image gets visible for desktop version
+    for (let element of slider) {
+      element.classList.remove("swipe");
+      element.style.display = "flex";
+    }
+    // add click surfaces for slider in desktop version
+    for (let element of ClickLeft) {
+      element.style.display = "block";
+    }
+    for (let element of ClickRight) {
+      element.style.display = "block";
+    }
 
-let slideDown = (pictureList, counter, counterCurr, slider) => {
+    // info slider event listeners
+    info1.addEventListener("click", () => infoSlide(info1, infoCard1, slider1));
+
+    // event listener for the slider
+
+    slider1ArrLeft.addEventListener("click", () =>
+      slideLeft(sliderList1, "counter1", slider1CounterCurr, slider1)
+    );
+
+    slider1ArrRight.addEventListener("click", () =>
+      slideRight(sliderList1, "counter1", slider1CounterCurr, slider1)
+    );
+  }
+};
+
+let listenMobile = () => {
+  if (window.innerWidth <= 480) {
+    // remove elements and add elements and classes for mobile slider support
+
+    swipeWrap.style.display = "block";
+
+    for (let element of slider) {
+      element.classList.add("swipe");
+      element.style.display = "block";
+    }
+
+    for (let element of ClickLeft) {
+      element.style.display = "none";
+    }
+    for (let element of ClickRight) {
+      element.style.display = "none";
+    }
+
+    // slider 1
+    window.mySwipe = new Swipe(document.getElementById("slider-1"), {
+      startSlide: 0,
+      speed: 400,
+      draggable: false,
+      continuous: true,
+      disableScroll: false,
+      stopPropagation: false,
+      ignore: ".scroller",
+      callback: function(index, elem, dir) {},
+      transitionEnd: function(index, elem) {}
+    });
+  }
+};
+
+let slideLeft = (pictureList, counter, counterCurr, slider) => {
   if (window[counter] === 0) {
     window[counter] = pictureList.length - 1;
     counterCurr.innerHTML = window[counter] + 1;
@@ -49,7 +108,7 @@ let slideDown = (pictureList, counter, counterCurr, slider) => {
   slider.style.backgroundImage = `url("${pictureList[window[counter]]}")`;
 };
 
-let slideUp = (pictureList, counter, counterCurr, slider) => {
+let slideRight = (pictureList, counter, counterCurr, slider) => {
   if (window[counter] === pictureList.length - 1) {
     window[counter] = 0;
     counterCurr.innerHTML = window[counter] + 1;
@@ -76,3 +135,8 @@ let infoSlide = (button, infoCard, slider) => {
     clicked = false;
   }
 };
+
+listenDesktop();
+listenMobile();
+window.addEventListener("resize", () => listenDesktop());
+window.addEventListener("resize", () => listenMobile());
