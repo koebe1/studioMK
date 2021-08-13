@@ -58,7 +58,7 @@ main {
 }
 
 .grid-item {
-  /* display: flex; */
+  display: flex;
   background-color: grey;
 }
 
@@ -81,7 +81,7 @@ main {
 }
 .grid-item-2 {
   grid-area: grid-item-2;
-  /* /* background-image: url("../pictures/play/01/01_pingpongtanja.jpg"); */
+  background-image: url("../pictures/play/01/01_pingpongtanja.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -359,13 +359,14 @@ main {
   .grid-container {
     grid-gap: 5vw;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(51, 310px);
+    grid-template-rows: repeat(52, 310px);
     grid-template-areas:
       "grid-item-1"
       "grid-item-2"
       "grid-item-2"
       "grid-item-3"
       "grid-item-3"
+      "grid-item-4"
       "grid-item-4"
       "grid-item-5"
       "grid-item-6"
@@ -413,7 +414,7 @@ main {
     font-size: 25px;
   }
   .grid-container {
-    grid-template-rows: repeat(51, 310px);
+    grid-template-rows: repeat(52, 310px);
   }
 }
 @media (max-width: 375px) {
@@ -421,7 +422,7 @@ main {
     font-size: 23px;
   }
   .grid-container {
-    grid-template-rows: repeat(51, 249px);
+    grid-template-rows: repeat(52, 249px);
   }
 }
 @media (max-width: 320px) {
@@ -429,7 +430,7 @@ main {
     font-size: 21px;
   }
   .grid-container {
-    grid-template-rows: repeat(51, 212.5px);
+    grid-template-rows: repeat(52, 212.5px);
   }
 }
 
@@ -442,7 +443,7 @@ main {
   width: 100%;
 }
 
-img {
+.swipe-container img {
   height: 100%;
   width: 100%;
 }
