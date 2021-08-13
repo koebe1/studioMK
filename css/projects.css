@@ -1,6 +1,7 @@
 body {
   width: 100vw;
   height: 100vh;
+  background-color: #000;
 }
 nav {
   height: 9.5vh;
@@ -150,7 +151,6 @@ main {
 .info-card-text-right {
   padding: 10.1vh 0 0 15vw;
 }
-
 
 .swipe-wrap {
   height: 100%;
