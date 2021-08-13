@@ -1,5 +1,3 @@
-
-
 // grid-item-1
 const gridItem2 = document.getElementById("2");
 const gridItem2Left = document.getElementById("grid-item-2-left");
@@ -216,64 +214,16 @@ let slideRight = (pictureList, counter, slider) => {
   slider.style.backgroundImage = `url("${pictureList[window[counter]]}")`;
 };
 
-window.mySwipe = new Swipe(document.getElementById("2"));
+var element = document.getElementById("slider");
+window.mySwipe = new Swipe(element, {
+  startSlide: 0,
+  draggable: false,
+  autoRestart: true,
+  continuous: false,
+  disableScroll: false,
+  stopPropagation: true,
+  callback: function(index, element) {},
+  transitionEnd: function(index, element) {}
+});
 
 // listenDesktop();
-
-// let touchstartX = 0;
-// let touchstartY = 0;
-// let touchendX = 0;
-// let touchendY = 0;
-
-// function handleGesture(gridItemList, counter, gridItem) {
-//   // swipe left -> slide down
-//   if (touchendX <= touchstartX) {
-//     console.log("Swiped left");
-//     slideLeft(gridItemList, counter, gridItem);
-//   }
-
-//   if (touchendX >= touchstartX) {
-//     console.log("Swiped right");
-//     slideRight(gridItemList, counter, gridItem);
-//   }
-
-//   if (touchendY <= touchstartY) {
-//     console.log("Swiped up");
-//   }
-
-//   if (touchendY >= touchstartY) {
-//     console.log("Swiped down");
-//   }
-
-//   if (touchendY === touchstartY) {
-//     console.log("Tap");
-//   }
-// }
-
-// //  adding mobile swipe support
-// let listenMobile = () => {
-//   if (window.innerWidth <= 480) {
-//     gridItem2.addEventListener(
-//       "touchstart",
-//       function(event) {
-//         touchstartX = event.changedTouches[0].screenX;
-//         touchstartY = event.changedTouches[0].screenY;
-//       },
-//       false
-//     );
-
-//     gridItem2.addEventListener(
-//       "touchend",
-//       event => {
-//         touchendX = event.changedTouches[0].screenX;
-//         touchendY = event.changedTouches[0].screenY;
-//         handleGesture(gridItemList2, "counter2", gridItem2);
-//       },
-//       false
-//     );
-//   }
-// };
-// // gridItem2.addEventListener("touchmove", () => {
-// //   console.log("hello world!");
-// // });
-// listenMobile();
