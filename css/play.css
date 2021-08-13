@@ -57,10 +57,10 @@ main {
     "grid-item-28 grid-item-29 grid-item-31";
 }
 
-.grid-item {
-  display: flex;
-  background-color: grey;
-}
+ .grid-item {
+  /* display: flex; */
+  background-color: grey; 
+} 
 
 .grid-item-click-left {
   width: 50%;
@@ -81,7 +81,7 @@ main {
 }
 .grid-item-2 {
   grid-area: grid-item-2;
-  background-image: url("../pictures/play/01/01_pingpongtanja.jpg");
+  /* /* background-image: url("../pictures/play/01/01_pingpongtanja.jpg"); */
   background-position: center;
   background-size: cover;
 }
@@ -408,18 +408,7 @@ main {
   }
 }
 
-
-.swipe {
-  overflow: hidden;
-  visibility: hidden;
-  position: relative;
-}
-.swipe-wrap {
-  overflow: hidden;
-  position: relative;
-}
-.swipe-wrap > div {
-  float: left;
+img {
+  height: 100%;
   width: 100%;
-  position: relative;
 }

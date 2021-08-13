@@ -214,16 +214,17 @@ let slideRight = (pictureList, counter, slider) => {
   slider.style.backgroundImage = `url("${pictureList[window[counter]]}")`;
 };
 
-var element = document.getElementById("slider");
-window.mySwipe = new Swipe(element, {
+window.mySwipe = new Swipe(document.getElementById("slider"), {
   startSlide: 0,
+  speed: 400,
+  // auto: 3000,
   draggable: false,
-  autoRestart: true,
-  continuous: false,
+  continuous: true,
   disableScroll: false,
-  stopPropagation: true,
-  callback: function(index, element) {},
-  transitionEnd: function(index, element) {}
+  stopPropagation: false,
+  ignore: ".scroller",
+  callback: function(index, elem, dir) {},
+  transitionEnd: function(index, elem) {}
 });
 
 // listenDesktop();
