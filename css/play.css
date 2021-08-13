@@ -414,7 +414,7 @@ main {
     font-size: 25px;
   }
   .grid-container {
-    grid-template-rows: repeat(52, 310px);
+    grid-template-rows: repeat(52, 294px);
   }
 }
 @media (max-width: 375px) {

@@ -417,3 +417,33 @@ main {
       "grid-item-34";
   }
 }
+
+@media (max-width: 430px) {
+  .grid-container {
+    grid-template-rows: repeat(51, 294px);
+  }
+}
+@media (max-width: 375px) {
+  .grid-container {
+    grid-template-rows: repeat(51, 249px);
+  }
+}
+@media (max-width: 320px) {
+  .grid-container {
+    grid-template-rows: repeat(51, 212.5px);
+  }
+}
+
+.swipe-wrap {
+  height: 100%;
+  width: 100%;
+}
+.swipe-container {
+  height: 100%;
+  width: 100%;
+}
+
+.swipe-container img {
+  height: 100%;
+  width: 100%;
+}
