@@ -60,7 +60,7 @@ main {
 }
 
 .slider-sub-left {
-  padding-left: 2.51%;
+  padding-left: 3vw;
 }
 
 #dots {
@@ -74,7 +74,7 @@ main {
 
 .slider-sub-right {
   display: flex;
-  padding-right: 2.51%;
+  margin-right: 4vw;
 }
 
 .info {
