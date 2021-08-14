@@ -20,14 +20,13 @@ nav span {
 }
 main {
   display: flex;
-  background-color: #000;
   flex-direction: column;
   width: 100%;
-  padding: 0;
   margin: 9.5vh 0 0 0;
 }
 
 .swiper-container {
+  background-color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
