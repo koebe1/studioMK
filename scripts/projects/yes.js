@@ -42,3 +42,19 @@ swiperContainer.addEventListener("click", () => {
     swiper.slideNext();
   }
 });
+
+// info-card
+let infoContainer = document.querySelector(".info-container");
+let info = document.getElementById("slider-sub-info");
+console.log(info);
+info.addEventListener("click", () => {
+  if (infoContainer.classList.contains("info-container-visible")) {
+    infoContainer.classList.add("info-container-hidden");
+    infoContainer.classList.remove("info-container-visible");
+    info.innerHTML = "INFO";
+  } else {
+    infoContainer.classList.add("info-container-visible");
+    infoContainer.classList.remove("info-container-hidden");
+    info.innerHTML = "CLOSE";
+  }
+});
