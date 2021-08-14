@@ -58,3 +58,16 @@ info.addEventListener("click", () => {
     info.innerHTML = "CLOSE";
   }
 });
+
+// fix mobile problems with viewheight
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty("--vh", `${vh}px`);
+
+
+
+// on resize
+window.addEventListener('resize', () => {
+  // We execute the same script as before
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
