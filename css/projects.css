@@ -100,9 +100,14 @@ main {
   width: 3.5vw;
   display: flex;
   justify-content: space-around;
-  font-size: 25px;
   font-family: "Non Natural Grotesk Medium";
   position: static;
+}
+.swiper-pagination-current {
+  padding-right: 0.8vw;
+}
+.swiper-pagination-total {
+  padding-left: 0.8vw;
 }
 
 .info-container {
@@ -121,4 +126,48 @@ main {
 }
 .info-container-hidden {
   display: none;
+}
+
+@media (max-width: 1024px) {
+  .slider-sub {
+    font-size: 20px;
+  }
+  #dots {
+    font-size: 23px;
+  }
+  .info {
+    margin-right: 4vw;
+  }
+}
+@media (max-width: 768px) {
+  .slider-sub {
+    font-size: 18px;
+  }
+  #dots {
+    font-size: 21px;
+  }
+}
+@media (max-width: 600px) {
+  .slider-sub {
+    font-size: 16px;
+  }
+  #dots {
+    font-size: 19px;
+  }
+}
+@media (max-width: 480px) {
+  .slider-sub {
+    font-size: 14px;
+  }
+  #dots {
+    font-size: 17px;
+  }
+}
+@media (max-width: 420px) {
+  .slider-sub {
+    font-size: 12px;
+  }
+  #dots {
+    font-size: 15px;
+  }
 }
