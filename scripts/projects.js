@@ -12,7 +12,7 @@ const swiper = new Swiper(".swiper-container", {
   }
 });
 
-if (window.innerWidth <= 480) {
+if (window.innerWidth > 480) {
   // function for custom cursor
   let swiperContainer = document.querySelector(".swiper-container");
   swiperContainer.addEventListener("mousemove", function(e) {
