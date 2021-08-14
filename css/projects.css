@@ -1,3 +1,6 @@
+html {
+  overflow: hidden;
+}
 body {
   width: 100vw;
   height: 100vh;
@@ -57,6 +60,7 @@ main {
   align-items: center;
   background-color: #fff;
   height: 9vh;
+  z-index: 2;
 }
 
 .slider-sub-left {
