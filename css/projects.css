@@ -35,10 +35,9 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 81.5vh;
+  height: 81vh;
   width: 100vw;
   flex-direction: column;
-  min-height: -webkit-fill-available;
 }
 .arrow-left {
   cursor: url("../fonts/cursor_left.png"), pointer;
@@ -61,7 +60,7 @@ main {
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
-  height: 9vh;
+  height: 9.5vh;
   z-index: 2;
 }
 
@@ -119,12 +118,11 @@ main {
   position: absolute;
   background-color: #fff;
   display: none;
-  height: 81.5vh;
+  height: 81vh;
   width: 100vw;
   line-height: 30px;
   font-size: 12px;
   z-index: 2;
-  overflow: hidden;
 }
 
 .info-container-visible {
