@@ -46,7 +46,6 @@ swiperContainer.addEventListener("click", () => {
 // info-card
 let infoContainer = document.querySelector(".info-container");
 let info = document.getElementById("slider-sub-info");
-console.log(info);
 info.addEventListener("click", () => {
   if (infoContainer.classList.contains("info-container-visible")) {
     infoContainer.classList.add("info-container-hidden");
