@@ -84,7 +84,6 @@ main {
 
 .info-card-text-left {
   display: flex;
-  max-width: 850px;
   width: 49.15vw;
   flex-direction: column;
   justify-content: flex-start;
@@ -161,6 +160,9 @@ main {
   }
   #dots {
     font-size: 17px;
+  }
+  .info-container {
+    line-height: 14px;
   }
 }
 @media (max-width: 420px) {
