@@ -1,7 +1,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-color: #000;
+  background-color: #fff;
 }
 nav {
   height: 9.5vh;
@@ -19,68 +19,32 @@ nav span {
   color: #fff;
 }
 main {
+  display: flex;
+  background-color: #000;
+  flex-direction: column;
   width: 100%;
   padding: 0;
   margin: 9.5vh 0 0 0;
 }
 
-.slider-container {
+.swiper-container {
   display: flex;
-  width: 100%;
-  flex-direction: column;
-  background-color: #000;
-}
-.slider {
-  display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  /* height: calc(90vh - 100px); */
   height: 81.5vh;
-  width: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  cursor: url("../fonts/cursor_right.png"), pointer;
+  width: 100vw;
+  flex-direction: column;
 }
-#slider-1 {
-  background-image: url("../pictures/index/01_yes/yes1.jpg");
-}
-#slider-2 {
-  background-image: url("../pictures/index/02_Pfadfinder/pfadfinder_1920x1063px.jpg");
-}
-#slider-3 {
-  background-image: url("../pictures/index/03_ueberbild/ueberbild1.jpg");
-}
-#slider-4 {
-  background-image: url("../pictures/index/04_neunkubikmeter/01_neunkubikmeter.jpg");
-}
-#slider-5 {
-  background-image: url("../pictures/index/05_luemo/luemo_1920x1063px.jpg");
-}
-#slider-6 {
-  background-image: url("../pictures/index/06_united-ip/uip1.jpg");
-}
-#slider-7 {
-  background-image: url("../pictures/index/07_zfkk/zfkk_1920x1063px.jpg");
-}
-#slider-8 {
-  background-image: url("../pictures/index/08_gruppeB/gruppeb_1920x1063px.jpg");
-}
-#slider-9 {
-  background-image: url("../pictures/index/09_365/kalenderblatt_1920x1063px.jpg");
-}
-
-.arr-container-left {
-  opacity: 0;
-  height: 100%;
-  width: 50%;
+.arrow-left {
   cursor: url("../fonts/cursor_left.png"), pointer;
 }
-.arr-container-right {
-  opacity: 0;
-  height: 100%;
-  width: 50%;
+.arrow-right {
   cursor: url("../fonts/cursor_right.png"), pointer;
+}
+.swiper-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 .slider-sub {
@@ -92,7 +56,7 @@ main {
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
-  height: 10vh;
+  height: 9vh;
 }
 
 .slider-sub-left {
@@ -108,23 +72,13 @@ main {
 }
 
 .slider-sub-right {
+  display: flex;
   padding-right: 2.51%;
 }
 
 .info {
   cursor: pointer;
-  padding-right: 2vw;
-}
-
-.info:hover {
-  font-family: "Non Natural Grotesk Medium";
-}
-.info:active {
-  font-family: "Non Natural Grotesk Light";
-}
-
-.slider-counter-current {
-  padding-left: 2vw;
+  padding-right: 3vw;
 }
 
 .info-card {
@@ -152,16 +106,12 @@ main {
   padding: 10.1vh 0 0 15vw;
 }
 
-.swipe-wrap {
-  height: 100%;
-  width: 100%;
-}
-.swipe-container {
-  height: 100%;
-  width: 100%;
-}
-
-.swipe-container img {
-  height: 100%;
-  width: 100%;
+/* swiper */
+.swiper-pagination {
+  width: 3.5vw;
+  display: flex;
+  justify-content: space-around;
+  font-size: 25px;
+  font-family: "Non Natural Grotesk Medium";
+  position: static;
 }
