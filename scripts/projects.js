@@ -60,15 +60,26 @@ info.addEventListener("click", () => {
 });
 
 // fix mobile problems with viewheight
+let nav = document.getElementsByTagName("nav")[0];
+let main = document.getElementsByTagName("main")[0];
 let swiperContainer = document.querySelector(".swiper-container");
-let vh = window.innerHeight * 0.01;
-document.documentElement.style.setProperty("--vh", `${vh}px`);
+let sliderSub = document.querySelector(".slider-sub");
+let vh = window.innerHeight / 100;
+
 swiperContainer.style.height = `${vh * 81}px`;
+infoContainer.style.height = `${vh * 81}px`;
+nav.style.height = `${vh * 9.5}px`;
+sliderSub.style.height = `${vh * 9.5}px`;
+main.style.margin = "9.5vh 0 0 0";
 
 // on resize
 window.addEventListener("resize", () => {
   // We execute the same script as before
   let vh = window.innerHeight * 0.01;
+  // set swiper-container height to 81vh
   swiperContainer.style.height = `${vh * 81}px`;
-  document.documentElement.style.setProperty("--vh", `${vh}px`);
+  infoContainer.style.height = `${vh * 81}px`;
+  nav.style.height = `${vh * 9.5}px`;
+  sliderSub.style.height = `${vh * 9.5}px`;
+  main.style.margin = "9.5vh 0 0 0";
 });

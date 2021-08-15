@@ -4,14 +4,15 @@ html {
   overflow: hidden;
 }
 body {
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
+  /* height is set in js file due to bugs with vh unit in mobile */
+  /* height: 100vh; */
   width: 100%;
 
   background-color: #000;
 }
 nav {
-  height: 9.5vh;
+  /* height is set in js file due to bugs with vh unit in mobile */
+  /* height: 9.5vh; */
   width: 100vw;
   background-color: #000;
 }
@@ -29,7 +30,8 @@ main {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin: 9.5vh 0 0 0;
+  /* margin is set in js file due to bugs with vh unit in mobile */
+  /* margin: 9.5vh 0 0 0; */
 }
 
 .swiper-container {
@@ -37,9 +39,8 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: calc(var(--vh, 81vh) * 100); */
+  /* height is set in js file due to bugs with vh unit in mobile */
   /* height: 81vh; */
-
   width: 100vw;
   flex-direction: column;
 }
@@ -64,8 +65,9 @@ main {
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
-  height: 9.5vh;
-  /* height: calc(var(--vh, 2vh) * 100); */
+  /* height is set in js file due to bugs with vh unit in mobile */
+  /* height: 9.5vh; */
+
   z-index: 2;
 }
 
