@@ -12,7 +12,6 @@ let img11 = document.getElementById("img-11");
 
 let swiperSlide10 = document.getElementById("swiper-slide-10");
 let swiperSlide11 = document.getElementById("swiper-slide-11");
-console.log(swiperSlide10);
 
 // set src picture to mobile version
 

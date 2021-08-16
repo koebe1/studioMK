@@ -8,23 +8,23 @@ body {
   /* height: 100vh; */
   width: 100%;
 
-  background-color: #000;
+  background-color: #fff;
 }
 nav {
   /* height is set in js file due to bugs with vh unit in mobile */
   /* height: 9.5vh; */
   width: 100vw;
-  background-color: #000;
+  background-color: #fff;
 }
 nav a {
-  color: #fff;
+  color: #000000;
 }
 nav span {
-  color: #fff;
+  color: #000;
 }
 
 #eyes {
-  color: #fff;
+  color: #000000;
 }
 main {
   display: flex;
@@ -35,7 +35,7 @@ main {
 }
 
 .swiper-container {
-  background-color: #000;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
