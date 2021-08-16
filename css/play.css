@@ -359,7 +359,7 @@ main {
   .grid-container {
     grid-gap: 5vw;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(52, 310px);
+    grid-template-rows: repeat(45, 310px);
     grid-template-areas:
       "grid-item-1"
       "grid-item-2"
@@ -414,7 +414,7 @@ main {
     font-size: 25px;
   }
   .grid-container {
-    grid-template-rows: repeat(52, 294px);
+    grid-template-rows: repeat(45, 294px);
   }
 }
 @media (max-width: 375px) {
@@ -422,7 +422,7 @@ main {
     font-size: 23px;
   }
   .grid-container {
-    grid-template-rows: repeat(52, 249px);
+    grid-template-rows: repeat(45, 249px);
   }
 }
 @media (max-width: 320px) {
@@ -430,7 +430,7 @@ main {
     font-size: 21px;
   }
   .grid-container {
-    grid-template-rows: repeat(52, 212.5px);
+    grid-template-rows: repeat(45, 212.5px);
   }
 }
 
