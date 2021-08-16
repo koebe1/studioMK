@@ -1,16 +1,16 @@
 // initializing swiper
-// const swiper = new Swiper(".swiper-container", {
-//   // Optional parameters
-//   direction: "horizontal",
-//   loop: true,
-//   speed: 200,
-//   threshold: 10,
+const swiper = new Swiper(".swiper-container", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: false,
+  speed: 200,
+  threshold: 10,
 
-//   pagination: {
-//     el: ".swiper-pagination",
-//     type: "fraction"
-//   }
-// });
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction"
+  }
+});
 
 if (window.innerWidth > 480) {
   // function for custom cursor
@@ -83,4 +83,3 @@ window.addEventListener("resize", () => {
   sliderSub.style.height = `${vh * 9.5}px`;
   main.style.margin = "9.5vh 0 0 0";
 });
-
