@@ -395,3 +395,39 @@ let infoSlide = (button, infoCard, slider) => {
     clicked = false;
   }
 };
+
+if (window.innerWidth <= 480) {
+  // fix mobile bugs with viewheight
+  let mainText = document.querySelector(".main-text");
+  let slider = document.querySelectorAll(".slider");
+  let sliderSub = document.querySelectorAll(".slider-sub");
+  // info card not needed in mobile version
+  // let infoCard = document.querySelectorAll(".info-card");
+
+  let vh = window.innerHeight / 100;
+
+  mainText.style.height = `${vh * 70}px`;
+  for (element of slider) {
+    // element.style.height = `${vh * 37}px`;
+  }
+  for (element of sliderSub) {
+    // element.style.height = `${vh * 6}px`;
+  }
+  // for (element of infoCard) {
+  //   element.style.height = `${vh * 14.4}px`;
+  // }
+
+  // on resize
+  window.addEventListener("resize", () => {
+    // We execute the same script as before
+    let vh = window.innerHeight * 0.01;
+
+    mainText.style.height = `${vh * 70}px`;
+    for (element of slider) {
+      // element.style.height = `${vh * 37}px`;
+    }
+    for (element of sliderSub) {
+      // element.style.height = `${vh * 5}px`;
+    }
+  });
+}
