@@ -405,10 +405,6 @@ if (window.innerWidth <= 480) {
 
   mainText.style.padding = `${vh * 8.5}px 0 ${vh * 8.5}px 0`;
   mainText.style.marginTop = `${vh * 9.5}px`;
-
-  // for (sliderSub of sliderSubs) {
-  //   sliderSub.style.height = `${vh * 8.8}px`;
-  // }
 }
 
 // on resize
@@ -417,9 +413,5 @@ window.addEventListener("resize", () => {
     let vh = window.innerHeight / 100;
     mainText.style.padding = `${vh * 8.5}px 0 ${vh * 8.5}px 0`;
     mainText.style.marginTop = `${vh * 9.5}px`;
-
-    // for (sliderSub of sliderSubs) {
-    //   sliderSub.style.height = `${vh * 8.8}px`;
-    // }
   }
 });

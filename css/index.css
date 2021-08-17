@@ -310,7 +310,7 @@ main {
   }
 
   .slider-sub {
-    font-size: 12px;
+    font-size: 20px;
     height: 14.3vw;
   }
   .slider-sub-right {
@@ -323,7 +323,7 @@ main {
     height: 69.5vw;
   }
   .dots {
-    font-size: 15px;
+    font-size: 18px;
   }
   .filter-label {
     display: none;
@@ -332,7 +332,7 @@ main {
     padding-right: 4vw;
   }
   #dots {
-    padding-left: 4vw;
+    padding-left: 0 0;
   }
 }
 
