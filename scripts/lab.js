@@ -438,17 +438,3 @@ if (window.innerWidth > 480) {
     }
   });
 }
-
-window.addEventListener("resize", () => {
-  if (window.innerWidth > 480) {
-  }
-});
-
-// mobile
-if (window.innerWidth <= 480) {
-}
-
-window.addEventListener("resize", () => {
-  if (window.innerWidth <= 480) {
-  }
-});

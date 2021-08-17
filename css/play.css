@@ -17,7 +17,7 @@ nav span {
 
 main {
   flex-direction: column;
-  /* width: 100%; */
+
   margin: 9.5vh 2.19vw 0 2.19vw;
 }
 
@@ -35,7 +35,7 @@ main {
 .grid-container {
   display: grid;
   grid-gap: 1.3vw;
-  height: 100%;
+  width: 100%;
   margin: 10.63% 0 19.83% 0;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(15, 413px);
@@ -58,18 +58,24 @@ main {
 }
 
 .grid-item {
-  display: flex;
+  width: 100%;
+  /* display: flex; */
   background-color: grey;
 }
-
-.grid-item-click-left {
-  width: 50%;
+.swiper-wrapper {
+  width: 100%;
+}
+.swiper-slide img {
+  width: 100%;
   height: 100%;
+  z-index: 100;
+  object-fit: cover;
+}
+
+.arrow-left {
   cursor: url("../fonts/cursor_left.png"), pointer;
 }
-.grid-item-click-right {
-  width: 50%;
-  height: 100%;
+.arrow-right {
   cursor: url("../fonts/cursor_right.png"), pointer;
 }
 
@@ -78,36 +84,30 @@ main {
   background-image: url("../pictures/play/01/01_afvs.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .grid-item-2 {
   grid-area: grid-item-2;
-  background-image: url("../pictures/play/01/01_pingpongtanja.jpg");
-  background-position: center;
-  background-size: cover;
 }
 .grid-item-3 {
   grid-area: grid-item-3;
   background-image: url("../pictures/play/01/01_karriereleiter.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .grid-item-4 {
   grid-area: grid-item-4;
-  background-image: url("../pictures/play/01/01_frida.jpg");
-  background-position: center;
-  background-size: cover;
 }
 .grid-item-5 {
   grid-area: grid-item-5;
   background-image: url("../pictures/play/01/01_play.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .grid-item-6 {
   grid-area: grid-item-6;
-  background-image: url("../pictures/play/01/01_rudi.jpg");
-  background-position: center;
-  background-size: cover;
 }
 
 .grid-item-7 {
@@ -115,90 +115,93 @@ main {
   background-image: url("../pictures/play/01/01_parapluie_bird.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .grid-item-8 {
   grid-area: grid-item-8;
   background-image: url("../pictures/play/01/01_flowers.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .grid-item-9 {
   background-image: url("../pictures/play/01/01_black.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   grid-area: grid-item-9;
 }
 .grid-item-10 {
   grid-area: grid-item-10;
-  background-image: url("../pictures/play/01/01_stone.jpg");
-  background-position: center;
-  background-size: cover;
 }
 .grid-item-11 {
   grid-area: grid-item-11;
   background-image: url("../pictures/play/01/01_noemotions.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .grid-item-12 {
   grid-area: grid-item-12;
   background-image: url("../pictures/play/01/01_True-Emotions.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .grid-item-13 {
   grid-area: grid-item-13;
   background-image: url("../pictures/play/01/01_drink.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .grid-item-14 {
   grid-area: grid-item-14;
-  background-image: url("../pictures/play/01/01_blueman.jpg");
-  background-position: center;
-  background-size: cover;
 }
 .grid-item-15 {
   grid-area: grid-item-15;
   background-image: url("../pictures/play/01/01_dripdripdrip.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .grid-item-16 {
   grid-area: grid-item-16;
   background-image: url("../pictures/play/01/01_greenhands.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .grid-item-17 {
   grid-area: grid-item-17;
   background-image: url("../pictures/play/01/01_arms.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .grid-item-18 {
   grid-area: grid-item-18;
   background-image: url("../pictures/play/01/01_oscar-schlemmer.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .grid-item-19 {
   grid-area: grid-item-19;
   background-image: url("../pictures/play/01/01_flower.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .grid-item-20 {
   grid-area: grid-item-20;
   background-image: url("../pictures/play/01/01_woman.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .grid-item-21 {
   grid-area: grid-item-21;
-  background-image: url("../pictures/play/01/01_parapluie.jpg");
-  background-position: center;
-  background-size: cover;
 }
 
 .grid-item-22 {
@@ -206,60 +209,50 @@ main {
   background-image: url("../pictures/play/01/01_homecoming.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .grid-item-23 {
   grid-area: grid-item-23;
-  background-image: url("../pictures/play/01/01_blueman_sitting.jpg");
-  background-position: center;
-  background-size: cover;
 }
 .grid-item-24 {
   grid-area: grid-item-24;
-  background-image: url("../pictures/play/01/01_schwarzemasse.jpg");
-  background-position: center;
-  background-size: cover;
 }
 .grid-item-25 {
   grid-area: grid-item-25;
   background-image: url("../pictures/play/01/01_portrait.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .grid-item-26 {
   grid-area: grid-item-26;
-  background-image: url("../pictures/play/01/01_Ich-bin-ich.jpg");
-  background-position: center;
-  background-size: cover;
 }
 .grid-item-27 {
   grid-area: grid-item-27;
   background-image: url("../pictures/play/01/01_nonkonformist.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .grid-item-28 {
   grid-area: grid-item-28;
   background-image: url("../pictures/play/01/01_masterarbeit.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .grid-item-29 {
   grid-area: grid-item-29;
   background-image: url("../pictures/play/01/01_pingpongibou.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .grid-item-30 {
   grid-area: grid-item-30;
-  background-image: url("../pictures/play/01/01_walkingman.jpg");
-  background-position: center;
-  background-size: cover;
 }
 .grid-item-31 {
   grid-area: grid-item-31;
-  background-image: url("../pictures/play/01/01_illi.jpg");
-  background-position: center;
-  background-size: cover;
 }
 
 @media (max-width: 1800px) {
@@ -432,18 +425,4 @@ main {
   .grid-container {
     grid-template-rows: repeat(45, 212.5px);
   }
-}
-
-.swipe-wrap {
-  height: 100%;
-  width: 100%;
-}
-.swipe-container {
-  height: 100%;
-  width: 100%;
-}
-
-.swipe-container img {
-  height: 100%;
-  width: 100%;
 }
