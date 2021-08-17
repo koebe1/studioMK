@@ -1,18 +1,18 @@
 main {
   flex-direction: column;
-  margin-top: 100px;
   margin-left: 0vw;
   margin-right: 0vw;
+  margin-top: 0;
 }
 
 .main-text {
   display: flex;
-  padding: 0 6.25vw 0 6.25vw;
-  flex-direction: column;
+  margin-top: 9.5vh;
+  padding: 8.5vh 0 8.5vh 0;
   justify-content: center;
   align-items: center;
   /* fixed vh bug in mobile version in the js file */
-  height: 75vh;
+  /* height: 75vh; */
   font-size: 70px;
 }
 .indented {
@@ -35,9 +35,7 @@ main {
   background-position: center center;
   cursor: url("../fonts/cursor_right.png"), pointer;
 }
-#slider-1 {
-  background-image: url("../pictures/index/01_yes/yes1.jpg");
-}
+
 .arr-container-left {
   opacity: 0;
   height: 100%;
@@ -115,7 +113,9 @@ main {
 .info-card-text-right {
   padding: 10.1vh 0 0 15vw;
 }
-
+#slider-1 {
+  background-image: url("../pictures/index/01_yes/yes1.jpg");
+}
 #slider-2 {
   background-image: url("../pictures/index/02_Pfadfinder/pfadfinder_1920x1063px.jpg");
 }
@@ -155,7 +155,6 @@ main {
 @media (max-width: 1750px) {
   .main-text {
     font-size: 58px;
-    max-height: 700px;
   }
 }
 
@@ -187,7 +186,6 @@ main {
 @media (max-width: 1400px) {
   .main-text {
     font-size: 45px;
-    max-height: 500px;
   }
   .slider {
     max-height: 700px;
@@ -195,13 +193,11 @@ main {
   .info-card {
     font-size: 16px;
     line-height: 25px;
-    max-height: 700px;
   }
 }
 @media (max-width: 1192px) {
   .main-text {
     font-size: 38px;
-    max-height: 500px;
   }
   .info-card {
     font-size: 14px;
@@ -211,8 +207,6 @@ main {
 @media (max-width: 1024px) {
   .main-text {
     font-size: 33px;
-    height: 50vh;
-    max-height: 400px;
   }
   .slider {
     max-height: 600px;
@@ -250,7 +244,6 @@ main {
 @media (max-width: 768px) {
   .main-text {
     font-size: 25px;
-    height: 40vh;
   }
   .slider-sub {
     font-size: 18px;
@@ -259,7 +252,6 @@ main {
 @media (max-width: 665px) {
   .main-text {
     font-size: 21px;
-    height: 30vh;
   }
   .slider-sub {
     font-size: 16px;
@@ -280,28 +272,52 @@ main {
 
 /* mobile */
 @media (max-width: 480px) {
+  #slider-1 {
+    background-image: url("../pictures/work/01_work_yes.jpg");
+  }
+  #slider-2 {
+    background-image: url("../pictures/work/02_work_pfad.jpg");
+  }
+  #slider-3 {
+    background-image: url("../pictures/work/03_work_ue.jpg");
+  }
+  #slider-4 {
+    background-image: url("../pictures/work/04_work_neunkubik.jpg");
+  }
+  #slider-5 {
+    background-image: url("../pictures/work/05_work_lue.jpg");
+  }
+  #slider-6 {
+    background-image: url("../pictures/work/06_work_uip.jpg");
+  }
+  #slider-7 {
+    background-image: url("../pictures/work/07_work_zfkk.jpg");
+  }
+  #slider-8 {
+    background-image: url("../pictures/work/08_work_b_5.gif");
+  }
+  #slider-9 {
+    background-image: url("../pictures/work/09_work_365.jpg");
+  }
   main {
-    margin-top: 3vh;
+    margin-top: 0vh;
     margin-bottom: 9.5vh;
   }
   .main-text {
-    line-height: 30px;
-    font-size: 25px;
-    /* height: 70vh; */
+    line-height: 18px;
+    font-size: 13px;
+    padding: 8.5vh 0 8.5vh 0;
   }
-  div,
-  p {
-    display: inline;
-  }
+
   .slider-sub {
     font-size: 12px;
-    height: 6.3vh;
+    height: 14.3vw;
   }
   .slider-sub-right {
     display: none;
   }
   .indented {
-    text-indent: 0;
+    text-indent: 9vw;
   }
   .slider {
     height: 69.5vw;
@@ -318,44 +334,9 @@ main {
   #dots {
     padding-left: 4vw;
   }
-
-  .info-card {
-    background-color: rgba(0, 0, 0, 1);
-    font-size: 9px;
-    height: 30vh;
-    line-height: 11px;
-  }
-  .info-card-text-left {
-    width: 100%;
-    padding: 35px;
-  }
-  .info-card-text-left span {
-    color: white;
-  }
-  .info-card-text-right {
-    display: none;
-  }
-  .info-card-text-left .dots {
-    display: none;
-  }
 }
 
-@media (max-width: 480px) {
-}
 @media (max-width: 420px) {
 }
 @media (max-width: 375px) {
-  .main-text {
-    font-size: 23px;
-  }
-  .indented {
-    text-indent: 0;
-  }
-  .slider {
-    height: 33vh;
-  }
-
-  .info-card {
-    font-size: 7px;
-  }
 }
