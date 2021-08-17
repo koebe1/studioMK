@@ -16,10 +16,10 @@ if (window.innerWidth <= 480) {
   closeContainer.style.height = `${vh * 9.5}px`;
 
   dotsMobile.addEventListener("click", () => {
+    navLinks.style.display = "none";
     navMobile.style.display = "flex";
     main.style.display = "none";
     footer.style.display = "none";
-    navLinks.style.display = "none";
     nav.style.padding = "0";
     body.style.backgroundColor = "#000";
   });
