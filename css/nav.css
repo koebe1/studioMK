@@ -163,6 +163,11 @@ nav {
 }
 
 @media (max-width: 480px) {
+  html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
   nav {
     font-size: 17px;
     padding: 1.75vh 2.4vw;
