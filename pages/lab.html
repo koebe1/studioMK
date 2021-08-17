@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
     <link rel="stylesheet" href="../css/lab.css" />
     <script src="../scripts/lab.js" defer></script>
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/swipejs/2.2.5/style.min.css"
-      rel="stylesheet"
-      media="all"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/swipejs/2.2.5/swipe.min.js"></script>
     <title>L A B</title>
   </head>
 
@@ -50,32 +49,29 @@
         <p>Ein Miri-Satz.</p>
       </div>
       <div class="grid-container">
-        <div class="grid-item grid-item-1 slider swipe" id="slider1">
-          <div class="swipe-wrap">
-            <div class="swipe-container">
+        <div class="grid-item swiper-container grid-item-1" id="slider1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
               <img class="swipe-img" src="../pictures/lab/01_rose.jpg" alt="" />
             </div>
-            <div class="swipe-container">
+            <div class="swiper-slide">
               <img class="swipe-img" src="../pictures/lab/02_rose.jpg" alt="" />
             </div>
-            <div class="swipe-container">
+            <div class="swiper-slide">
               <img class="swipe-img" src="../pictures/lab/03_rose.jpg" alt="" />
             </div>
           </div>
-
-          <div class="grid-item-click-left" id="grid-item-1-left"></div>
-          <div class="grid-item-click-right" id="grid-item-1-right"></div>
         </div>
-        <div class="grid-item grid-item-2 slider swipe" id="slider2">
-          <div class="swipe-wrap">
-            <div class="swipe-container">
+        <div class="grid-item grid-item-2 swiper-container" id="slider2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
               <img
                 class="swipe-img"
                 src="../pictures/lab/01_rose_ice.jpg"
                 alt=""
               />
             </div>
-            <div class="swipe-container">
+            <div class="swiper-slide">
               <img
                 class="swipe-img"
                 src="../pictures/lab/02_rose_ice.jpg"
@@ -83,20 +79,17 @@
               />
             </div>
           </div>
-
-          <div class="grid-item-click-left" id="grid-item-2-left"></div>
-          <div class="grid-item-click-right" id="grid-item-2-right"></div>
         </div>
-        <div class="grid-item grid-item-3 slider swipe" id="slider3">
-          <div class="swipe-wrap">
-            <div class="swipe-container">
+        <div class="grid-item grid-item-3 swiper-container" id="slider3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
               <img
                 class="swipe-img"
                 src="../pictures/lab/01_sommerlab.jpg"
                 alt=""
               />
             </div>
-            <div class="swipe-container">
+            <div class="swiper-slide">
               <img
                 class="swipe-img"
                 src="../pictures/lab/02_sommerlab.jpg"
@@ -104,52 +97,46 @@
               />
             </div>
           </div>
-
-          <div class="grid-item-click-left" id="grid-item-3-left"></div>
-          <div class="grid-item-click-right" id="grid-item-3-right"></div>
         </div>
         <div class="grid-item grid-item-4" id="slider4"></div>
         <div class="grid-item grid-item-5" id="slider5"></div>
-        <div class="grid-item grid-item-6 slider swipe" id="slider6">
-          <div class="swipe-wrap">
-            <div class="swipe-container">
+        <div class="grid-item grid-item-6 swiper-container" id="slider6">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
               <img class="swipe-img" src="../pictures/lab/01_kuso.jpg" alt="" />
             </div>
-            <div class="swipe-container">
+            <div class="swiper-slide">
               <img class="swipe-img" src="../pictures/lab/02_kuso.jpg" alt="" />
             </div>
-            <div class="swipe-container">
+            <div class="swiper-slide">
               <img class="swipe-img" src="../pictures/lab/03_kuso.jpg" alt="" />
             </div>
-            <div class="swipe-container">
+            <div class="swiper-slide">
               <img class="swipe-img" src="../pictures/lab/04_kuso.jpg" alt="" />
             </div>
           </div>
-
-          <div class="grid-item-click-left" id="grid-item-6-left"></div>
-          <div class="grid-item-click-right" id="grid-item-6-right"></div>
         </div>
         <div class="grid-item grid-item-7" id="slider7"></div>
         <div class="grid-item grid-item-8" id="slider8"></div>
         <div class="grid-item grid-item-9" id="slider9"></div>
         <div class="grid-item grid-item-10" id="slider10"></div>
-        <div class="grid-item grid-item-11 slider swipe" id="slider11">
-          <div class="swipe-wrap">
-            <div class="swipe-container">
+        <div class="grid-item grid-item-11 swiper-container" id="slider11">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
               <img
                 class="swipe-img"
                 src="../pictures/lab/01_studiomk_afvs.jpg"
                 alt=""
               />
             </div>
-            <div class="swipe-container">
+            <div class="swiper-slide">
               <img
                 class="swipe-img"
                 src="../pictures/lab/02_studiomk_afvs.jpg"
                 alt=""
               />
             </div>
-            <div class="swipe-container">
+            <div class="swiper-slide">
               <img
                 class="swipe-img"
                 src="../pictures/lab/03_studiomk_afvs.jpg"
@@ -157,17 +144,14 @@
               />
             </div>
           </div>
-
-          <div class="grid-item-click-left" id="grid-item-11-left"></div>
-          <div class="grid-item-click-right" id="grid-item-11-right"></div>
         </div>
         <div class="grid-item grid-item-12" id="slider12"></div>
-        <div class="grid-item grid-item-13 slider swipe" id="slider13">
-          <div class="swipe-wrap">
-            <div class="swipe-container">
+        <div class="grid-item grid-item-13 swiper-container" id="slider13">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
               <img class="swipe-img" src="../pictures/lab/01_zfkk.jpg" alt="" />
             </div>
-            <div class="swipe-container">
+            <div class="swiper-slide">
               <img
                 class="swipe-img"
                 src="../pictures/lab/zfkk_fenster_02.gif"
@@ -175,9 +159,6 @@
               />
             </div>
           </div>
-
-          <div class="grid-item-click-left" id="grid-item-13-left"></div>
-          <div class="grid-item-click-right" id="grid-item-13-right"></div>
         </div>
         <div class="grid-item grid-item-14" id="slider14"></div>
         <div class="grid-item grid-item-15" id="slider15"></div>
@@ -185,16 +166,16 @@
         <div class="grid-item grid-item-17" id="slider17"></div>
         <div class="grid-item grid-item-18" id="slider18"></div>
         <div class="grid-item grid-item-19" id="slider19"></div>
-        <div class="grid-item grid-item-20 slider swipe" id="slider20">
-          <div class="swipe-wrap">
-            <div class="swipe-container">
+        <div class="grid-item grid-item-20 swiper-container" id="slider20">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
               <img
                 class="swipe-img"
                 src="../pictures/lab/03_cover.jpg"
                 alt=""
               />
             </div>
-            <div class="swipe-container">
+            <div class="swiper-slide">
               <img
                 class="swipe-img"
                 src="../pictures/lab/02_cover.jpg"
@@ -202,48 +183,39 @@
               />
             </div>
           </div>
-
-          <div class="grid-item-click-left" id="grid-item-20-left"></div>
-          <div class="grid-item-click-right" id="grid-item-20-right"></div>
         </div>
-        <div class="grid-item grid-item-21 slider swipe" id="slider21">
-          <div class="swipe-wrap">
-            <div class="swipe-container">
+        <div class="grid-item grid-item-21 swiper-container" id="slider21">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
               <img class="swipe-img" src="../pictures/lab/01_hose.jpg" alt="" />
             </div>
-            <div class="swipe-container">
+            <div class="swiper-slide">
               <img class="swipe-img" src="../pictures/lab/02_hose.jpg" alt="" />
             </div>
           </div>
-
-          <div class="grid-item-click-left" id="grid-item-21-left"></div>
-          <div class="grid-item-click-right" id="grid-item-21-right"></div>
         </div>
         <div class="grid-item grid-item-22" id="slider22"></div>
         <div class="grid-item grid-item-23" id="slider23"></div>
-        <div class="grid-item grid-item-24 slider swipe" id="slider24">
-          <div class="swipe-wrap">
-            <div class="swipe-container">
+        <div class="grid-item grid-item-24 swiper-container" id="slider24">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
               <img class="swipe-img" src="../pictures/lab/01_b.jpg" alt="" />
             </div>
-            <div class="swipe-container">
+            <div class="swiper-slide">
               <img class="swipe-img" src="../pictures/lab/02_b.jpg" alt="" />
             </div>
           </div>
-
-          <div class="grid-item-click-left" id="grid-item-24-left"></div>
-          <div class="grid-item-click-right" id="grid-item-24-right"></div>
         </div>
-        <div class="grid-item grid-item-25 slider swipe" id="slider25">
-          <div class="swipe-wrap">
-            <div class="swipe-container">
+        <div class="grid-item grid-item-25 swiper-container" id="slider25">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
               <img
                 class="swipe-img"
                 src="../pictures/lab/01_studiomk_sticker.jpg"
                 alt=""
               />
             </div>
-            <div class="swipe-container">
+            <div class="swiper-slide">
               <img
                 class="swipe-img"
                 src="../pictures/lab/02_studiomk_sticker.jpg"
@@ -251,9 +223,6 @@
               />
             </div>
           </div>
-
-          <div class="grid-item-click-left" id="grid-item-25-left"></div>
-          <div class="grid-item-click-right" id="grid-item-25-right"></div>
         </div>
         <div class="grid-item grid-item-26" id="slider26"></div>
         <div class="grid-item grid-item-27" id="slider27"></div>
@@ -263,16 +232,16 @@
         <div class="grid-item grid-item-31" id="slider31"></div>
         <div class="grid-item grid-item-32" id="slider32"></div>
         <div class="grid-item grid-item-33" id="slider33"></div>
-        <div class="grid-item grid-item-34 slider swipe" id="slider34">
-          <div class="swipe-wrap">
-            <div class="swipe-container">
+        <div class="grid-item grid-item-34 swiper-container" id="slider34">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
               <img
                 class="swipe-img"
                 src="../pictures/lab/01_aleatorik.jpg"
                 alt=""
               />
             </div>
-            <div class="swipe-container">
+            <div class="swiper-slide">
               <img
                 class="swipe-img"
                 src="../pictures/lab/02_aleatorik.jpg"
@@ -280,9 +249,6 @@
               />
             </div>
           </div>
-
-          <div class="grid-item-click-left" id="grid-item-34-left"></div>
-          <div class="grid-item-click-right" id="grid-item-34-right"></div>
         </div>
         <div class="grid-item grid-item-35" id="slider35"></div>
       </div>
