@@ -46,15 +46,7 @@ const slider5CounterCurr = document.getElementById("slider5-counter-current");
 const slider5CounterEnd = document.getElementById("slider5-counter-end");
 const slider5 = document.getElementById("slider-5");
 window["counter5"] = 0;
-// slider 6
-const info6 = document.getElementById("info-6");
-const infoCard6 = document.querySelector(".info-card-6");
-const slider6ArrLeft = document.getElementById("slider6-arr-left");
-const slider6ArrRight = document.getElementById("slider6-arr-right");
-const slider6CounterCurr = document.getElementById("slider6-counter-current");
-const slider6CounterEnd = document.getElementById("slider6-counter-end");
-const slider6 = document.getElementById("slider-6");
-window["counter6"] = 0;
+
 // slider 7
 const info7 = document.getElementById("info-7");
 const infoCard7 = document.querySelector(".info-card-7");
@@ -140,12 +132,7 @@ const sliderList5 = [
   "../pictures/index/05_luemo/luemo_1920x1063px6.jpg",
   "../pictures/index/05_luemo/luemo_1920x1063px7.jpg"
 ];
-const sliderList6 = [
-  "../pictures/index/06_united-ip/uip1.jpg",
-  "../pictures/index/06_united-ip/uip2.jpg",
-  "../pictures/index/06_united-ip/uip3.jpg",
-  "../pictures/index/06_united-ip/uip4.jpg"
-];
+
 const sliderList7 = [
   "../pictures/index/07_zfkk/zfkk_1920x1063px.jpg",
   "../pictures/index/07_zfkk/zfkk_1920x1063px2.jpg",
@@ -186,7 +173,6 @@ info2.addEventListener("click", () => infoSlide(info2, infoCard2, slider2));
 info3.addEventListener("click", () => infoSlide(info3, infoCard3, slider3));
 info4.addEventListener("click", () => infoSlide(info4, infoCard4, slider4));
 info5.addEventListener("click", () => infoSlide(info5, infoCard5, slider5));
-info6.addEventListener("click", () => infoSlide(info6, infoCard6, slider6));
 info7.addEventListener("click", () => infoSlide(info7, infoCard7, slider7));
 info8.addEventListener("click", () => infoSlide(info8, infoCard8, slider8));
 info9.addEventListener("click", () => infoSlide(info9, infoCard9, slider9));
@@ -198,7 +184,7 @@ if (window.innerWidth > 480) {
   slider3CounterEnd.innerHTML = sliderList3.length;
   slider4CounterEnd.innerHTML = sliderList4.length;
   slider5CounterEnd.innerHTML = sliderList5.length;
-  slider6CounterEnd.innerHTML = sliderList6.length;
+
   slider7CounterEnd.innerHTML = sliderList7.length;
   slider8CounterEnd.innerHTML = sliderList8.length;
   slider9CounterEnd.innerHTML = sliderList9.length;
@@ -241,13 +227,7 @@ if (window.innerWidth > 480) {
   slider5ArrRight.addEventListener("click", () =>
     slideUp(sliderList5, "counter5", slider5CounterCurr, slider5)
   );
-  slider6ArrLeft.addEventListener("click", () =>
-    slideDown(sliderList6, "counter6", slider6CounterCurr, slider6)
-  );
 
-  slider6ArrRight.addEventListener("click", () =>
-    slideUp(sliderList6, "counter6", slider6CounterCurr, slider6)
-  );
   slider7ArrLeft.addEventListener("click", () =>
     slideDown(sliderList7, "counter7", slider7CounterCurr, slider7)
   );
@@ -317,15 +297,7 @@ else if (window.innerWidth <= 480) {
     "click",
     () => (window.location.href = "../pages/projects/luemo.html")
   );
-  // UNITED IP
-  slider6ArrLeft.addEventListener(
-    "click",
-    () => (window.location.href = "../pages/projects/united-ip.html")
-  );
-  slider6ArrRight.addEventListener(
-    "click",
-    () => (window.location.href = "../pages/projects/united-ip.html")
-  );
+
   // ZFKK
   slider7ArrLeft.addEventListener(
     "click",

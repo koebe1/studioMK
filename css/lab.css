@@ -11,8 +11,9 @@ nav a {
 nav span {
   color: #ffffff;
 }
-#eyes {
-  color: #ffffff;
+
+#nav-mobile-links li a {
+  color: #fff;
 }
 
 main {

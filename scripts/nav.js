@@ -5,6 +5,7 @@ let footer = document.getElementsByTagName("footer")[0];
 let nav = document.getElementsByTagName("nav")[0];
 let navLinks = document.querySelector(".nav-links");
 let body = document.getElementsByTagName("body")[0];
+let bodyColor = body.style.backgroundColor;
 let close = document.getElementById("close");
 let closeContainer = document.querySelector(".close-container");
 
@@ -18,7 +19,9 @@ if (window.innerWidth <= 480) {
     nav.style.display = "none";
     navMobile.style.display = "flex";
     main.style.display = "none";
-    footer.style.display = "none";
+    if (footer) {
+      footer.style.display = "none";
+    }
     nav.style.padding = "0";
     navMobile.style.height = `${vh * 100}px`;
     navMobile.style.width = `100vw`;
@@ -27,12 +30,14 @@ if (window.innerWidth <= 480) {
   close.addEventListener("click", () => {
     navMobile.style.display = "none";
     main.style.display = "flex";
-    footer.style.display = "flex";
+    if (footer) {
+      footer.style.display = "flex";
+    }
     navLinks.style.display = "flex";
     nav.style.display = "flex";
 
     nav.style.padding = "0 2.19vw 0 2.19vw";
-    body.style.backgroundColor = "#fff";
+    body.style.backgroundColor = bodyColor;
     body.style.zIndex = "0";
   });
 }
