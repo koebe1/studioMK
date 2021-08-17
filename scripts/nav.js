@@ -17,6 +17,7 @@ if (window.innerWidth <= 480) {
 
   dotsMobile.addEventListener("click", () => {
     navLinks.style.display = "none";
+    nav.style.display = "none";
     navMobile.style.display = "flex";
     main.style.display = "none";
     footer.style.display = "none";
@@ -28,6 +29,8 @@ if (window.innerWidth <= 480) {
     main.style.display = "flex";
     footer.style.display = "flex";
     navLinks.style.display = "flex";
+    nav.style.display = "flex";
+
     nav.style.padding = "0 2.19vw 0 2.19vw";
     body.style.backgroundColor = "#fff";
   });
