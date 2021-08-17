@@ -16,13 +16,14 @@ if (window.innerWidth <= 480) {
   closeContainer.style.height = `${vh * 9.5}px`;
 
   dotsMobile.addEventListener("click", () => {
+    body.style.backgroundColor = "#000";
+    body.style.zIndex = "999";
     navLinks.style.display = "none";
     nav.style.display = "none";
     navMobile.style.display = "flex";
     main.style.display = "none";
     footer.style.display = "none";
     nav.style.padding = "0";
-    body.style.backgroundColor = "#000";
   });
   close.addEventListener("click", () => {
     navMobile.style.display = "none";
@@ -33,5 +34,6 @@ if (window.innerWidth <= 480) {
 
     nav.style.padding = "0 2.19vw 0 2.19vw";
     body.style.backgroundColor = "#fff";
+    body.style.zIndex = "0";
   });
 }
