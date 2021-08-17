@@ -80,19 +80,19 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 18vw 0 10vw 0;
+  margin: 10vw 0 4.5vw 0;
 }
 #nav-mobile-links li {
   text-decoration: none;
-  padding: 3.5vw 0;
+  padding: 3vw 0;
 }
 #nav-mobile-links li a {
   font-size: 25px;
   color: #fff;
-  padding: 3.5vw 0;
+  padding: 3vw 0;
 }
 #nav-mobile-dots {
-  margin-bottom: 13.5vw;
+  margin-bottom: 8vw;
   font-size: 30px;
   font-family: sans-serif;
   color: #fff;
