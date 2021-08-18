@@ -78,6 +78,9 @@ main {
 .arrow-right {
   cursor: url("../fonts/cursor_right.png"), pointer;
 }
+.grid-item-subtext {
+  display: none;
+}
 
 .grid-item-1 {
   grid-area: grid-item-1;
@@ -284,7 +287,7 @@ main {
 }
 
 .post-text {
-  margin: 6.05vw 0 8vw 0;
+  margin: 6.05vw 0 8.1vw 0;
 }
 .post-text-dots {
   color: #fff;

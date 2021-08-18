@@ -23,20 +23,28 @@ main {
 
 .text-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 6.5% 0 0 0;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 12vw 0 3vw 0;
   width: 100%;
 }
-.text-container p {
+.heading span {
   font-size: 70px;
-  color: #000;
+  line-height: 84px;
+  display: block;
+}
+.subtext p {
+  font-size: 25px;
+  line-height: 35px;
+}
+.subtext-mobile {
+  display: none;
 }
 .grid-container {
   display: grid;
   grid-gap: 1.3vw;
   width: 100%;
-  margin: 10.63% 0 19.83% 0;
+  margin: 0 0 0 0;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(15, 413px);
   grid-template-areas:
@@ -60,7 +68,7 @@ main {
 .grid-item {
   width: 100%;
   /* display: flex; */
-  background-color: grey;
+  /* background-color: grey; */
 }
 .swiper-wrapper {
   width: 100%;
@@ -79,6 +87,18 @@ main {
   cursor: url("../fonts/cursor_right.png"), pointer;
 }
 
+.grid-item-subtext {
+  display: none;
+}
+
+.post-text {
+  margin: 6.05vw 0 8.1vw 0;
+}
+.post-text-dots {
+  color: #000000;
+  font-size: 35px;
+  font-family: sans-serif;
+}
 .grid-item-1 {
   grid-area: grid-item-1;
   background-image: url("../pictures/play/01/01_afvs.jpg");
@@ -266,9 +286,9 @@ main {
   }
 }
 @media (max-width: 1600px) {
-  .text-container p {
+  /* .text-container p {
     font-size: 60px;
-  }
+  } */
   .grid-container {
     grid-template-rows: repeat(15, 344px);
   }
@@ -279,9 +299,9 @@ main {
   }
 }
 @media (max-width: 1400px) {
-  .text-container p {
+  /* .text-container p {
     font-size: 50px;
-  }
+  } */
   .grid-container {
     grid-template-rows: repeat(15, 301px);
   }
@@ -292,9 +312,9 @@ main {
   }
 }
 @media (max-width: 1200px) {
-  .text-container p {
+  /* .text-container p {
     font-size: 45px;
-  }
+  } */
   .grid-container {
     grid-template-rows: repeat(15, 258px);
   }
@@ -305,9 +325,9 @@ main {
   }
 }
 @media (max-width: 1024px) {
-  .text-container p {
+  /* .text-container p {
     font-size: 40px;
-  }
+  } */
   .grid-container {
     grid-template-rows: repeat(15, 220px);
   }
@@ -323,9 +343,9 @@ main {
   }
 }
 @media (max-width: 768px) {
-  .text-container p {
+  /* .text-container p {
     font-size: 35px;
-  }
+  } */
   .grid-container {
     grid-template-rows: repeat(15, 165px);
   }
@@ -346,34 +366,83 @@ main {
   }
 }
 @media (max-width: 480px) {
-  .text-container p {
+  .text-container {
+    flex-direction: column;
+    margin-bottom: 2.5vw;
+  }
+  .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .heading span {
     font-size: 25px;
+    line-height: 30px;
+  }
+  .subtext {
+    margin: 6vw 0 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .subtext p {
+    display: none;
+  }
+  .subtext-mobile {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .grid-item-subtext {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .grid-item-subtext span {
+    color: #000;
+    font-size: 15px;
+    padding-left: 3vw;
+  }
+  .grid-item-subtext .arr {
+    font-size: 23px;
   }
   .grid-container {
     grid-gap: 5vw;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(45, 310px);
+    grid-template-rows:
+      repeat(3, 310px) 0vw repeat(4, 310px) 0vw repeat(2, 310px)
+      0vw repeat(6, 310px) 0vw repeat(5, 310px) 0vw repeat(10, 310px) 0vw repeat(
+        3,
+        310px
+      )
+      0vw repeat(2, 310px) 0vw repeat(3, 310px) 0vw repeat(6, 310px) 0vw 310px 0vw;
     grid-template-areas:
       "grid-item-1"
       "grid-item-2"
       "grid-item-2"
+      "sub1"
       "grid-item-3"
       "grid-item-3"
       "grid-item-4"
       "grid-item-4"
+      "sub2"
       "grid-item-5"
       "grid-item-6"
+      "sub3"
       "grid-item-7"
       "grid-item-8"
       "grid-item-9"
       "grid-item-9"
       "grid-item-10"
       "grid-item-10"
+      "sub4"
       "grid-item-11"
       "grid-item-12"
       "grid-item-13"
       "grid-item-14"
       "grid-item-14"
+      "sub5"
       "grid-item-15"
       "grid-item-15"
       "grid-item-16"
@@ -384,45 +453,64 @@ main {
       "grid-item-19"
       "grid-item-20"
       "grid-item-21"
+      "sub6"
       "grid-item-22"
       "grid-item-23"
       "grid-item-23"
+      "sub7"
       "grid-item-24"
       "grid-item-24"
+      "sub8"
       "grid-item-25"
       "grid-item-25"
       "grid-item-26"
+      "sub9"
       "grid-item-27"
       "grid-item-28"
       "grid-item-28"
       "grid-item-29"
       "grid-item-29"
       "grid-item-30"
-      "grid-item-31";
+      "sub10"
+      "grid-item-31"
+      "sub11";
   }
 }
 
 @media (max-width: 430px) {
-  .text-container p {
-    font-size: 25px;
-  }
   .grid-container {
-    grid-template-rows: repeat(45, 294px);
+    grid-template-rows:
+      repeat(3, 294px) 0vw repeat(4, 294px) 0vw repeat(2, 294px)
+      0vw repeat(6, 294px) 0vw repeat(5, 294px) 0vw repeat(10, 294px) 0vw repeat(
+        3,
+        294px
+      )
+      0vw repeat(2, 294px) 0vw repeat(3, 294px) 0vw repeat(6, 294px) 0vw 294px 0vw;
   }
 }
 @media (max-width: 375px) {
-  .text-container p {
-    font-size: 23px;
-  }
   .grid-container {
-    grid-template-rows: repeat(45, 249px);
+    grid-template-rows:
+      repeat(3, 249px) 0vw repeat(4, 249px) 0vw repeat(2, 249px)
+      0vw repeat(6, 249px) 0vw repeat(5, 249px) 0vw repeat(10, 249px) 0vw repeat(
+        3,
+        249px
+      )
+      0vw repeat(2, 249px) 0vw repeat(3, 249px) 0vw repeat(6, 249px) 0vw 249px 0vw;
+  }
+  .subtext-mobile {
+    font-size: 11.9px;
+    line-height: 18px;
   }
 }
 @media (max-width: 320px) {
-  .text-container p {
-    font-size: 21px;
-  }
   .grid-container {
-    grid-template-rows: repeat(45, 212.5px);
+    grid-template-rows:
+      repeat(3, 212.5px) 0vw repeat(4, 212.5px) 0vw repeat(2, 212.5px)
+      0vw repeat(6, 212.5px) 0vw repeat(5, 212.5px) 0vw repeat(10, 212.5px) 0vw repeat(
+        3,
+        212.5px
+      )
+      0vw repeat(2, 212.5px) 0vw repeat(3, 212.5px) 0vw repeat(6, 212.5px) 0vw 212.5px 0vw;
   }
 }
