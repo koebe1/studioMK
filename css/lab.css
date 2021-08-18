@@ -486,7 +486,7 @@ main {
         4,
         294px
       )
-      0vw repeat(3, 294px) 0vw294px repeat(12, 294px) 294px;
+      0vw repeat(3, 294px) 0vw 294px repeat(12, 294px) 294px;
   }
 }
 @media (max-width: 375px) {
