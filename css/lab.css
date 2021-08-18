@@ -291,6 +291,7 @@ main {
   font-size: 45px;
   font-family: sans-serif;
 }
+
 @media (max-width: 1800px) {
   .grid-container {
     grid-template-rows: repeat(17, 387.5px);
@@ -385,20 +386,45 @@ main {
     font-size: 35px;
   }
 
+  .grid-item-subtext {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .grid-item-subtext span {
+    color: #fff;
+    font-size: 15px;
+    padding-left: 3vw;
+  }
+  .grid-item-subtext .arr {
+    font-size: 23px;
+  }
+
   .grid-container {
     grid-gap: 5vw;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(51, 310px);
+    /* grid-template-rows: repeat(2, 310px) 0.1vw repeat(58, 310px); */
+    grid-template-rows:
+      repeat(2, 310px) 0vw repeat(2, 310px) 0vw 310px 0vw repeat(4, 310px)
+      0vw repeat(7, 310px) 0vw repeat(3, 310px) 0vw repeat(11, 310px) 0vw repeat(
+        4,
+        310px
+      ) 0vw repeat(3, 310px) 0vw 310px repeat(12, 310px) 310px;
+
     grid-template-areas:
       "grid-item-1"
       "grid-item-1"
+      "sub"
       "grid-item-2"
       "grid-item-2"
+      "sub2"
       "grid-item-3"
+      "sub3"
       "grid-item-4"
       "grid-item-5"
       "grid-item-6"
       "grid-item-6"
+      "sub4"
       "grid-item-7"
       "grid-item-8"
       "grid-item-8"
@@ -406,9 +432,11 @@ main {
       "grid-item-9"
       "grid-item-9"
       "grid-item-11"
+      "sub5"
       "grid-item-12"
       "grid-item-13"
       "grid-item-13"
+      "sub6"
       "grid-item-14"
       "grid-item-14"
       "grid-item-15"
@@ -420,14 +448,18 @@ main {
       "grid-item-19"
       "grid-item-20"
       "grid-item-20"
+      "sub7"
       "grid-item-35"
       "grid-item-35"
       "grid-item-21"
       "grid-item-21"
+      "sub8"
       "grid-item-22"
       "grid-item-23"
       "grid-item-24"
+      "sub9"
       "grid-item-25"
+      "sub10"
       "grid-item-26"
       "grid-item-26"
       "grid-item-27"
@@ -440,7 +472,8 @@ main {
       "grid-item-32"
       "grid-item-32"
       "grid-item-33"
-      "grid-item-34";
+      "grid-item-34"
+      "sub11";
   }
 }
 
