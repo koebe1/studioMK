@@ -23,11 +23,15 @@ main {
 }
 
 .text-container {
-  margin: 6.5% 0 0 0;
+  margin: 9.3vw 0 3.1vw 0;
+}
+.text-container h1 {
+  font-size: 70px;
+  color: #fff;
 }
 .text-container p {
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 25px;
+  line-height: 30px;
   color: #fff;
 }
 .grid-container {
@@ -35,7 +39,7 @@ main {
   grid-gap: 1.3vw;
   height: 100%;
   width: 100%;
-  margin: 10.63% 0 19.83% 0;
+  margin: 0 0 0 0;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(17, 413px);
   grid-template-areas:
@@ -278,6 +282,15 @@ main {
 .grid-item-34 {
   grid-area: grid-item-34;
 }
+
+.post-text {
+  margin: 6.05vw 0 8vw 0;
+}
+.post-text-dots {
+  color: #fff;
+  font-size: 45px;
+  font-family: sans-serif;
+}
 @media (max-width: 1800px) {
   .grid-container {
     grid-template-rows: repeat(17, 387.5px);
@@ -354,6 +367,24 @@ main {
   }
 }
 @media (max-width: 480px) {
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 22.2vw 0 3.8vw 0;
+  }
+  .text-container h1 {
+    font-size: 25px;
+  }
+  .text-container p {
+    font-size: 13px;
+    line-height: 18px;
+    display: inline;
+  }
+  .post-text-dots {
+    font-size: 35px;
+  }
+
   .grid-container {
     grid-gap: 5vw;
     grid-template-columns: 1fr;
@@ -421,6 +452,9 @@ main {
 @media (max-width: 375px) {
   .grid-container {
     grid-template-rows: repeat(51, 249px);
+  }
+  .text-container p {
+    font-size: 11.4px;
   }
 }
 @media (max-width: 320px) {
