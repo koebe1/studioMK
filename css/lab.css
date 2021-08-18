@@ -410,7 +410,7 @@ main {
         4,
         310px
       )
-      0vw repeat(3, 310px) 0vw 310px repeat(12, 310px) 310px;
+      0vw repeat(3, 310px) 0vw 310px 0vw repeat(12, 310px) 310px;
 
     grid-template-areas:
       "grid-item-1"
@@ -486,7 +486,7 @@ main {
         4,
         294px
       )
-      0vw repeat(3, 294px) 0vw 294px repeat(12, 294px) 294px;
+      0vw repeat(3, 294px) 0vw 294px 0vw repeat(12, 294px) 294px;
   }
 }
 @media (max-width: 375px) {
@@ -497,7 +497,7 @@ main {
         4,
         249px
       )
-      0vw repeat(3, 249px) 0vw 249px repeat(12, 249px) 249px;
+      0vw repeat(3, 249px) 0vw 249px 0vw repeat(12, 249px) 249px;
   }
   .text-container p {
     font-size: 11.4px;
@@ -514,6 +514,6 @@ main {
         4,
         212.5px
       )
-      0vw repeat(3, 212.5px) 0vw 212.5px repeat(12, 212.5px) 212.5px;
+      0vw repeat(3, 212.5px) 0vw 212.5px 0vw repeat(12, 212.5px) 212.5px;
   }
 }
