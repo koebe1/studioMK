@@ -7,16 +7,21 @@ main {
 
 .main-text {
   display: flex;
-  margin-top: 9.5vh;
-  padding: 8.5vh 0 8.5vh 0;
+  margin: 9.5vh 0 0 0;
+  width: 100%;
+  padding: 9vw 0 11.1vw 0;
   justify-content: center;
   align-items: center;
   /* fixed vh bug in mobile version in the js file */
   /* height: 75vh; */
-  font-size: 70px;
+  font-size: 65px;
+}
+
+#main-text-mobile {
+  display: none;
 }
 .indented {
-  text-indent: 22%;
+  text-indent: 10%;
 }
 
 .slider-container {
@@ -55,7 +60,7 @@ main {
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  height: 14.4vh;
+  height: 8.7vw;
 }
 
 .slider-sub-left {
@@ -114,7 +119,6 @@ main {
   padding: 10.1vh 0 0 15vw;
 }
 
-
 #slider-1 {
   background-image: url("../pictures/index/01_yes/yes1.jpg");
 }
@@ -144,9 +148,20 @@ main {
 }
 
 /* BREAKPOINTS */
+@media (min-width: 2300px) {
+  .main-text {
+    font-size: 80px;
+  }
+}
+/* @media (min-width: 2100px) {
+  .main-text {
+    font-size: 70px;
+  }
+} */
+
 @media (max-width: 1865px) {
   .main-text {
-    font-size: 65px;
+    font-size: 60px;
   }
   .info-card {
     font-size: 20px;
@@ -156,7 +171,8 @@ main {
 
 @media (max-width: 1750px) {
   .main-text {
-    font-size: 58px;
+    font-size: 55px;
+    line-height: 65px;
   }
 }
 
@@ -165,7 +181,8 @@ main {
     font-size: 20px;
   }
   .main-text {
-    font-size: 55px;
+    font-size: 50px;
+    line-height: 60px;
   }
   .slider {
     max-height: 800px;
@@ -179,15 +196,17 @@ main {
     font-size: 25px;
   }
 }
-@media (max-width: 1515px) {
+@media (max-width: 1500px) {
   .main-text {
-    font-size: 50px;
+    font-size: 45px;
+    line-height: 55px;
   }
 }
 
 @media (max-width: 1400px) {
   .main-text {
-    font-size: 45px;
+    font-size: 40px;
+    line-height: 50px;
   }
   .slider {
     max-height: 700px;
@@ -197,10 +216,13 @@ main {
     line-height: 25px;
   }
 }
-@media (max-width: 1192px) {
+@media (max-width: 1250px) {
   .main-text {
-    font-size: 38px;
+    font-size: 35px;
+    line-height: 45px;
   }
+}
+@media (max-width: 1192px) {
   .info-card {
     font-size: 14px;
     line-height: 23px;
@@ -208,7 +230,8 @@ main {
 }
 @media (max-width: 1024px) {
   .main-text {
-    font-size: 33px;
+    font-size: 30px;
+    line-height: 40px;
   }
   .slider {
     max-height: 600px;
@@ -230,7 +253,8 @@ main {
 }
 @media (max-width: 880px) {
   .main-text {
-    font-size: 29px;
+    font-size: 25px;
+    line-height: 35px;
   }
   .slider {
     max-height: 500px;
@@ -245,7 +269,8 @@ main {
 /* tablet */
 @media (max-width: 768px) {
   .main-text {
-    font-size: 25px;
+    font-size: 20px;
+    line-height: 25px;
   }
   .slider-sub {
     font-size: 18px;
@@ -253,7 +278,8 @@ main {
 }
 @media (max-width: 665px) {
   .main-text {
-    font-size: 21px;
+    font-size: 18px;
+    line-height: 23px;
   }
   .slider-sub {
     font-size: 16px;
@@ -265,7 +291,8 @@ main {
 }
 @media (max-width: 560px) {
   .main-text {
-    font-size: 18px;
+    font-size: 15px;
+    line-height: 20px;
   }
   .slider-sub {
     font-size: 15px;
@@ -306,9 +333,20 @@ main {
     margin-bottom: 9.5vh;
   }
   .main-text {
+    display: flex;
+    justify-content: center;
     line-height: 18px;
     font-size: 13px;
-    padding: 8.5vh 0 8.5vh 0;
+    padding: 12vw 0 13.7vw 0;
+  }
+  #main-text-mobile {
+    display: block;
+  }
+  #main-text-desktop {
+    display: none;
+  }
+  .indented {
+    text-indent: 22%;
   }
 
   .slider-sub {

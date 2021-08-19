@@ -375,15 +375,15 @@ let sliderSubs = document.querySelectorAll(".slider-sub");
 if (window.innerWidth <= 480) {
   let vh = window.innerHeight / 100;
 
-  mainText.style.padding = `${vh * 8.5}px 0 ${vh * 8.5}px 0`;
-  mainText.style.marginTop = `${vh * 9.5}px`;
+  // mainText.style.padding = `${vh * 8.5}px 0 ${vh * 8.5}px 0`;
+  // mainText.style.marginTop = `${vh * 9.5}px`;
 }
 
 // on resize
 window.addEventListener("resize", () => {
   if (window.innerWidth <= 480) {
     let vh = window.innerHeight / 100;
-    mainText.style.padding = `${vh * 8.5}px 0 ${vh * 8.5}px 0`;
-    mainText.style.marginTop = `${vh * 9.5}px`;
+    // mainText.style.padding = `${vh * 8.5}px 0 ${vh * 8.5}px 0`;
+    // mainText.style.marginTop = `${vh * 9.5}px`;
   }
 });

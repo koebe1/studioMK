@@ -165,12 +165,23 @@ nav {
 
 @media (max-width: 480px) {
   nav {
+    height: 15vw;
     font-size: 17px;
-    padding: 1.75vh 2.4vw;
+    padding: 0vw 2.4vw;
+  }
+  .main-text {
+    padding-top: 0vw;
   }
   #logo {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+  }
+  #logo a {
+    padding: 0;
+  }
+  .nav-links {
+    display: flex;
     align-items: center;
   }
 
@@ -188,7 +199,7 @@ nav {
 }
 
 @media (max-width: 375px) {
-  #nav-mobile-links li a {
-    font-size: 23px;
+  .main-text p {
+    font-size: 11px;
   }
 }

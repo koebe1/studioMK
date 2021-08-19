@@ -2,21 +2,28 @@
 let brand = document.querySelector(".brand");
 let illustration = document.querySelector(".illustration");
 let print = document.querySelector(".print");
-let web = document.querySelector(".web");
+let corporateDesign = document.querySelector(".corporate-design");
+let screendesign = document.querySelector(".screendesign");
+let verpackungsdesign = document.querySelector(".verpackungsdesign");
 let gridContainer = document.getElementById("work-grid-container");
 let gridItems = gridContainer.children;
 
-brand.addEventListener("click", () => filter(brand), false);
+brand.addEventListener("click", () => filter(brand));
 illustration.addEventListener("click", () => filter(illustration));
 print.addEventListener("click", () => filter(print));
-web.addEventListener("click", () => filter(web));
+corporateDesign.addEventListener("click", () => filter(corporateDesign));
+screendesign.addEventListener("click", () => filter(screendesign));
+verpackungsdesign.addEventListener("click", () => filter(verpackungsdesign));
 
-// to make the filter function work give the elements with the class label "work-grid-item a class of (brand, illustration, print, web)"
+// to make the filter function work give the elements with the class label "work-grid-item a class of (illustration, print...)"
+function findCommon(arr1, arr2) {
+  return arr1.some(item => arr2.includes(item));
+}
+
 let filtered = [];
 let filter = target => {
   // filter is on
   if (target.classList.contains("on")) {
-    target.classList.add("off");
     target.classList.remove("on");
 
     // remove target.id from filtered
@@ -29,7 +36,6 @@ let filter = target => {
     // filter is off
   } else {
     target.classList.add("on");
-    target.classList.remove("off");
 
     // add target.id to filtered
     if (!filtered.includes(target.id)) {
@@ -41,10 +47,15 @@ let filter = target => {
     // check if filtered is empty
     if (filtered.length === 0) {
       item.style.display = "block";
-    } else if (!filtered.includes(item.classList[1])) {
-      item.style.display = "none";
-    } else {
+      // if item has any class that is in filtered list -> show item
+    } else if (
+      filtered.some(f => {
+        return item.classList.contains(f);
+      })
+    ) {
       item.style.display = "block";
+    } else {
+      item.style.display = "none";
     }
   }
 };

@@ -1,13 +1,20 @@
 main {
   flex-direction: column;
   font-size: 25px;
-  margin: 14vh 2.19vw 14vh 2.19vw;
+  margin: 9.5vh 2.19vw 0 2.19vw;
+}
+
+.heading {
+  margin-top: 5.3vw;
+}
+.heading h1 {
+  font-size: 70px;
+  line-height: 84px;
 }
 
 /* filter */
-
 .filter {
-  padding: 6vw 0 2.3vw 0;
+  padding: 4vw 0 1.5vw 0;
 }
 .filter-name {
   font-family: "Non Natural Grotesk Light";
@@ -66,11 +73,20 @@ main {
   align-items: center;
   width: 100%;
   height: 2.8vw;
-  background-color: white;
+  background-color: #fff;
 }
 .dots {
   font-size: 30px;
   padding-left: 3.5%;
+}
+
+.post-text {
+  margin: 6.05vw 0 8.1vw 0;
+}
+.post-text-dots {
+  color: #000000;
+  font-size: 35px;
+  font-family: sans-serif;
 }
 
 @media (max-width: 1600px) {
@@ -80,6 +96,28 @@ main {
   .dots {
     font-size: 30px;
   }
+  .heading h1 {
+    font-size: 65px;
+    line-height: 75px;
+  }
+  .filter span {
+    font-size: 23px;
+  }
+}
+@media (max-width: 1400px) {
+  main {
+    font-size: 20px;
+  }
+  .dots {
+    font-size: 30px;
+  }
+  .heading h1 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .filter span {
+    font-size: 21px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -88,6 +126,28 @@ main {
   }
   .dots {
     font-size: 25px;
+  }
+  .heading h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .filter span {
+    font-size: 18px;
+  }
+}
+@media (max-width: 900px) {
+  .work-grid-item-sub {
+    font-size: 14px;
+  }
+  .dots {
+    font-size: 20px;
+  }
+  .heading h1 {
+    font-size: 45px;
+    line-height: 55px;
+  }
+  .filter span {
+    font-size: 15px;
   }
 }
 
@@ -108,13 +168,30 @@ main {
   .dots {
     font-size: 23px;
   }
+  .heading h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .filter span {
+    font-size: 14px;
+  }
 }
 @media (max-width: 650px) {
   .filter {
     font-size: 17px;
   }
   .work-grid-item-sub {
-    font-size: 15px;
+    font-size: 13px;
+  }
+  .dots {
+    font-size: 20px;
+  }
+  .heading h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .filter span {
+    font-size: 12px;
   }
 }
 @media (max-width: 550px) {
@@ -125,7 +202,14 @@ main {
     font-size: 13px;
   }
   .dots {
-    font-size: 20px;
+    font-size: 18px;
+  }
+  .heading h1 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .filter span {
+    font-size: 10px;
   }
 }
 @media (max-width: 480px) {
@@ -147,7 +231,17 @@ main {
     height: 8vw;
   }
   .dots {
+    font-size: 20px;
+  }
+  .heading h1 {
     font-size: 25px;
+    line-height: 35px;
+  }
+  .filter {
+    padding-top: 4vw;
+  }
+  .filter span {
+    font-size: 10px;
   }
 }
 @media (max-width: 420px) {
@@ -155,7 +249,7 @@ main {
     font-size: 17px;
   }
   .dots {
-    font-size: 23px;
+    font-size: 20px;
   }
   .work-grid-item-sub {
     font-size: 17px;
