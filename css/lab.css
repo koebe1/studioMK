@@ -319,6 +319,13 @@ main {
   .grid-container {
     grid-template-rows: repeat(17, 301px);
   }
+  .text-container h1 {
+    font-size: 60px;
+  }
+  .text-container p {
+    font-size: 22px;
+    line-height: 27px;
+  }
 }
 @media (max-width: 1300px) {
   .grid-container {
@@ -339,6 +346,14 @@ main {
   .grid-container {
     grid-template-rows: repeat(17, 220px);
   }
+  .text-container h1 {
+    font-size: 55px;
+    line-height: 70px;
+  }
+  .text-container p {
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 @media (max-width: 900px) {
   .grid-container {
@@ -354,6 +369,14 @@ main {
   .grid-container {
     grid-template-rows: repeat(17, 165px);
   }
+  .text-container h1 {
+    font-size: 50px;
+    line-height: 65px;
+  }
+  .text-container p {
+    font-size: 18px;
+    line-height: 23px;
+  }
 }
 @media (max-width: 700px) {
   .grid-container {
@@ -363,6 +386,14 @@ main {
 @media (max-width: 600px) {
   .grid-container {
     grid-template-rows: repeat(17, 129px);
+  }
+  .text-container h1 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+  .text-container p {
+    font-size: 15px;
+    line-height: 21px;
   }
 }
 @media (max-width: 500px) {
