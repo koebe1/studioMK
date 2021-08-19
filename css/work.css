@@ -85,7 +85,7 @@ main {
 }
 .post-text-dots {
   color: #000000;
-  font-size: 35px;
+  font-size: 40px;
   font-family: sans-serif;
 }
 
@@ -242,6 +242,9 @@ main {
   }
   .filter span {
     font-size: 10px;
+  }
+  .post-text-dots {
+    font-size: 35px;
   }
 }
 @media (max-width: 420px) {
