@@ -1,0 +1,191 @@
+main {
+  margin: 9.5vh 2.19vw 0 2.19vw;
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
+}
+.main-text {
+  margin-top: 12.45vw;
+}
+.main-text p {
+  font-size: 70px;
+}
+section {
+  width: 100%;
+}
+
+.section-1 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 5.3vw;
+}
+
+.miriam-koenig {
+  width: 33%;
+  margin-top: 15vw;
+}
+.miriam-koenig span {
+  font-size: 25px;
+}
+.border {
+  width: 30.4vw;
+  border: 1px solid #000000;
+  margin: 1.25vw 0;
+}
+
+.section-1-text p {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.section-1-img img {
+  width: 52.8vw;
+  object-fit: contain;
+}
+
+.section-2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4.1vw;
+}
+.image-2-mobile {
+  display: none;
+}
+
+.hi-img {
+  margin: 5.4vw 0 0 13.9vw;
+}
+.hi-img img {
+  width: 18.85vw;
+  object-fit: contain;
+}
+
+.section-2-text p {
+  font-size: 20px;
+  line-height: 28px;
+}
+.section-2-text span {
+  font-size: 25px;
+}
+.section-2-text-2 {
+  width: 30.4vw;
+}
+.service {
+  margin-top: 2.5vw;
+}
+.service p {
+  margin-bottom: 0.6vw;
+}
+.section-3 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4.1vw;
+  font-size: 20px;
+  line-height: 28px;
+}
+.section-3 span {
+  font-size: 25px;
+}
+.hi-container {
+  display: flex;
+  justify-content: space-between;
+}
+.address {
+  margin-top: 1.5vw;
+}
+.mail {
+  margin-top: 1.5vw;
+}
+.social {
+  margin-top: 1.5vw;
+}
+
+.social a {
+  display: block;
+  padding: 0;
+}
+
+.friends {
+  margin-top: 2.5vw;
+}
+.friends-links a {
+  display: block;
+  padding: 0;
+  margin-bottom: 0.6vw;
+}
+.friends-links {
+  margin-top: 2.5vw;
+}
+
+.post-text {
+  width: 100%;
+  margin: 9.3vw 0 4.7vw 2.19vw;
+}
+.post-text-dots {
+  color: #000000;
+  font-size: 25px;
+  font-family: sans-serif;
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+  main {
+    margin-top: 15vw;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .main-text {
+    display: none;
+  }
+  .section-1 {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100vw;
+  }
+  .section-1-img {
+    margin-top: 17vw;
+  }
+  .section-1-img img {
+    width: 100vw;
+  }
+  .miriam-koenig {
+    display: flex;
+    flex-direction: column;
+    margin-top: 17.9vw;
+    width: 94%;
+    margin-left: 3%;
+  }
+  .miriam-koenig .border {
+    margin-bottom: 3vw;
+  }
+  .miriam-koenig p {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .miriam-koenig .border {
+    width: 100%;
+  }
+
+  .image-2-mobile {
+    margin: 0;
+    padding: 0;
+    border: 1px solid red;
+    display: block;
+    width: 100%;
+  }
+  .image-2-mobile img {
+    width: 100%;
+    object-fit: contain;
+  }
+  .section-2 {
+    display: none;
+  }
+  .section-3 {
+    display: none;
+  }
+  .post-text-dots {
+    font-size: 35px;
+  }
+}
