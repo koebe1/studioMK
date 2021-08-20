@@ -33,7 +33,10 @@ section {
   border: 1px solid #000000;
   margin: 1.25vw 0;
 }
-
+.miriam-koenig p {
+  font-size: 20px;
+  line-height: 28px;
+}
 .section-1-text p {
   font-size: 20px;
   line-height: 28px;
