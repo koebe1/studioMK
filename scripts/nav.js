@@ -41,3 +41,36 @@ if (window.innerWidth <= 480) {
     body.style.zIndex = "0";
   });
 }
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth <= 480) {
+    dotsMobile.addEventListener("click", () => {
+      body.style.backgroundColor = "#000";
+      body.style.zIndex = "999";
+      navLinks.style.display = "none";
+      nav_.style.display = "none";
+      navMobile.style.display = "flex";
+      main_.style.display = "none";
+      if (footer) {
+        footer.style.display = "none";
+      }
+      nav_.style.padding = "0";
+      navMobile.style.height = `${vh_ * 100}px`;
+      navMobile.style.width = `100vw`;
+      closeContainer.style.height = `${vh_ * 9.5}px`;
+    });
+    close.addEventListener("click", () => {
+      navMobile.style.display = "none";
+      main_.style.display = "flex";
+      if (footer) {
+        footer.style.display = "flex";
+      }
+      navLinks.style.display = "flex";
+      nav_.style.display = "flex";
+
+      nav_.style.padding = "0 2.19vw 0 2.19vw";
+      body.style.backgroundColor = bodyColor;
+      body.style.zIndex = "0";
+    });
+  }
+});

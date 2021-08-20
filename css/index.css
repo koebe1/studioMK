@@ -326,12 +326,12 @@ main {
   }
 
   #play-container {
-    background-image: url("../pictures/index/6_play.jpg");
+    background-image: url("../pictures/info/mobile/info_mobile_mk_3.jpg");
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
-    height: 69.5vw;
+    height: 70vw;
   }
 
   main {
