@@ -255,13 +255,15 @@ section {
   }
 
   .image-4-mobile {
-    display: block;
+    display: inline-block;
+
     margin: 17.8vw 0 17.8vw 0;
-    width: 100%;
+    width: 106%;
+    transform: translateX(-3%);
   }
   .image-4-mobile img {
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
 
   .hi-img {
