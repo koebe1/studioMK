@@ -1,8 +1,6 @@
 main {
   flex-direction: column;
-  margin-left: 0vw;
-  margin-right: 0vw;
-  margin-top: 0;
+  margin: 0 0 0 0;
 }
 
 .main-text {
@@ -100,7 +98,7 @@ main {
   position: absolute;
   opacity: 1;
   line-height: 35px;
-  /* height: 82vh; */
+  height: 82vh;
   width: 100%;
   background-color: white;
   font-size: 22px;
@@ -120,33 +118,40 @@ main {
 }
 
 #slider-1 {
-  background-image: url("../pictures/index/01_yes/yes1.jpg");
+  background-image: url("../pictures/index/1_yes_1920x1063px.jpg");
 }
 #slider-2 {
-  background-image: url("../pictures/index/02_Pfadfinder/pfadfinder_1920x1063px.jpg");
+  background-image: url("../pictures/index/2_pfadis_1920x1063px.jpg");
 }
 #slider-3 {
-  background-image: url("../pictures/index/03_ueberbild/ueberbild1.jpg");
+  background-image: url("../pictures/index/3_ueberbild_1920x1063px6.jpg");
 }
 #slider-4 {
-  background-image: url("../pictures/index/04_neunkubikmeter/01_neunkubikmeter.jpg");
+  background-image: url("../pictures/index/4_neunkubikmeter_1920x1063px6.jpg");
 }
 #slider-5 {
-  background-image: url("../pictures/index/05_luemo/luemo_1920x1063px.jpg");
+  background-image: url("../pictures/index/5_luemo_1920x1063px.jpg");
 }
 #slider-6 {
   background-image: url("../pictures/index/06_united-ip/uip1.jpg");
 }
-#slider-7 {
-  background-image: url("../pictures/index/07_zfkk/zfkk_1920x1063px.jpg");
-}
-#slider-8 {
-  background-image: url("../pictures/index/08_gruppeB/gruppeb_1920x1063px.jpg");
-}
-#slider-9 {
-  background-image: url("../pictures/index/09_365/kalenderblatt_1920x1063px.jpg");
+#play-container {
+  background-image: url("../pictures/index/6_play.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 47vw;
 }
 
+.post-text {
+  margin: 9.3vw 0 0.5vw 2.19vw;
+}
+.post-text-dots {
+  color: #000000;
+  font-size: 25px;
+  font-family: sans-serif;
+}
 /* BREAKPOINTS */
 @media (min-width: 2300px) {
   .main-text {
@@ -319,18 +324,20 @@ main {
   #slider-6 {
     background-image: url("../pictures/work/06_work_uip.jpg");
   }
-  #slider-7 {
-    background-image: url("../pictures/work/07_work_zfkk.jpg");
+
+  #play-container {
+    background-image: url("../pictures/index/6_play.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 69.5vw;
   }
-  #slider-8 {
-    background-image: url("../pictures/work/08_work_b_5.gif");
-  }
-  #slider-9 {
-    background-image: url("../pictures/work/09_work_365.jpg");
-  }
+
   main {
     margin-top: 0vh;
-    margin-bottom: 9.5vh;
+
+    margin-bottom: 6vw;
   }
   .main-text {
     display: flex;
@@ -356,6 +363,7 @@ main {
   .slider-sub-right {
     display: none;
   }
+
   .indented {
     text-indent: 9vw;
   }
@@ -373,6 +381,10 @@ main {
   }
   #dots {
     padding-left: 0 0;
+  }
+  .post-text-dots {
+    font-size: 35px;
+    font-family: sans-serif;
   }
 }
 

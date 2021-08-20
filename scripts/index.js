@@ -47,36 +47,9 @@ const slider5CounterEnd = document.getElementById("slider5-counter-end");
 const slider5 = document.getElementById("slider-5");
 window["counter5"] = 0;
 
-// slider 7
-const info7 = document.getElementById("info-7");
-const infoCard7 = document.querySelector(".info-card-7");
-const slider7ArrLeft = document.getElementById("slider7-arr-left");
-const slider7ArrRight = document.getElementById("slider7-arr-right");
-const slider7CounterCurr = document.getElementById("slider7-counter-current");
-const slider7CounterEnd = document.getElementById("slider7-counter-end");
-const slider7 = document.getElementById("slider-7");
-window["counter7"] = 0;
-// slider 8
-const info8 = document.getElementById("info-8");
-const infoCard8 = document.querySelector(".info-card-8");
-const slider8ArrLeft = document.getElementById("slider8-arr-left");
-const slider8ArrRight = document.getElementById("slider8-arr-right");
-const slider8CounterCurr = document.getElementById("slider8-counter-current");
-const slider8CounterEnd = document.getElementById("slider8-counter-end");
-const slider8 = document.getElementById("slider-8");
-window["counter8"] = 0;
-// slider 9
-const info9 = document.getElementById("info-9");
-const infoCard9 = document.querySelector(".info-card-9");
-const slider9ArrLeft = document.getElementById("slider9-arr-left");
-const slider9ArrRight = document.getElementById("slider9-arr-right");
-const slider9CounterCurr = document.getElementById("slider9-counter-current");
-const slider9CounterEnd = document.getElementById("slider9-counter-end");
-const slider9 = document.getElementById("slider-9");
-window["counter9"] = 0;
-
 //  slider pictures
 const sliderList1 = [
+  "../pictures/index/1_yes_1920x1063px.jpg",
   "../pictures/index/01_yes/yes1.jpg",
   "../pictures/index/01_yes/yes2.jpg",
   "../pictures/index/01_yes/yes3.jpg",
@@ -88,7 +61,7 @@ const sliderList1 = [
   "../pictures/index/01_yes/yes9.jpg"
 ];
 const sliderList2 = [
-  "../pictures/index/02_Pfadfinder/pfadfinder_1920x1063px.jpg",
+  "../pictures/index/2_pfadis_1920x1063px.jpg",
   "../pictures/index/02_Pfadfinder/pfadfinder_1920x1063px2.jpg",
   "../pictures/index/02_Pfadfinder/pfadfinder_1920x1063px3.jpg",
   "../pictures/index/02_Pfadfinder/pfadfinder_1920x1063px4.jpg",
@@ -103,6 +76,7 @@ const sliderList2 = [
   "../pictures/index/02_Pfadfinder/pfadfinder_1920x1063px13.jpg"
 ];
 const sliderList3 = [
+  "../pictures/index/3_ueberbild_1920x1063px6.jpg",
   "../pictures/index/03_ueberbild/ueberbild1.jpg",
   "../pictures/index/03_ueberbild/ueberbild2.jpg",
   "../pictures/index/03_ueberbild/ueberbild3.jpg",
@@ -112,6 +86,7 @@ const sliderList3 = [
   "../pictures/index/03_ueberbild/ueberbild7.jpg"
 ];
 const sliderList4 = [
+  "../pictures/index/4_neunkubikmeter_1920x1063px6.jpg",
   "../pictures/index/04_neunkubikmeter/01_neunkubikmeter.jpg",
   "../pictures/index/04_neunkubikmeter/02_neunkubikmeter.jpg",
   "../pictures/index/04_neunkubikmeter/03_neunkubikmeter.jpg",
@@ -124,6 +99,7 @@ const sliderList4 = [
   "../pictures/index/04_neunkubikmeter/10_neunkubikmeter.jpg"
 ];
 const sliderList5 = [
+  "../pictures/index/5_luemo_1920x1063px.jpg",
   "../pictures/index/05_luemo/luemo_1920x1063px.jpg",
   "../pictures/index/05_luemo/luemo_1920x1063px2.jpg",
   "../pictures/index/05_luemo/luemo_1920x1063px3.jpg",
@@ -133,49 +109,12 @@ const sliderList5 = [
   "../pictures/index/05_luemo/luemo_1920x1063px7.jpg"
 ];
 
-const sliderList7 = [
-  "../pictures/index/07_zfkk/zfkk_1920x1063px.jpg",
-  "../pictures/index/07_zfkk/zfkk_1920x1063px2.jpg",
-  "../pictures/index/07_zfkk/zfkk_1920x1063px3.jpg",
-  "../pictures/index/07_zfkk/zfkk_1920x1063px4.jpg",
-  "../pictures/index/07_zfkk/zfkk_1920x1063px5.jpg",
-  "../pictures/index/07_zfkk/zfkk_1920x1063px6.jpg",
-  "../pictures/index/07_zfkk/zfkk_1920x1063px7.jpg",
-  "../pictures/index/07_zfkk/zfkk_1920x1063px8.jpg",
-  "../pictures/index/07_zfkk/zfkk_1920x1063px9.jpg",
-  "../pictures/index/07_zfkk/zfkk_1920x1063px10.jpg"
-];
-const sliderList8 = [
-  "../pictures/index/08_gruppeB/gruppeb_1920x1063px.jpg",
-  "../pictures/index/08_gruppeB/gruppeb_1920x1063px2.jpg",
-  "../pictures/index/08_gruppeB/gruppeb_1920x1063px3.jpg",
-  "../pictures/index/08_gruppeB/gruppeb_1920x1063px4.jpg",
-  "../pictures/index/08_gruppeB/gruppeb_1920x1063px5.jpg",
-  "../pictures/index/08_gruppeB/gruppeb_1920x1063px6.jpg",
-  "../pictures/index/08_gruppeB/gruppeb_1920x1063px7.jpg",
-  "../pictures/index/08_gruppeB/gruppeb_1920x1063px8.jpg"
-];
-const sliderList9 = [
-  "../pictures/index/09_365/kalenderblatt_1920x1063px.jpg",
-  "../pictures/index/09_365/kalenderblatt_1920x1063px2.jpg",
-  "../pictures/index/09_365/kalenderblatt_1920x1063px3.jpg",
-  "../pictures/index/09_365/kalenderblatt_1920x1063px4.jpg",
-  "../pictures/index/09_365/kalenderblatt_1920x1063px5.jpg",
-  "../pictures/index/09_365/kalenderblatt_1920x1063px6.jpg",
-  "../pictures/index/09_365/kalenderblatt_1920x1063px7.jpg",
-  "../pictures/index/09_365/kalenderblatt_1920x1063px8.jpg",
-  "../pictures/index/09_365/kalenderblatt_1920x1063px9.jpg"
-];
-
 // info slider event listeners
 info1.addEventListener("click", () => infoSlide(info1, infoCard1, slider1));
 info2.addEventListener("click", () => infoSlide(info2, infoCard2, slider2));
 info3.addEventListener("click", () => infoSlide(info3, infoCard3, slider3));
 info4.addEventListener("click", () => infoSlide(info4, infoCard4, slider4));
 info5.addEventListener("click", () => infoSlide(info5, infoCard5, slider5));
-info7.addEventListener("click", () => infoSlide(info7, infoCard7, slider7));
-info8.addEventListener("click", () => infoSlide(info8, infoCard8, slider8));
-info9.addEventListener("click", () => infoSlide(info9, infoCard9, slider9));
 
 if (window.innerWidth > 480) {
   // getting length of the sliders
@@ -184,10 +123,6 @@ if (window.innerWidth > 480) {
   slider3CounterEnd.innerHTML = sliderList3.length;
   slider4CounterEnd.innerHTML = sliderList4.length;
   slider5CounterEnd.innerHTML = sliderList5.length;
-
-  slider7CounterEnd.innerHTML = sliderList7.length;
-  slider8CounterEnd.innerHTML = sliderList8.length;
-  slider9CounterEnd.innerHTML = sliderList9.length;
 
   // event listener for the slider
   slider1ArrLeft.addEventListener("click", () =>
@@ -226,28 +161,6 @@ if (window.innerWidth > 480) {
 
   slider5ArrRight.addEventListener("click", () =>
     slideUp(sliderList5, "counter5", slider5CounterCurr, slider5)
-  );
-
-  slider7ArrLeft.addEventListener("click", () =>
-    slideDown(sliderList7, "counter7", slider7CounterCurr, slider7)
-  );
-
-  slider7ArrRight.addEventListener("click", () =>
-    slideUp(sliderList7, "counter7", slider7CounterCurr, slider7)
-  );
-  slider8ArrLeft.addEventListener("click", () =>
-    slideDown(sliderList8, "counter8", slider8CounterCurr, slider8)
-  );
-
-  slider8ArrRight.addEventListener("click", () =>
-    slideUp(sliderList8, "counter8", slider8CounterCurr, slider8)
-  );
-  slider9ArrLeft.addEventListener("click", () =>
-    slideDown(sliderList9, "counter9", slider9CounterCurr, slider9)
-  );
-
-  slider9ArrRight.addEventListener("click", () =>
-    slideUp(sliderList9, "counter9", slider9CounterCurr, slider9)
   );
 }
 // eventlistener for mobile
@@ -296,34 +209,6 @@ else if (window.innerWidth <= 480) {
   slider5ArrRight.addEventListener(
     "click",
     () => (window.location.href = "../pages/projects/luemo.html")
-  );
-
-  // ZFKK
-  slider7ArrLeft.addEventListener(
-    "click",
-    () => (window.location.href = "../pages/projects/zfkk.html")
-  );
-  slider7ArrRight.addEventListener(
-    "click",
-    () => (window.location.href = "../pages/projects/zfkk.html")
-  );
-  // GRUPPE B
-  slider8ArrLeft.addEventListener(
-    "click",
-    () => (window.location.href = "../pages/projects/gruppe-b.html")
-  );
-  slider8ArrRight.addEventListener(
-    "click",
-    () => (window.location.href = "../pages/projects/gruppe-b.html")
-  );
-  // 365
-  slider9ArrLeft.addEventListener(
-    "click",
-    () => (window.location.href = "../pages/projects/365.html")
-  );
-  slider9ArrRight.addEventListener(
-    "click",
-    () => (window.location.href = "../pages/projects/365.html")
   );
 }
 
