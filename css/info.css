@@ -236,7 +236,6 @@ section {
     display: flex;
     flex-direction: column-reverse;
     width: 100%;
-    border: 1px solid red;
   }
   .friends {
     width: 94%;
@@ -266,10 +265,39 @@ section {
     object-fit: contain;
   }
 
+  .hi {
+    width: 94%;
+    margin-left: 3%;
+  }
+  .hi .border {
+    width: 100%;
+  }
+  .hi-text {
+    margin: 9vw 0 0 0;
+  }
+  .hi-text p {
+    font-size: 13px;
+    line-height: 25px;
+  }
+  .hi-text a {
+    font-size: 13px;
+    line-height: 25px;
+  }
+  .address {
+    margin-top: 6vw;
+  }
+  .mail {
+    margin-top: 6vw;
+  }
+  .social {
+    margin-top: 6vw;
+  }
+
   .hi-img {
     display: none;
   }
   .post-text-dots {
     font-size: 35px;
+    margin-left: 3%;
   }
 }
