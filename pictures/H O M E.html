@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://127.0.0.1:5500/pages/impressum.html -->
+<html lang="de"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    
+    
+    
+    <script src="./H O M E_files/index.js" defer=""></script>
+    <script src="./H O M E_files/nav.js" defer=""></script>
+    <title>H O M E</title>
+  <link rel="icon" href="http://127.0.0.1:5500/pictures/favicon/studiomk_pfeil-06_16x16.svg" sizes="any"><link rel="stylesheet" href="./H O M E_files/styles.css"><link rel="stylesheet" href="./H O M E_files/nav.css"><link rel="stylesheet" href="./H O M E_files/impressum.css"></head>
+
+  <body>
+    <nav>
+      <ul class="nav-links">
+        <div id="logo">
+          <a href="http://127.0.0.1:5500/pages/index.html"><img src="./H O M E_files/studiomk_logo-10.svg" alt=""></a>
+        </div>
+
+        <ul class="nav-links-right">
+          <li>
+            <a href="http://127.0.0.1:5500/pages/work.html">WORK </a>
+            AND
+            <a href="http://127.0.0.1:5500/pages/play.html"> PLAY</a>
+          </li>
+          <li id="info"><a href="http://127.0.0.1:5500/pages/info.html">INFO</a></li>
+          <li><a href="http://127.0.0.1:5500/pages/lab.html">LAB</a></li>
+        </ul>
+      </ul>
+      <span id="dots-mobile">··</span>
+    </nav>
+    <nav id="nav-mobile">
+      <div class="close-container">
+        <span id="close">close</span>
+      </div>
+      <ul id="nav-mobile-links">
+        <li><a href="http://127.0.0.1:5500/pages/work.html">WORK</a></li>
+        <li><a href="http://127.0.0.1:5500/pages/play.html">AND PLAY</a></li>
+        <li><a href="http://127.0.0.1:5500/pages/info.html">INFO</a></li>
+        <li><a href="http://127.0.0.1:5500/pages/lab.html">LAB</a></li>
+      </ul>
+      <span id="nav-mobile-dots">··</span>
+      <ul id="nav-mobile-footer">
+        <li><a href="http://127.0.0.1:5500/pages/impressum.html">Mail</a></li>
+        <li><a href="http://127.0.0.1:5500/pages/impressum.html">Brief</a></li>
+        <li id="nav-mobile-insta"><a href="http://127.0.0.1:5500/pages/impressum.html">Instagram</a></li>
+        <li><a href="http://127.0.0.1:5500/pages/impressum.html">Behance</a></li>
+        <li><a href="http://127.0.0.1:5500/pages/impressum.html">LinkedIn</a></li>
+        <li id="nav-mobile-friends"><a href="http://127.0.0.1:5500/pages/impressum.html">Friends</a></li>
+        <li id="nav-mobile-shop"><a href="http://127.0.0.1:5500/pages/impressum.html">Shop</a></li>
+        <li><a href="http://127.0.0.1:5500/pages/impressum.html">Impressum</a></li>
+        <li><a href="http://127.0.0.1:5500/pages/impressum.html">Datenschutz</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <div id="impressum">
+          <span>IMPRESSUM</span>
+          <div class="border"></div>
+        </div>
+        <div id="datenschutz">
+          <span>DATENSCHUTZ</span>
+          <div class="border"></div>
+        </div>
+      </section>
+    </main>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

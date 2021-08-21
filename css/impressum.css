@@ -1,0 +1,114 @@
+main {
+  flex-direction: column;
+  color: #000000;
+  margin: 9.5vh 2.19vw 0 2.19vw;
+}
+
+section {
+  width: 100%;
+  margin-top: 4.7vw;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+}
+/* IMPRESSUM */
+.bold {
+  font-family: "Non Natural Grotesk Medium";
+}
+.light {
+  font-family: "Non Natural Grotesk Light";
+}
+#impressum {
+  width: 32%;
+}
+#impressum span {
+  font-size: 25px;
+}
+#datenschutz {
+  width: 66.15%;
+}
+#datenschutz span {
+  font-size: 25px;
+}
+.border {
+  border: 1px solid #000000;
+  margin: 1.25vw 0 2.5vw 0;
+}
+.address {
+  margin-top: 2.5vw;
+}
+.contact {
+  margin-top: 2.5vw;
+}
+.fotos {
+  margin-top: 2.5vw;
+}
+.text {
+  margin-top: 2.5vw;
+}
+.dev {
+  margin-top: 2.5vw;
+}
+.post-text {
+  margin: 6.05vw 0 8.1vw 0;
+}
+.post-text-dots {
+  color: #000000;
+  font-size: 35px;
+  font-family: sans-serif;
+}
+
+@media (max-width: 768px) {
+  section {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.4px;
+  }
+  #impressum span {
+    font-size: 23px;
+  }
+  #datenschutz span {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 600px) {
+  section {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+  }
+  #impressum span {
+    font-size: 21px;
+  }
+  #datenschutz span {
+    font-size: 21px;
+  }
+}
+/* mobile */
+@media (max-width: 480px) {
+  main {
+    margin-top: 15vw;
+  }
+  section {
+    flex-direction: column;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.33px;
+  }
+  #impressum {
+    width: 100%;
+  }
+  #impressum span {
+    font-size: 13px;
+  }
+  #datenschutz {
+    width: 100%;
+    margin-top: 11vw;
+  }
+  #datenschutz span {
+    font-size: 13px;
+  }
+}
