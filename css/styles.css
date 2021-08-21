@@ -48,3 +48,7 @@ main {
   font-weight: bold;
   font-family: sans-serif;
 }
+
+.post-text-arr {
+  cursor: pointer;
+}
