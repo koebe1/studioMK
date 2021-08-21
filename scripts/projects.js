@@ -67,10 +67,10 @@ let sliderSub = document.querySelector(".slider-sub");
 let vh = window.innerHeight / 100;
 
 swiperContainer.style.height = `${vh * 81}px`;
-infoContainer.style.height = `${vh * 81}px`;
 nav.style.height = `${vh * 9.5}px`;
 sliderSub.style.height = `${vh * 9.5}px`;
 main.style.margin = "9.5vh 0 0 0";
+infoContainer.style.height = `${vh * 81}px`;
 
 // on resize
 window.addEventListener("resize", () => {

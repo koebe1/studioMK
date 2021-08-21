@@ -287,12 +287,19 @@ main {
 }
 
 .post-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
   margin: 6.05vw 0 8.1vw 0;
 }
 .post-text-dots {
   color: #fff;
   font-size: 35px;
   font-family: sans-serif;
+}
+.post-text-arr {
+  color: #fff;
+  font-size: 35px;
 }
 
 @media (max-width: 1800px) {
@@ -429,6 +436,9 @@ main {
     color: #fff;
     font-size: 15px;
     padding-left: 3vw;
+  }
+  .post-text {
+    margin-top: 15vw;
   }
   .grid-item-subtext .arr {
     font-size: 23px;

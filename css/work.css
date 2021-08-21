@@ -81,12 +81,19 @@ main {
 }
 
 .post-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
   margin: 6.05vw 0 8.1vw 0;
 }
 .post-text-dots {
   color: #000000;
   font-size: 35px;
   font-family: sans-serif;
+}
+.post-text-arr {
+  color: #000000;
+  font-size: 35px;
 }
 
 @media (max-width: 1600px) {

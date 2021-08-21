@@ -272,3 +272,4 @@ window.addEventListener("resize", () => {
     // mainText.style.marginTop = `${vh * 9.5}px`;
   }
 });
+
