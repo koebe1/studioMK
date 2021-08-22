@@ -127,7 +127,7 @@ main {
   /* height: 81vh; */
   width: 100vw;
   line-height: 35px;
-  font-size: 20px;
+  font-size: 25px;
   z-index: 2;
   overflow: hidden;
 }
@@ -165,15 +165,23 @@ span.info-card-dots {
 }
 
 .info-heading {
-  margin-bottom: 2.6vw;
+  margin-bottom: 3.3vw;
 }
 .paragraph-after {
-  margin-bottom: 1.8vw;
+  margin-bottom: 1.3vw;
 }
 .paragraph-large-before {
-  margin-top: 4vw;
+  margin-top: 4.5vw;
 }
-
+@media (max-width: 1400px) {
+  .info-container {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  span.info-card-dots {
+    font-size: 30px;
+  }
+}
 @media (max-width: 1024px) {
   .slider-sub {
     font-size: 20px;
@@ -184,6 +192,13 @@ span.info-card-dots {
   .info {
     margin-right: 4vw;
   }
+  .info-container {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  span.info-card-dots {
+    font-size: 28px;
+  }
 }
 @media (max-width: 768px) {
   .slider-sub {
@@ -192,15 +207,43 @@ span.info-card-dots {
   #dots {
     font-size: 21px;
   }
+  .info-container {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  span.info-card-dots {
+    font-size: 25px;
+  }
+  .paragraph-after {
+    margin-bottom: 1vw;
+  }
 }
-@media (max-width: 600px) {
+@media (max-width: 610px) {
   .slider-sub {
     font-size: 16px;
   }
   #dots {
     font-size: 19px;
   }
+  .info-container {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  span.info-card-dots {
+    font-size: 20px;
+  }
 }
+
+@media (max-width: 550px) {
+  .info-container {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  span.info-card-dots {
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 480px) {
   nav {
     height: 15vw;
@@ -213,7 +256,13 @@ span.info-card-dots {
   }
   .info-container {
     font-size: 12px;
-    line-height: 14px;
+    line-height: 0px;
+  }
+  span.info-card-dots {
+    font-size: 20px;
+  }
+  .paragraph-after {
+    margin-bottom: 0vw;
   }
   .swiper-slide img {
     width: 100%;
