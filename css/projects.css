@@ -293,7 +293,7 @@ span.info-card-dots {
     object-position: center;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 450px) {
   .slider-sub {
     font-size: 12px;
   }
@@ -304,5 +304,8 @@ span.info-card-dots {
 @media (max-width: 375px) {
   .info-container span {
     line-height: 23px;
+  }
+  .slider-sub {
+    font-size: 10px;
   }
 }
