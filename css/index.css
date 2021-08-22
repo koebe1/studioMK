@@ -126,9 +126,18 @@ main {
   line-height: 35px;
   font-family: "Non Natural Grotesk Light";
 }
+.info-heading {
+  margin-bottom: 3.3vw;
+}
+.paragraph-after {
+  margin-bottom: 1.3vw;
+}
+.paragraph-large-before {
+  margin-top: 4.5vw;
+}
 
 span.info-card-dots {
-  font-size: 45px;
+  font-size: 35px;
   font-family: sans-serif;
 }
 
@@ -218,6 +227,10 @@ span.info-card-dots {
   .dots {
     font-size: 25px;
   }
+  span.info-card-dots {
+    font-size: 30px;
+    font-family: sans-serif;
+  }
 }
 @media (max-width: 1500px) {
   .main-text {
@@ -235,9 +248,24 @@ span.info-card-dots {
     max-height: 700px;
   }
   .info-card {
-    font-size: 16px;
-    line-height: 20px;
     max-height: 700px;
+  }
+  .info-card span {
+    line-height: 30px;
+  }
+
+  .info-heading {
+    margin-bottom: 3.3vw;
+  }
+  .paragraph-after {
+    margin-bottom: 1.3vw;
+  }
+  .paragraph-large-before {
+    margin-top: 4.5vw;
+  }
+  span.info-card-dots {
+    font-size: 25px;
+    font-family: sans-serif;
   }
 }
 @media (max-width: 1250px) {
@@ -248,11 +276,7 @@ span.info-card-dots {
 }
 @media (max-width: 1192px) {
   .info-card {
-    font-size: 14px;
-    line-height: 15px;
-  }
-  span.info-card-dots {
-    font-size: 30px;
+    font-size: 16px;
   }
 }
 @media (max-width: 1024px) {
@@ -267,9 +291,16 @@ span.info-card-dots {
     max-height: 150px;
   }
   .info-card {
-    font-size: 10px;
-
     max-height: 600px;
+  }
+
+  .info-card span {
+    line-height: 25px;
+  }
+
+  span.info-card-dots {
+    font-size: 20px;
+    font-family: sans-serif;
   }
 }
 @media (max-width: 880px) {
@@ -282,9 +313,22 @@ span.info-card-dots {
   }
   .info-card {
     max-height: 500px;
-    font-size: 9px;
-    line-height: 0px;
+    font-size: 14px;
   }
+  .info-heading {
+    margin-bottom: 3.3vw;
+  }
+  .paragraph-after {
+    margin-bottom: 1.3vw;
+  }
+  .paragraph-large-before {
+    margin-top: 4.5vw;
+  }
+
+  .info-card span {
+    line-height: 22px;
+  }
+
   span.info-card-dots {
     font-size: 20px;
   }
@@ -299,6 +343,12 @@ span.info-card-dots {
   .slider-sub {
     font-size: 18px;
   }
+  .info-card {
+    font-size: 12px;
+  }
+  .info-card span {
+    line-height: 18px;
+  }
 }
 @media (max-width: 665px) {
   .main-text {
@@ -309,8 +359,7 @@ span.info-card-dots {
     font-size: 16px;
   }
   .info-card {
-    font-size: 8px;
-    line-height: 2px;
+   
   }
 }
 @media (max-width: 560px) {
@@ -322,7 +371,7 @@ span.info-card-dots {
     font-size: 15px;
   }
   .info-card {
-    font-size: 6px;
+ 
   }
 }
 

@@ -174,7 +174,7 @@ span.info-card-dots {
   margin-top: 4.5vw;
 }
 @media (max-width: 1400px) {
-  .info-container {
+  .info-container span {
     font-size: 20px;
     line-height: 30px;
   }
@@ -208,10 +208,14 @@ span.info-card-dots {
     font-size: 21px;
   }
   .info-container {
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 16px; 
+  }
+  .info-container span {
+    font-size: 16px; 
+    line-height: 30px;
   }
   span.info-card-dots {
+
     font-size: 25px;
   }
   .paragraph-after {
@@ -255,14 +259,31 @@ span.info-card-dots {
     font-size: 17px;
   }
   .info-container {
-    font-size: 12px;
-    line-height: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 11px;
+    line-height: 15px;
+  }
+  .info-card-left {
+    width: 100%;
+    padding: 12vw 8vw 0 8vw;
+  }
+  .info-card-right {
+    padding: 0vw 8vw 14vw 8vw;
+    width: 100%;
   }
   span.info-card-dots {
     font-size: 20px;
   }
+  .info-heading {
+    margin-bottom: 4vw;
+  }
   .paragraph-after {
-    margin-bottom: 0vw;
+    margin-bottom: 0.5vw;
+  }
+  .paragraph-large-before {
+    margin-top: 0vw;
   }
   .swiper-slide img {
     width: 100%;
