@@ -208,14 +208,13 @@ span.info-card-dots {
     font-size: 21px;
   }
   .info-container {
-    font-size: 16px; 
+    font-size: 16px;
   }
   .info-container span {
-    font-size: 16px; 
+    font-size: 16px;
     line-height: 30px;
   }
   span.info-card-dots {
-
     font-size: 25px;
   }
   .paragraph-after {
@@ -259,7 +258,6 @@ span.info-card-dots {
     font-size: 17px;
   }
   .info-container {
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     font-size: 11px;
