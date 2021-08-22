@@ -78,19 +78,16 @@ main {
 .dots {
   font-size: 30px;
   padding-left: 3.5%;
+  letter-spacing: 0.2vw;
 }
 
 .post-text {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: flex-end;
   margin: 6.05vw 0 8.1vw 0;
 }
-.post-text-dots {
-  color: #000000;
-  font-size: 35px;
-  font-family: sans-serif;
-}
+
 .post-text-arr {
   color: #000000;
   font-size: 35px;
@@ -99,9 +96,6 @@ main {
 @media (max-width: 1600px) {
   main {
     font-size: 20px;
-  }
-  .dots {
-    font-size: 30px;
   }
   .heading h1 {
     font-size: 65px;
@@ -238,7 +232,8 @@ main {
     height: 8vw;
   }
   .dots {
-    font-size: 20px;
+    font-size: 18px;
+    letter-spacing: 1.6px;
   }
   .heading h1 {
     font-size: 25px;
@@ -250,9 +245,7 @@ main {
   .filter span {
     font-size: 10px;
   }
-  .post-text-dots {
-    font-size: 35px;
-  }
+
 }
 @media (max-width: 420px) {
   .filter {

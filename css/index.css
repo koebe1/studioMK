@@ -70,7 +70,8 @@ main {
 }
 
 .dots {
-  font-size: 35px;
+  font-size: 30px;
+  letter-spacing: 0.2vw;
 }
 
 .slider-sub-right {
@@ -131,15 +132,6 @@ span.info-card-dots {
   font-family: sans-serif;
 }
 
-.post-text {
-  margin: 6.05vw 2.19vw 0vw 2.19vw;
-}
-.post-text-dots {
-  color: #000000;
-  font-size: 35px;
-  font-family: sans-serif;
-}
-
 #slider-1 {
   background-image: url("../pictures/index/1_yes_1920x1063px.jpg");
 }
@@ -167,6 +159,17 @@ span.info-card-dots {
   height: 47vw;
 }
 
+.post-text {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 6.05vw 2.19vw 8.1vw 0;
+}
+
+.post-text-arr {
+  color: #000000;
+  font-size: 35px;
+}
 /* BREAKPOINTS */
 @media (min-width: 2300px) {
   .main-text {
@@ -356,14 +359,13 @@ span.info-card-dots {
 
   main {
     margin-top: 0vh;
-
     margin-bottom: 6vw;
   }
   .main-text {
     display: flex;
     justify-content: center;
-    line-height: 18px;
-    font-size: 13px;
+    line-height: 20px;
+    font-size: 15px;
     padding: 10vw 0 13.7vw 0;
   }
   #main-text-mobile {
@@ -377,7 +379,7 @@ span.info-card-dots {
   }
 
   .slider-sub {
-    font-size: 20px;
+    font-size: 18px;
     height: 14.3vw;
   }
   .slider-sub-right {
@@ -392,6 +394,7 @@ span.info-card-dots {
   }
   .dots {
     font-size: 18px;
+    letter-spacing: 1.6px;
   }
   .filter-label {
     display: none;
@@ -408,6 +411,10 @@ span.info-card-dots {
 }
 
 @media (max-width: 420px) {
+  .main-text p {
+    font-size: 13px;
+    line-height: 17px;
+  }
 }
 @media (max-width: 375px) {
 }

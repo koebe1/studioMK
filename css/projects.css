@@ -40,7 +40,7 @@ main {
   justify-content: center;
   align-items: center;
   /* height is set in js file due to bugs with vh unit in mobile */
-  /* height: 81vh; */
+  height: 81vh;
   width: 100vw;
   flex-direction: column;
 }
@@ -50,7 +50,7 @@ main {
 .arrow-right {
   cursor: url("../fonts/cursor_right.png"), pointer;
 }
-.swiper-container img {
+.swiper-slide img {
   height: 100%;
   width: 100%;
   object-fit: contain;
@@ -89,6 +89,7 @@ main {
 
 .dots {
   font-size: 18px;
+  letter-spacing: 0.2vw;
 }
 
 .slider-sub-right {
@@ -187,6 +188,9 @@ span.info-card-dots {
   }
 }
 @media (max-width: 480px) {
+  nav {
+    height: 15vw;
+  }
   .slider-sub {
     font-size: 14px;
   }
@@ -195,6 +199,12 @@ span.info-card-dots {
   }
   .info-container {
     line-height: 14px;
+  }
+  .swiper-slide img {
+    width: 100%;
+
+    object-fit: cover;
+    object-position: center;
   }
 }
 @media (max-width: 420px) {

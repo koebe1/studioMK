@@ -288,17 +288,13 @@ main {
 
 .post-text {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: flex-end;
   margin: 6.05vw 0 8.1vw 0;
 }
-.post-text-dots {
-  color: #fff;
-  font-size: 35px;
-  font-family: sans-serif;
-}
+
 .post-text-arr {
-  color: #fff;
+  color: #ffffff;
   font-size: 35px;
 }
 
@@ -423,9 +419,7 @@ main {
     line-height: 18px;
     display: inline;
   }
-  .post-text-dots {
-    font-size: 35px;
-  }
+
 
   .grid-item-subtext {
     display: flex;

@@ -66,20 +66,39 @@ let swiperContainer = document.querySelector(".swiper-container");
 let sliderSub = document.querySelector(".slider-sub");
 let vh = window.innerHeight / 100;
 
-swiperContainer.style.height = `${vh * 81}px`;
-nav.style.height = `${vh * 9.5}px`;
-sliderSub.style.height = `${vh * 9.5}px`;
-main.style.margin = "9.5vh 0 0 0";
-infoContainer.style.height = `${vh * 81}px`;
-
-// on resize
-window.addEventListener("resize", () => {
-  // We execute the same script as before
-  let vh = window.innerHeight * 0.01;
-  // set swiper-container height to 81vh
+if (window.innerWidth > 480) {
   swiperContainer.style.height = `${vh * 81}px`;
-  infoContainer.style.height = `${vh * 81}px`;
   nav.style.height = `${vh * 9.5}px`;
   sliderSub.style.height = `${vh * 9.5}px`;
   main.style.margin = "9.5vh 0 0 0";
+  infoContainer.style.height = `${vh * 81}px`;
+}
+if (window.innerWidth <= 480) {
+  nav.style.height = "15vw";
+  sliderSub.style.height = "15vw";
+  swiperContainer.style.height = `calc(${vh * 100}px - 30vw)`;
+  main.style.margin = "15vw 0 0 0";
+}
+
+// on resize
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 480) {
+    // We execute the same script as before
+    let vh = window.innerHeight * 0.01;
+    // set swiper-container height to 81vh
+    swiperContainer.style.height = `${vh * 81}px`;
+    infoContainer.style.height = `${vh * 81}px`;
+    nav.style.height = `${vh * 9.5}px`;
+    sliderSub.style.height = `${vh * 9.5}px`;
+    main.style.margin = "9.5vh 0 0 0";
+  }
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth <= 480) {
+    nav.style.height = "15vw";
+    sliderSub.style.height = "15vw";
+    swiperContainer.style.height = `calc(${vh * 100}px - 30vw)`;
+    main.style.margin = "15vw 0 0 0";
+  }
 });
