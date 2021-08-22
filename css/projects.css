@@ -295,7 +295,7 @@ span.info-card-dots {
 }
 @media (max-width: 450px) {
   .slider-sub {
-    font-size: 12px;
+    font-size: 10px;
   }
   #dots {
     font-size: 15px;
@@ -306,6 +306,6 @@ span.info-card-dots {
     line-height: 23px;
   }
   .slider-sub {
-    font-size: 10px;
+    font-size: 9px;
   }
 }
