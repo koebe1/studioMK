@@ -49,64 +49,64 @@ window["counter5"] = 0;
 
 //  slider pictures
 const sliderList1 = [
-  "../pictures/index/1_yes_1920x1063px.jpg",
-  "../pictures/index/01_yes/yes1.jpg",
-  "../pictures/index/01_yes/yes2.jpg",
-  "../pictures/index/01_yes/yes3.jpg",
-  "../pictures/index/01_yes/yes4.jpg",
-  "../pictures/index/01_yes/yes5.jpg",
-  "../pictures/index/01_yes/yes6.jpg",
-  "../pictures/index/01_yes/yes7.jpg",
-  "../pictures/index/01_yes/yes8.jpg",
-  "../pictures/index/01_yes/yes9.jpg"
+  "pictures/index/1_yes_1920x1063px.jpg",
+  "pictures/index/01_yes/yes1.jpg",
+  "pictures/index/01_yes/yes2.jpg",
+  "pictures/index/01_yes/yes3.jpg",
+  "pictures/index/01_yes/yes4.jpg",
+  "pictures/index/01_yes/yes5.jpg",
+  "pictures/index/01_yes/yes6.jpg",
+  "pictures/index/01_yes/yes7.jpg",
+  "pictures/index/01_yes/yes8.jpg",
+  "pictures/index/01_yes/yes9.jpg"
 ];
 const sliderList2 = [
-  "../pictures/index/2_pfadis_1920x1063px.jpg",
-  "../pictures/index/02_Pfadfinder/pfadfinder_1920x1063px2.jpg",
-  "../pictures/index/02_Pfadfinder/pfadfinder_1920x1063px3.jpg",
-  "../pictures/index/02_Pfadfinder/pfadfinder_1920x1063px4.jpg",
-  "../pictures/index/02_Pfadfinder/pfadfinder_1920x1063px5.jpg",
-  "../pictures/index/02_Pfadfinder/pfadfinder_1920x1063px6.jpg",
-  "../pictures/index/02_Pfadfinder/pfadfinder_1920x1063px7.jpg",
-  "../pictures/index/02_Pfadfinder/pfadfinder_1920x1063px8.jpg",
-  "../pictures/index/02_Pfadfinder/pfadfinder_1920x1063px9.jpg",
-  "../pictures/index/02_Pfadfinder/pfadfinder_1920x1063px10.jpg",
-  "../pictures/index/02_Pfadfinder/pfadfinder_1920x1063px11.jpg",
-  "../pictures/index/02_Pfadfinder/pfadfinder_1920x1063px12.jpg",
-  "../pictures/index/02_Pfadfinder/pfadfinder_1920x1063px13.jpg"
+  "pictures/index/2_pfadis_1920x1063px.jpg",
+  "pictures/index/02_Pfadfinder/pfadfinder_1920x1063px2.jpg",
+  "pictures/index/02_Pfadfinder/pfadfinder_1920x1063px3.jpg",
+  "pictures/index/02_Pfadfinder/pfadfinder_1920x1063px4.jpg",
+  "pictures/index/02_Pfadfinder/pfadfinder_1920x1063px5.jpg",
+  "pictures/index/02_Pfadfinder/pfadfinder_1920x1063px6.jpg",
+  "pictures/index/02_Pfadfinder/pfadfinder_1920x1063px7.jpg",
+  "pictures/index/02_Pfadfinder/pfadfinder_1920x1063px8.jpg",
+  "pictures/index/02_Pfadfinder/pfadfinder_1920x1063px9.jpg",
+  "pictures/index/02_Pfadfinder/pfadfinder_1920x1063px10.jpg",
+  "pictures/index/02_Pfadfinder/pfadfinder_1920x1063px11.jpg",
+  "pictures/index/02_Pfadfinder/pfadfinder_1920x1063px12.jpg",
+  "pictures/index/02_Pfadfinder/pfadfinder_1920x1063px13.jpg"
 ];
 const sliderList3 = [
-  "../pictures/index/3_ueberbild_1920x1063px6.jpg",
-  "../pictures/index/03_ueberbild/ueberbild1.jpg",
-  "../pictures/index/03_ueberbild/ueberbild2.jpg",
-  "../pictures/index/03_ueberbild/ueberbild3.jpg",
-  "../pictures/index/03_ueberbild/ueberbild4.jpg",
-  "../pictures/index/03_ueberbild/ueberbild5.jpg",
-  "../pictures/index/03_ueberbild/ueberbild6.jpg",
-  "../pictures/index/03_ueberbild/ueberbild7.jpg"
+  "pictures/index/3_ueberbild_1920x1063px6.jpg",
+  "pictures/index/03_ueberbild/ueberbild1.jpg",
+  "pictures/index/03_ueberbild/ueberbild2.jpg",
+  "pictures/index/03_ueberbild/ueberbild3.jpg",
+  "pictures/index/03_ueberbild/ueberbild4.jpg",
+  "pictures/index/03_ueberbild/ueberbild5.jpg",
+  "pictures/index/03_ueberbild/ueberbild6.jpg",
+  "pictures/index/03_ueberbild/ueberbild7.jpg"
 ];
 const sliderList4 = [
-  "../pictures/index/4_neunkubikmeter_1920x1063px6.jpg",
-  "../pictures/index/04_neunkubikmeter/01_neunkubikmeter.jpg",
-  "../pictures/index/04_neunkubikmeter/02_neunkubikmeter.jpg",
-  "../pictures/index/04_neunkubikmeter/03_neunkubikmeter.jpg",
-  "../pictures/index/04_neunkubikmeter/04_neunkubikmeter.jpg",
-  "../pictures/index/04_neunkubikmeter/05_neunkubikmeter.jpg",
-  "../pictures/index/04_neunkubikmeter/06_neunkubikmeter.jpg",
-  "../pictures/index/04_neunkubikmeter/07_neunkubikmeter.jpg",
-  "../pictures/index/04_neunkubikmeter/08_neunkubikmeter.jpg",
-  "../pictures/index/04_neunkubikmeter/09_neunkubikmeter.jpg",
-  "../pictures/index/04_neunkubikmeter/10_neunkubikmeter.jpg"
+  "pictures/index/4_neunkubikmeter_1920x1063px6.jpg",
+  "pictures/index/04_neunkubikmeter/01_neunkubikmeter.jpg",
+  "pictures/index/04_neunkubikmeter/02_neunkubikmeter.jpg",
+  "pictures/index/04_neunkubikmeter/03_neunkubikmeter.jpg",
+  "pictures/index/04_neunkubikmeter/04_neunkubikmeter.jpg",
+  "pictures/index/04_neunkubikmeter/05_neunkubikmeter.jpg",
+  "pictures/index/04_neunkubikmeter/06_neunkubikmeter.jpg",
+  "pictures/index/04_neunkubikmeter/07_neunkubikmeter.jpg",
+  "pictures/index/04_neunkubikmeter/08_neunkubikmeter.jpg",
+  "pictures/index/04_neunkubikmeter/09_neunkubikmeter.jpg",
+  "pictures/index/04_neunkubikmeter/10_neunkubikmeter.jpg"
 ];
 const sliderList5 = [
-  "../pictures/index/5_luemo_1920x1063px.jpg",
-  "../pictures/index/05_luemo/luemo_1920x1063px.jpg",
-  "../pictures/index/05_luemo/luemo_1920x1063px2.jpg",
-  "../pictures/index/05_luemo/luemo_1920x1063px3.jpg",
-  "../pictures/index/05_luemo/luemo_1920x1063px4.jpg",
-  "../pictures/index/05_luemo/luemo_1920x1063px5.jpg",
-  "../pictures/index/05_luemo/luemo_1920x1063px6.jpg",
-  "../pictures/index/05_luemo/luemo_1920x1063px7.jpg"
+  "pictures/index/5_luemo_1920x1063px.jpg",
+  "pictures/index/05_luemo/luemo_1920x1063px.jpg",
+  "pictures/index/05_luemo/luemo_1920x1063px2.jpg",
+  "pictures/index/05_luemo/luemo_1920x1063px3.jpg",
+  "pictures/index/05_luemo/luemo_1920x1063px4.jpg",
+  "pictures/index/05_luemo/luemo_1920x1063px5.jpg",
+  "pictures/index/05_luemo/luemo_1920x1063px6.jpg",
+  "pictures/index/05_luemo/luemo_1920x1063px7.jpg"
 ];
 
 // info slider event listeners
@@ -168,47 +168,47 @@ else if (window.innerWidth <= 480) {
   // YES!
   slider1ArrLeft.addEventListener(
     "click",
-    () => (window.location.href = "../pages/projects/yes.html")
+    () => (window.location.href = "pages/projects/yes.html")
   );
   slider1ArrRight.addEventListener(
     "click",
-    () => (window.location.href = "../pages/projects/yes.html")
+    () => (window.location.href = "pages/projects/yes.html")
   );
   // PFADFINDER
   slider2ArrLeft.addEventListener(
     "click",
-    () => (window.location.href = "../pages/projects/pfadfinder.html")
+    () => (window.location.href = "pages/projects/pfadfinder.html")
   );
   slider2ArrRight.addEventListener(
     "click",
-    () => (window.location.href = "../pages/projects/pfadfinder.html")
+    () => (window.location.href = "pages/projects/pfadfinder.html")
   );
   // UEBERBILD
   slider3ArrLeft.addEventListener(
     "click",
-    () => (window.location.href = "../pages/projects/ueberbild.html")
+    () => (window.location.href = "pages/projects/ueberbild.html")
   );
   slider3ArrRight.addEventListener(
     "click",
-    () => (window.location.href = "../pages/projects/ueberbild.html")
+    () => (window.location.href = "pages/projects/ueberbild.html")
   );
   // NEUNKUBIKMETER
   slider4ArrLeft.addEventListener(
     "click",
-    () => (window.location.href = "../pages/projects/neunkubikmeter.html")
+    () => (window.location.href = "pages/projects/neunkubikmeter.html")
   );
   slider4ArrRight.addEventListener(
     "click",
-    () => (window.location.href = "../pages/projects/neunkubikmeter.html")
+    () => (window.location.href = "pages/projects/neunkubikmeter.html")
   );
   // LÜMO
   slider5ArrLeft.addEventListener(
     "click",
-    () => (window.location.href = "../pages/projects/luemo.html")
+    () => (window.location.href = "pages/projects/luemo.html")
   );
   slider5ArrRight.addEventListener(
     "click",
-    () => (window.location.href = "../pages/projects/luemo.html")
+    () => (window.location.href = "pages/projects/luemo.html")
   );
 }
 
@@ -272,4 +272,3 @@ window.addEventListener("resize", () => {
     // mainText.style.marginTop = `${vh * 9.5}px`;
   }
 });
-
