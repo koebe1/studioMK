@@ -76,6 +76,7 @@ if (window.innerWidth > 480) {
 if (window.innerWidth <= 480) {
   nav.style.height = "15vw";
   sliderSub.style.height = "15vw";
+  infoContainer.style.height = `calc(${vh * 100}px - 30vw)`;
   swiperContainer.style.height = `calc(${vh * 100}px - 30vw)`;
   main.style.margin = "15vw 0 0 0";
 }
@@ -98,6 +99,7 @@ window.addEventListener("resize", () => {
   if (window.innerWidth <= 480) {
     nav.style.height = "15vw";
     sliderSub.style.height = "15vw";
+    infoContainer.style.height = `calc(${vh * 100}px - 30vw)`;
     swiperContainer.style.height = `calc(${vh * 100}px - 30vw)`;
     main.style.margin = "15vw 0 0 0";
   }
