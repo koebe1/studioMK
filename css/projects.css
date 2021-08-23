@@ -267,6 +267,9 @@ span.info-card-dots {
   span.info-card-dots {
     font-size: 18px;
   }
+  .slider-sub {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -313,11 +316,11 @@ span.info-card-dots {
     object-fit: cover;
     object-position: center;
   }
+  .slider-sub {
+    font-size: 13px;
+  }
 }
 @media (max-width: 450px) {
-  .slider-sub {
-    font-size: 10px;
-  }
   #dots {
     font-size: 15px;
   }
@@ -326,12 +329,23 @@ span.info-card-dots {
   .info-container span {
     line-height: 21px;
   }
+  .slider-sub {
+    font-size: 11px;
+  }
 }
 @media (max-width: 375px) {
   .info-container span {
     line-height: 20px;
   }
   .slider-sub {
-    font-size: 9px;
+    font-size: 11px;
+  }
+}
+@media (max-width: 350px) {
+  .info-container span {
+    line-height: 20px;
+  }
+  .slider-sub {
+    font-size: 10px;
   }
 }
