@@ -126,8 +126,7 @@ main {
   /* height: calc(var(--vh, 81vh) * 100); */
   /* height: 81vh; */
   width: 100vw;
-  line-height: 35px;
-  font-size: 25px;
+  font-size: 22px;
   z-index: 2;
   overflow: hidden;
 }
@@ -155,7 +154,7 @@ main {
 }
 .info-container span {
   color: #fff;
-  line-height: 35px;
+  line-height: 30px;
   font-family: "Non Natural Grotesk Light";
 }
 span.info-card-dots {
@@ -173,13 +172,41 @@ span.info-card-dots {
 .paragraph-large-before {
   margin-top: 4.5vw;
 }
-@media (max-width: 1400px) {
+
+@media (max-width: 1800px) {
   .info-container span {
-    font-size: 20px;
+    font-size: 23px;
+    line-height: 29px;
+  }
+}
+@media (max-width: 1700px) {
+  .info-container span {
+    font-size: 22px;
     line-height: 30px;
   }
+}
+@media (max-width: 1600px) {
+  .info-container span {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+@media (max-width: 1400px) {
+  .info-container span {
+    font-size: 18px;
+    line-height: 27px;
+  }
   span.info-card-dots {
-    font-size: 30px;
+    font-size: 28px;
+  }
+}
+@media (max-width: 1200px) {
+  .info-container span {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  span.info-card-dots {
+    font-size: 26px;
   }
 }
 @media (max-width: 1024px) {
@@ -192,12 +219,9 @@ span.info-card-dots {
   .info {
     margin-right: 4vw;
   }
-  .info-container {
-    font-size: 18px;
-    line-height: 28px;
-  }
-  span.info-card-dots {
-    font-size: 28px;
+  .info-container span {
+    font-size: 15px;
+    line-height: 24px;
   }
 }
 @media (max-width: 768px) {
@@ -207,15 +231,13 @@ span.info-card-dots {
   #dots {
     font-size: 21px;
   }
-  .info-container {
-    font-size: 16px;
-  }
+
   .info-container span {
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 14px;
+    line-height: 22px;
   }
   span.info-card-dots {
-    font-size: 25px;
+    font-size: 23px;
   }
   .paragraph-after {
     margin-bottom: 1vw;
@@ -228,9 +250,9 @@ span.info-card-dots {
   #dots {
     font-size: 19px;
   }
-  .info-container {
-    font-size: 14px;
-    line-height: 18px;
+  .info-container span {
+    font-size: 13px;
+    line-height: 20px;
   }
   span.info-card-dots {
     font-size: 20px;
@@ -238,9 +260,9 @@ span.info-card-dots {
 }
 
 @media (max-width: 550px) {
-  .info-container {
+  .info-container span {
     font-size: 12px;
-    line-height: 12px;
+    line-height: 18px;
   }
   span.info-card-dots {
     font-size: 18px;
@@ -260,11 +282,10 @@ span.info-card-dots {
   .info-container {
     flex-direction: column;
     justify-content: space-between;
-    font-size: 11px;
-    line-height: 15px;
+    font-size: 10px;
   }
   .info-container span {
-    line-height: 25px;
+    line-height: 23px;
   }
   .info-card-left {
     width: 100%;
@@ -301,9 +322,14 @@ span.info-card-dots {
     font-size: 15px;
   }
 }
+@media (max-width: 428px) {
+  .info-container span {
+    line-height: 21px;
+  }
+}
 @media (max-width: 375px) {
   .info-container span {
-    line-height: 23px;
+    line-height: 20px;
   }
   .slider-sub {
     font-size: 9px;

@@ -103,6 +103,7 @@ main {
   width: 100%;
   background-color: #000000;
   font-size: 25px;
+  overflow: scroll;
 }
 
 .info-card-text-left {
@@ -123,7 +124,8 @@ main {
 }
 .info-card span {
   color: #fff;
-  line-height: 35px;
+  font-size: 25px;
+  line-height: 33px;
   font-family: "Non Natural Grotesk Light";
 }
 .info-heading {
@@ -195,9 +197,13 @@ span.info-card-dots {
   .main-text {
     font-size: 60px;
   }
-  .info-card {
-    font-size: 20px;
-    line-height: 30px;
+
+  .info-card span {
+    font-size: 23px;
+    line-height: 29px;
+  }
+  span.info-card-dots {
+    font-size: 30px;
   }
 }
 
@@ -205,6 +211,10 @@ span.info-card-dots {
   .main-text {
     font-size: 55px;
     line-height: 65px;
+  }
+  .info-card span {
+    font-size: 22px;
+    line-height: 30px;
   }
 }
 
@@ -220,16 +230,14 @@ span.info-card-dots {
     max-height: 800px;
   }
   .info-card {
-    font-size: 18px;
-    line-height: 27px;
     max-height: 800px;
+  }
+  .info-card span {
+    font-size: 20px;
+    line-height: 28px;
   }
   .dots {
     font-size: 25px;
-  }
-  span.info-card-dots {
-    font-size: 30px;
-    font-family: sans-serif;
   }
 }
 @media (max-width: 1500px) {
@@ -251,7 +259,11 @@ span.info-card-dots {
     max-height: 700px;
   }
   .info-card span {
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  span.info-card-dots {
+    font-size: 28px;
   }
 
   .info-heading {
@@ -263,15 +275,18 @@ span.info-card-dots {
   .paragraph-large-before {
     margin-top: 4.5vw;
   }
-  span.info-card-dots {
-    font-size: 25px;
-    font-family: sans-serif;
-  }
 }
 @media (max-width: 1250px) {
   .main-text {
     font-size: 35px;
     line-height: 45px;
+  }
+  .info-card span {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  span.info-card-dots {
+    font-size: 26px;
   }
 }
 @media (max-width: 1192px) {
@@ -295,11 +310,12 @@ span.info-card-dots {
   }
 
   .info-card span {
-    line-height: 25px;
+    font-size: 15px;
+    line-height: 24px;
   }
 
   span.info-card-dots {
-    font-size: 20px;
+    font-size: 23px;
     font-family: sans-serif;
   }
 }
@@ -324,14 +340,6 @@ span.info-card-dots {
   .paragraph-large-before {
     margin-top: 4.5vw;
   }
-
-  .info-card span {
-    line-height: 22px;
-  }
-
-  span.info-card-dots {
-    font-size: 20px;
-  }
 }
 
 /* tablet */
@@ -347,7 +355,8 @@ span.info-card-dots {
     font-size: 12px;
   }
   .info-card span {
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 @media (max-width: 665px) {
@@ -358,8 +367,12 @@ span.info-card-dots {
   .slider-sub {
     font-size: 16px;
   }
-  .info-card {
-   
+  .info-card span {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  span.info-card-dots {
+    font-size: 20px;
   }
 }
 @media (max-width: 560px) {
@@ -370,8 +383,12 @@ span.info-card-dots {
   .slider-sub {
     font-size: 15px;
   }
-  .info-card {
- 
+  .info-card span {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  span.info-card-dots {
+    font-size: 18px;
   }
 }
 

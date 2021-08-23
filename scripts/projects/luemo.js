@@ -73,14 +73,13 @@ if (window.innerWidth > 480) {
   swiperSlide12.style.display = "none";
   swiperSlide13.style.display = "none";
 
-  img1.src = "../../pictures/index/08_gruppeB/gruppeb_1920x1063px.jpg";
-  img2.src = "../../pictures/index/08_gruppeB/gruppeb_1920x1063px2.jpg";
-  img3.src = "../../pictures/index/08_gruppeB/gruppeb_1920x1063px3.jpg";
-  img4.src = "../../pictures/index/08_gruppeB/gruppeb_1920x1063px4.jpg";
-  img5.src = "../../pictures/index/08_gruppeB/gruppeb_1920x1063px5.jpg";
-  img6.src = "../../pictures/index/08_gruppeB/gruppeb_1920x1063px6.jpg";
-  img7.src = "../../pictures/index/08_gruppeB/gruppeb_1920x1063px7.jpg";
-  img8.src = "../../pictures/index/08_gruppeB/gruppeb_1920x1063px8.jpg";
+  img1.src = "../../pictures/index/05_luemo/luemo_1920x1063px.jpg";
+  img2.src = "../../pictures/index/05_luemo/luemo_1920x1063px2.jpg";
+  img3.src = "../../pictures/index/05_luemo/luemo_1920x1063px3.jpg";
+  img4.src = "../../pictures/index/05_luemo/luemo_1920x1063px4.jpg";
+  img5.src = "../../pictures/index/05_luemo/luemo_1920x1063px5.jpg";
+  img6.src = "../../pictures/index/05_luemo/luemo_1920x1063px6.jpg";
+  img7.src = "../../pictures/index/05_luemo/luemo_1920x1063px7.jpg";
 }
 
 window.addEventListener("resize", () => {
