@@ -128,7 +128,7 @@ main {
   width: 100vw;
   font-size: 22px;
   z-index: 2;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .info-container-visible {
