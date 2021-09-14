@@ -64,9 +64,12 @@ main {
 .slider-sub-left {
   padding-left: 2.51%;
 }
+.filter-label {
+  font-family: "Non Natural Grotesk Light";
+}
 
 #dots {
-  padding: 0 2vw 0 2vw;
+  padding: 0 1vw 0 1vw;
 }
 
 .dots {

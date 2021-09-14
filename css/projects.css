@@ -84,7 +84,7 @@ main {
 
 #dots {
   font-size: 30px;
-  padding: 0 2vw 0 2vw;
+  padding: 0 1vw 0 1vw;
 }
 
 .dots {
@@ -162,9 +162,17 @@ span.info-card-dots {
   font-family: sans-serif;
   letter-spacing: 0vw;
 }
+.categories {
+  display: flex;
+  flex-direction: column;
+  font-family: "Non Natural Grotesk Light";
+}
 
 .info-heading {
   margin-bottom: 3.3vw;
+}
+.filter-label {
+  font-family: "Non Natural Grotesk Light";
 }
 .paragraph-after {
   margin-bottom: 1.3vw;
@@ -278,6 +286,9 @@ span.info-card-dots {
   }
   .slider-sub {
     font-size: 14px;
+  }
+  .filter-label {
+    display: none;
   }
   #dots {
     font-size: 17px;

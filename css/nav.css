@@ -86,7 +86,7 @@ nav {
 }
 #nav-mobile-links li {
   text-decoration: none;
-  padding: 3vw 0;
+  padding: 2vw 0;
 }
 #nav-mobile-links li a {
   font-size: 25px;
@@ -170,7 +170,7 @@ nav {
   nav {
     height: 15vw;
     font-size: 17px;
-    padding: 0vw 2.4vw;
+    padding: 0vw 2.19vw 0 1.8vw;
   }
   .main-text {
     padding-top: 0vw;

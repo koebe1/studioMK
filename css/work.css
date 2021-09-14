@@ -7,9 +7,9 @@ main {
 .heading {
   margin-top: 5.3vw;
 }
-.heading h1 {
+.heading p {
   font-size: 70px;
-  line-height: 84px;
+  line-height: 70px;
 }
 
 /* filter */
@@ -97,9 +97,9 @@ main {
   main {
     font-size: 20px;
   }
-  .heading h1 {
+  .heading p {
     font-size: 65px;
-    line-height: 75px;
+    line-height: 65px;
   }
   .filter span {
     font-size: 23px;
@@ -112,9 +112,9 @@ main {
   .dots {
     font-size: 30px;
   }
-  .heading h1 {
+  .heading p {
     font-size: 60px;
-    line-height: 70px;
+    line-height: 60px;
   }
   .filter span {
     font-size: 21px;
@@ -128,9 +128,9 @@ main {
   .dots {
     font-size: 25px;
   }
-  .heading h1 {
+  .heading p {
     font-size: 50px;
-    line-height: 60px;
+    line-height: 50px;
   }
   .filter span {
     font-size: 18px;
@@ -143,9 +143,9 @@ main {
   .dots {
     font-size: 20px;
   }
-  .heading h1 {
+  .heading p {
     font-size: 45px;
-    line-height: 55px;
+    line-height: 45px;
   }
   .filter span {
     font-size: 15px;
@@ -169,9 +169,9 @@ main {
   .dots {
     font-size: 23px;
   }
-  .heading h1 {
+  .heading p {
     font-size: 40px;
-    line-height: 50px;
+    line-height: 40px;
   }
   .filter span {
     font-size: 14px;
@@ -187,9 +187,9 @@ main {
   .dots {
     font-size: 20px;
   }
-  .heading h1 {
+  .heading p {
     font-size: 30px;
-    line-height: 40px;
+    line-height: 30px;
   }
   .filter span {
     font-size: 12px;
@@ -205,9 +205,9 @@ main {
   .dots {
     font-size: 18px;
   }
-  .heading h1 {
+  .heading p {
     font-size: 25px;
-    line-height: 35px;
+    line-height: 25px;
   }
   .filter span {
     font-size: 10px;
@@ -215,12 +215,18 @@ main {
 }
 @media (max-width: 480px) {
   main {
-    margin: 10vh 6.25vw 15vh 6.25vw;
+    margin: 10vh 2.19vw 15vh 2.19vw;
   }
   .filter {
     padding: 12vw 0 4.5vw 0;
     font-size: 18px;
   }
+  .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
   #work-grid-container {
     grid-template-columns: 1fr;
   }
@@ -235,9 +241,9 @@ main {
     font-size: 18px;
     letter-spacing: 1.6px;
   }
-  .heading h1 {
+  .heading p {
     font-size: 25px;
-    line-height: 35px;
+    line-height: 25px;
   }
   .filter {
     padding-top: 4vw;
@@ -245,7 +251,6 @@ main {
   .filter span {
     font-size: 10px;
   }
-
 }
 @media (max-width: 420px) {
   .filter {
