@@ -359,12 +359,12 @@ span.info-card-dots {
   .info-heading {
     margin-bottom: 4vw;
   }
-  .paragraph-after {
+  /* .paragraph-after {
     margin-bottom: 0.5vw;
   }
   .paragraph-large-before {
     margin-top: 0vw;
-  }
+  } */
   .swiper-slide img {
     width: 100%;
 
