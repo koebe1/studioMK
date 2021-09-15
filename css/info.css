@@ -30,10 +30,13 @@ section {
 }
 .border {
   width: 30.4vw;
-  border: 1px solid #000000;
+  border: 0.5px solid #000000;
   margin: 1.25vw 0;
+  /* smaller the minimal width of the border of 1px */
+  transform: scaleY(0.5);
 }
 .miriam-koenig p {
+  font-family: "Non Natural Grotesk Light";
   font-size: 20px;
   line-height: 28px;
 }
@@ -65,6 +68,7 @@ section {
 }
 
 .section-2-text p {
+  font-family: "Non Natural Grotesk Light";
   font-size: 20px;
   line-height: 28px;
 }
@@ -90,9 +94,16 @@ section {
 .section-3 span {
   font-size: 25px;
 }
+
 .hi-container {
   display: flex;
   justify-content: space-between;
+}
+.hi-container p {
+  font-family: "Non Natural Grotesk Light";
+}
+.hi-container a {
+  font-family: "Non Natural Grotesk Light";
 }
 .address {
   margin-top: 1.5vw;
@@ -116,6 +127,7 @@ section {
   display: block;
   padding: 0;
   margin-bottom: 0.6vw;
+  font-family: "Non Natural Grotesk Light";
 }
 .friends-links {
   margin-top: 2.5vw;
