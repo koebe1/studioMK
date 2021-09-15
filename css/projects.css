@@ -105,7 +105,7 @@ main {
 
 .info {
   cursor: pointer;
-  margin-right: 3vw;
+  margin-right: 4vw;
 }
 
 /* swiper */
@@ -280,9 +280,6 @@ span.info-card-dots {
   span.info-card-dots {
     font-size: 23px;
   }
-  .paragraph-after {
-    margin-bottom: 1vw;
-  }
 }
 @media (max-width: 610px) {
   .slider-sub {
@@ -388,7 +385,6 @@ span.info-card-dots {
     font-size: 11;
     line-height: 21px;
   }
-
 }
 @media (max-width: 375px) {
   .info-container span {
@@ -397,12 +393,10 @@ span.info-card-dots {
   .info-card-left a {
     line-height: 20px;
   }
-
 }
 @media (max-width: 350px) {
   .info-container span {
     font-size: 10px;
     line-height: 20px;
   }
-
 }
