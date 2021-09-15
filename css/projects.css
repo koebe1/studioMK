@@ -356,12 +356,12 @@ span.info-card-dots {
   .info-heading {
     margin-bottom: 4vw;
   }
-  /* .paragraph-after {
-    margin-bottom: 0.5vw;
+  .paragraph-after {
+    margin-bottom: 2vw;
   }
   .paragraph-large-before {
-    margin-top: 0vw;
-  } */
+    margin-top: 5vw;
+  }
   .swiper-slide img {
     width: 100%;
 
@@ -370,6 +370,9 @@ span.info-card-dots {
   }
   .slider-sub {
     font-size: 18px;
+  }
+  .info {
+    margin-right: 6vw;
   }
 }
 @media (max-width: 450px) {
