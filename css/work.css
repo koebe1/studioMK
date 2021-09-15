@@ -254,7 +254,7 @@ main {
 }
 @media (max-width: 420px) {
   .filter {
-    font-size: 17px;
+    font-size: 18px;
   }
   .dots {
     font-size: 20px;
@@ -265,7 +265,7 @@ main {
 }
 @media (max-width: 375px) {
   .filter {
-    font-size: 15px;
+    font-size: 18px;
   }
   .dots {
     font-size: 20px;
