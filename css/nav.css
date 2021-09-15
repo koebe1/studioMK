@@ -29,8 +29,19 @@ nav {
   display: flex;
   justify-content: flex-end;
 }
+
+#work-and-play {
+  display: flex;
+}
+
+#work-and-play span {
+  padding: 0 0.4vw;
+}
 .nav-links a {
   text-decoration: none;
+}
+a {
+  padding: 0;
 }
 
 .nav-links li {
@@ -39,6 +50,15 @@ nav {
 
 #info {
   padding: 0px 7.2vw 0 7.2vw;
+}
+
+.nav-links a::before {
+  content: attr(title);
+  display: block;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+  font-family: "Non Natural Grotesk Medium";
 }
 
 .nav-links a:hover {
@@ -125,6 +145,9 @@ nav {
   nav {
     font-size: 20px;
   }
+  #logo img {
+    height: 20px;
+  }
   #eyes {
     font-size: 15px;
     left: 55.3%;
@@ -158,11 +181,17 @@ nav {
   nav {
     font-size: 18px;
   }
+  #logo img {
+    height: 18px;
+  }
 }
 
 @media (max-width: 560px) {
   nav {
     font-size: 15px;
+  }
+  #logo img {
+    height: 15px;
   }
 }
 
