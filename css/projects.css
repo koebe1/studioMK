@@ -325,9 +325,7 @@ span.info-card-dots {
   nav {
     height: 15vw;
   }
-  .slider-sub {
-    font-size: 14px;
-  }
+
   .filter-label {
     display: none;
   }
@@ -340,10 +338,11 @@ span.info-card-dots {
     font-size: 10px;
   }
   .info-container span {
+    font-size: 13px;
     line-height: 23px;
   }
   .info-card-left a {
-    font-size: 23px;
+    font-size: 13px;
     line-height: 23px;
   }
   .info-card-left {
@@ -373,7 +372,7 @@ span.info-card-dots {
     object-position: center;
   }
   .slider-sub {
-    font-size: 13px;
+    font-size: 18px;
   }
 }
 @media (max-width: 450px) {
@@ -386,11 +385,10 @@ span.info-card-dots {
     line-height: 21px;
   }
   .info-card-left a {
+    font-size: 11;
     line-height: 21px;
   }
-  .slider-sub {
-    font-size: 11px;
-  }
+
 }
 @media (max-width: 375px) {
   .info-container span {
@@ -399,15 +397,12 @@ span.info-card-dots {
   .info-card-left a {
     line-height: 20px;
   }
-  .slider-sub {
-    font-size: 11px;
-  }
+
 }
 @media (max-width: 350px) {
   .info-container span {
+    font-size: 10px;
     line-height: 20px;
   }
-  .slider-sub {
-    font-size: 10px;
-  }
+
 }
