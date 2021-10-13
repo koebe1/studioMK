@@ -374,6 +374,9 @@ span.info-card-dots {
   .info {
     margin-right: 6vw;
   }
+  .swiper-pagination-total {
+    padding-right: 3.3vw;
+  }
 }
 @media (max-width: 450px) {
   #dots {
