@@ -18,18 +18,17 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-
-
   STUDIO MK is a creative design studio owned by Miriam König located Regensburg, Germany. 
   <br/>
   To present her work as well as additional creative endeavors I got to build the new website for STUDIO MK.
   
 
 <br/>
-<br/>   
 
-![studioMK_home](https://user-images.githubusercontent.com/64101761/138594205-eea0d097-4bab-4d9b-9e35-e44b34faeef0.jpg)
-![studioMk_work](https://user-images.githubusercontent.com/64101761/138594210-4011e5cd-3d43-471e-aabe-45f5b7743bcd.jpg)
+
+![studioMK_home](https://user-images.githubusercontent.com/64101761/138594310-436a3a86-5119-464e-a6bb-912b7aefb97a.jpg)
+![studioMk_work](https://user-images.githubusercontent.com/64101761/138594311-27883f86-04c2-4859-a2ba-1ac06a9a1b31.jpg)
+
 
 
 
@@ -41,13 +40,13 @@
 
 ### Built With
 
-<br/>
+
 
 No need to get fancy! 
 <br/>
 <br/>
-* HTML, 
-* CSS     &
+* HTML 
+* CSS 
 * JavaScript
 <br/>
 ...are doing the job.
