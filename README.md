@@ -18,7 +18,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-  STUDIO MK is a creative design studio owned by Miriam König located Regensburg, Germany. 
+  STUDIO MK is a creative design studio owned by Miriam König located Leipzig, Germany. 
   <br/>
   To present her work as well as additional creative endeavors I got to build the new website for STUDIO MK.
   
